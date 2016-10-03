@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Mon Oct 03 14:53:04 2016
+>> Linked Mon Oct 03 17:17:45 2016
 
 OUTPUT FILE NAME:   <CardReader001.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 00004400
@@ -188,7 +188,7 @@ SYSNMI     0    0000fffc    00000002
 
 .text      0    00010000    00000068     
                   00010000    00000044     main.obj (.text:main)
-                  00010044    00000012     main.obj (.text:set_clock)
+                  00010044    00000012     initClock.obj (.text:set_clock)
                   00010056    00000008     UARTmodule.obj (.text:init_UART)
                   0001005e    00000006     rts430x_lc_rd_eabi.lib : exit.obj (.text:abort)
                   00010064    00000004                            : pre_init.obj (.text:_system_pre_init)
@@ -198,12 +198,13 @@ MODULE SUMMARY
        Module             code   ro data   rw data
        ------             ----   -------   -------
     D:\Programmeerimine\Code Composer WS\CardReader\out\
-       main.obj           86     0         0      
+       main.obj           68     0         0      
+       initClock.obj      18     0         0      
        UARTmodule.obj     8      0         0      
     +--+------------------+------+---------+---------+
        Total:             94     0         0      
                                                   
-    D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\rts430x_lc_rd_eabi.lib
+    C:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\rts430x_lc_rd_eabi.lib
        boot_special.obj   18     0         0      
        isr_trap.obj       8      0         0      
        exit.obj           6      0         0      

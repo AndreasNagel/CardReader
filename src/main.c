@@ -1,10 +1,10 @@
 #include <msp430.h> 
 #include "UARTmodule.h"
+#include "initClock.h"
 
 /*
  * main.c
  */
-int set_clock(int);
 
 int main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
@@ -32,13 +32,4 @@ int main(void) {
 // Sets master clock to a designated frequency,
 // viable settings are yet to be determined
 // more information in datasheet under unified clock system (UCS)
-int set_clock(int clock_speed){
-	if(clock_speed == 0){
-		UCSCTL2 |= 0x5000; // Phase lock loop frequency divider, bits 12-14 set divider, 5 = clk/32, 0 = clk/1
-		//UCSCTL5 |= 0x0005; // uncomment this line to make master clock 32 times slower
 
-		UCSCTL4 |= 0x0004; // Select master clock source currenctly DCOCLKDIV
-
-	}
-	return 0;
-}
