@@ -1,1 +1,1 @@
-"./UARTmodule.obj" "./init.obj" "./main.obj" "../lnk_msp430f5529.cmd" -llibmath.a -llibc.a 
+"D:/Programmeerimine/Code Composer WS/CardReader/out/UARTmodule.obj" "D:/Programmeerimine/Code Composer WS/CardReader/out/init.obj" "D:/Programmeerimine/Code Composer WS/CardReader/out/main.obj" "../lnk_msp430f5529.cmd" -llibmath.a -llibc.a 

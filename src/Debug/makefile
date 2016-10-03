@@ -4,15 +4,15 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS
+CG_TOOL_ROOT := D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.12.3.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
-"./UARTmodule.obj" \
-"./init.obj" \
-"./main.obj" \
+"D:/Programmeerimine/Code Composer WS/CardReader/out/UARTmodule.obj" \
+"D:/Programmeerimine/Code Composer WS/CardReader/out/init.obj" \
+"D:/Programmeerimine/Code Composer WS/CardReader/out/main.obj" \
 "../lnk_msp430f5529.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmath.a \
@@ -142,21 +142,21 @@ all: CardReader001.out
 CardReader001.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --display_error_number --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal -z -m"CardReader001.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv6/ccs_base/msp430/include" -i"C:/ti/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/lib" -i"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" --reread_libs --display_error_number --warn_sections --diag_wrap=off --xml_link_info="CardReader001_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "CardReader001.out" $(ORDERED_OBJS)
+	"D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all -g --define=__MSP430F5529__ --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --printf_support=minimal --temp_directory="D:/Programmeerimine/Code Composer WS/CardReader/out" --asm_directory="D:/Programmeerimine/Code Composer WS/CardReader/out" --list_directory="D:/Programmeerimine/Code Composer WS/CardReader/out" --obj_directory="D:/Programmeerimine/Code Composer WS/CardReader/out" -z -m"CardReader001.map" --stack_size=160 --heap_size=160 --cinit_hold_wdt=on -i"D:/Program Files/TI CCSv6/ccsv6/ccs_base/msp430/include" -i"D:/Program Files/TI CCSv6/ccsv6/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.12.3.LTS/lib" -i"D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.12.3.LTS/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="CardReader001_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "CardReader001.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 CardReader001.hex: $(EXE_OUTPUTS)
 	@echo 'Invoking: MSP430 Hex Utility'
-	"C:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/hex430" --memwidth=8 --romwidth=8 -o "CardReader001.hex" $(EXE_OUTPUTS__QUOTED)
+	"D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.12.3.LTS/bin/hex430" --memwidth=8 --romwidth=8 -o "CardReader001.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "UARTmodule.d" "init.d" "main.d" 
-	-$(RM) "UARTmodule.obj" "init.obj" "main.obj" 
+	-$(RM) "D:\Programmeerimine\Code Composer WS\CardReader\out\UARTmodule.d" "D:\Programmeerimine\Code Composer WS\CardReader\out\init.d" "D:\Programmeerimine\Code Composer WS\CardReader\out\main.d" 
+	-$(RM) "D:\Programmeerimine\Code Composer WS\CardReader\out\UARTmodule.obj" "D:\Programmeerimine\Code Composer WS\CardReader\out\init.obj" "D:\Programmeerimine\Code Composer WS\CardReader\out\main.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -1,0 +1,118 @@
+MSP430 Assembler PC v15.12.3 Mon Oct 03 14:53:03 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\134402                            PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 C/C++ Codegen                                       PC v15.12.3.LTS *
+       3            ;* Date/Time created: Mon Oct 03 14:53:03 2016                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=large --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../init.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 C/C++ Codegen PC v15.12.3.LTS Copyright (c) 2003-2
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Programmeerimine\Code Composer WS\CardReader\src\Debug")
+      12            ;       D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\bin\opt430.exe D:/Programmee
+      13            
+      14            ;******************************************************************************
+      15            ;* BUILD ATTRIBUTES                                                           *
+      16            ;******************************************************************************
+      17                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
+      18                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0000000000000000000000000
+      19                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(1)
+      20                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+      21                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+      22                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+      23            
+      24            ;******************************************************************************
+      25            ;* TYPE INFORMATION                                                           *
+      26            ;******************************************************************************
+      27            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+      28                    .dwattr $C$DW$T$2, DW_AT_name("void")
+      29            
+      30            $C$DW$T$4       .dwtag  DW_TAG_base_type
+      31                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+      32                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+      33                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+      34            
+      35            $C$DW$T$5       .dwtag  DW_TAG_base_type
+      36                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+      37                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+      38                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+      39            
+      40            $C$DW$T$6       .dwtag  DW_TAG_base_type
+      41                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+      42                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+      43                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+      44            
+      45            $C$DW$T$7       .dwtag  DW_TAG_base_type
+      46                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+      47                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+      48                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+      49            
+      50            $C$DW$T$8       .dwtag  DW_TAG_base_type
+      51                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+      52                    .dwattr $C$DW$T$8, DW_AT_name("short")
+      53                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+      54            
+      55            $C$DW$T$9       .dwtag  DW_TAG_base_type
+MSP430 Assembler PC v15.12.3 Mon Oct 03 14:53:03 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\134402                            PAGE    2
+
+      56                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+      57                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+      58                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+      59            
+      60            $C$DW$T$10      .dwtag  DW_TAG_base_type
+      61                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+      62                    .dwattr $C$DW$T$10, DW_AT_name("int")
+      63                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+      64            
+      65            $C$DW$T$11      .dwtag  DW_TAG_base_type
+      66                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+      67                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+      68                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+      69            
+      70            $C$DW$T$12      .dwtag  DW_TAG_base_type
+      71                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+      72                    .dwattr $C$DW$T$12, DW_AT_name("long")
+      73                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+      74            
+      75            $C$DW$T$13      .dwtag  DW_TAG_base_type
+      76                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+      77                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+      78                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+      79            
+      80            $C$DW$T$14      .dwtag  DW_TAG_base_type
+      81                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+      82                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+      83                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+      84            
+      85            $C$DW$T$15      .dwtag  DW_TAG_base_type
+      86                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+      87                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+      88                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+      89            
+      90            $C$DW$T$16      .dwtag  DW_TAG_base_type
+      91                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+      92                    .dwattr $C$DW$T$16, DW_AT_name("float")
+      93                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+      94            
+      95            $C$DW$T$17      .dwtag  DW_TAG_base_type
+      96                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+      97                    .dwattr $C$DW$T$17, DW_AT_name("double")
+      98                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+      99            
+     100            $C$DW$T$18      .dwtag  DW_TAG_base_type
+     101                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+     102                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+     103                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+     104            
+     105                    .dwendtag $C$DW$CU
+     106            
+
+No Assembly Errors, No Assembly Warnings

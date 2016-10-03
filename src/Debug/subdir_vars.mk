@@ -12,24 +12,24 @@ C_SRCS += \
 ../main.c 
 
 OBJS += \
-./UARTmodule.obj \
-./init.obj \
-./main.obj 
+D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/UARTmodule.obj \
+D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/init.obj \
+D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/main.obj 
 
 C_DEPS += \
-./UARTmodule.d \
-./init.d \
-./main.d 
+D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/UARTmodule.d \
+D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/init.d \
+D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/main.d 
 
 C_DEPS__QUOTED += \
-"UARTmodule.d" \
-"init.d" \
-"main.d" 
+"D:\Programmeerimine\Code Composer WS\CardReader\out\UARTmodule.d" \
+"D:\Programmeerimine\Code Composer WS\CardReader\out\init.d" \
+"D:\Programmeerimine\Code Composer WS\CardReader\out\main.d" 
 
 OBJS__QUOTED += \
-"UARTmodule.obj" \
-"init.obj" \
-"main.obj" 
+"D:\Programmeerimine\Code Composer WS\CardReader\out\UARTmodule.obj" \
+"D:\Programmeerimine\Code Composer WS\CardReader\out\init.obj" \
+"D:\Programmeerimine\Code Composer WS\CardReader\out\main.obj" 
 
 C_SRCS__QUOTED += \
 "../UARTmodule.c" \
