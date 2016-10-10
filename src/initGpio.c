@@ -5,9 +5,8 @@
  *      Author: karls_000
  */
 #include "MSP430F5xx_6xx/driverlib.h"
-#include <string.h>
 
-void set_gpio(int port, int pins, int IO, int highlow){
+void set_gpio(uint8_t port, uint16_t pins, int IO, int highlow){
 	if(IO == 0){ 									//for input IO needs to be 0
 		GPIO_setAsInputPin(port, pins);				//configures the selected Pin as input pin
 

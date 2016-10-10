@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Mon Oct 10 15:25:36 2016
+>> Linked Mon Oct 10 17:29:06 2016
 
 OUTPUT FILE NAME:   <CardReader001.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 00004400
@@ -85,7 +85,7 @@ MEMORY CONFIGURATION
   INT61                 0000fffa   00000002  00000002  00000000  RWIX
   INT62                 0000fffc   00000002  00000002  00000000  RWIX
   RESET                 0000fffe   00000002  00000002  00000000  RWIX
-  FLASH2                00010000   00014400  000001a4  0001425c  RWIX
+  FLASH2                00010000   00014400  000001a8  00014258  RWIX
 
 
 SECTION ALLOCATION MAP
@@ -189,18 +189,18 @@ SYSNMI     0    0000fffc    00000002
 .reset     0    0000fffe    00000002     
                   0000fffe    00000002     rts430x_lc_rd_eabi.lib : boot.obj (.reset)
 
-.text      0    00010000    000001a4     
-                  00010000    00000056     initGpio.obj (.text:set_gpio)
-                  00010056    0000003e     gpio.obj (.text:GPIO_setAsInputPinWithPullDownResistor)
-                  00010094    0000003e     gpio.obj (.text:GPIO_setAsInputPinWithPullUpResistor)
-                  000100d2    00000034     gpio.obj (.text:GPIO_setAsInputPin)
-                  00010106    00000028     gpio.obj (.text:GPIO_setAsOutputPin)
-                  0001012e    00000022     main.obj (.text:main)
-                  00010150    0000001c     gpio.obj (.text:GPIO_setOutputHighOnPin)
-                  0001016c    0000001c     gpio.obj (.text:GPIO_setOutputLowOnPin)
-                  00010188    00000012     initClock.obj (.text:set_clock)
-                  0001019a    00000006     rts430x_lc_rd_eabi.lib : exit.obj (.text:abort)
-                  000101a0    00000004                            : pre_init.obj (.text:_system_pre_init)
+.text      0    00010000    000001a8     
+                  00010000    00000052     initGpio.obj (.text:set_gpio)
+                  00010052    0000003e     gpio.obj (.text:GPIO_setAsInputPinWithPullDownResistor)
+                  00010090    0000003e     gpio.obj (.text:GPIO_setAsInputPinWithPullUpResistor)
+                  000100ce    00000034     gpio.obj (.text:GPIO_setAsInputPin)
+                  00010102    0000002a     main.obj (.text:main)
+                  0001012c    00000028     gpio.obj (.text:GPIO_setAsOutputPin)
+                  00010154    0000001c     gpio.obj (.text:GPIO_setOutputHighOnPin)
+                  00010170    0000001c     gpio.obj (.text:GPIO_setOutputLowOnPin)
+                  0001018c    00000012     initClock.obj (.text:set_clock)
+                  0001019e    00000006     rts430x_lc_rd_eabi.lib : exit.obj (.text:abort)
+                  000101a4    00000004                            : pre_init.obj (.text:_system_pre_init)
 
 MODULE SUMMARY
 
@@ -208,11 +208,11 @@ MODULE SUMMARY
        ------             ----   -------   -------
     D:\Programmeerimine\Code Composer WS\CardReader\out\
        gpio.obj           272    28        0      
-       initGpio.obj       86     0         0      
-       main.obj           34     0         0      
+       initGpio.obj       82     0         0      
+       main.obj           42     0         0      
        initClock.obj      18     0         0      
     +--+------------------+------+---------+---------+
-       Total:             410    28        0      
+       Total:             414    28        0      
                                                   
     C:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\rts430x_lc_rd_eabi.lib
        boot_special.obj   18     0         0      
@@ -247,7 +247,7 @@ MODULE SUMMARY
                                                   
        Stack:             0      0         160    
     +--+------------------+------+---------+---------+
-       Grand Total:       446    74        160    
+       Grand Total:       450    74        160    
 
 
 GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
@@ -336,7 +336,7 @@ address   name
 00000732  ADC12MEM9                             
 00000733  ADC12MEM9_H                           
 00000732  ADC12MEM9_L                           
-0001019a  C$$EXIT                               
+0001019e  C$$EXIT                               
 000008c0  CBCTL0                                
 000008c1  CBCTL0_H                              
 000008c0  CBCTL0_L                              
@@ -422,12 +422,12 @@ address   name
 00000146  FCTL4                                 
 00000147  FCTL4_H                               
 00000146  FCTL4_L                               
-000100d2  GPIO_setAsInputPin                    
-00010056  GPIO_setAsInputPinWithPullDownResistor
-00010094  GPIO_setAsInputPinWithPullUpResistor  
-00010106  GPIO_setAsOutputPin                   
-00010150  GPIO_setOutputHighOnPin               
-0001016c  GPIO_setOutputLowOnPin                
+000100ce  GPIO_setAsInputPin                    
+00010052  GPIO_setAsInputPinWithPullDownResistor
+00010090  GPIO_setAsInputPinWithPullUpResistor  
+0001012c  GPIO_setAsOutputPin                   
+00010154  GPIO_setOutputHighOnPin               
+00010170  GPIO_setOutputLowOnPin                
 000004c4  MAC                                   
 000004da  MAC32H                                
 000004db  MAC32H_H                              
@@ -1041,10 +1041,10 @@ ffffffff  __c_args__
 00004400  _c_int00_noinit_noargs_noexit         
 0000fffe  _reset_vector                         
 00004360  _stack                                
-000101a0  _system_pre_init                      
-0001019a  abort                                 
-0001012e  main                                  
-00010188  set_clock                             
+000101a4  _system_pre_init                      
+0001019e  abort                                 
+00010102  main                                  
+0001018c  set_clock                             
 00010000  set_gpio                              
 
 
@@ -1829,17 +1829,17 @@ address   name
 0000fffc  __TI_int62                            
 0000fffe  _reset_vector                         
 00010000  set_gpio                              
-00010056  GPIO_setAsInputPinWithPullDownResistor
-00010094  GPIO_setAsInputPinWithPullUpResistor  
-000100d2  GPIO_setAsInputPin                    
-00010106  GPIO_setAsOutputPin                   
-0001012e  main                                  
-00010150  GPIO_setOutputHighOnPin               
-0001016c  GPIO_setOutputLowOnPin                
-00010188  set_clock                             
-0001019a  C$$EXIT                               
-0001019a  abort                                 
-000101a0  _system_pre_init                      
+00010052  GPIO_setAsInputPinWithPullDownResistor
+00010090  GPIO_setAsInputPinWithPullUpResistor  
+000100ce  GPIO_setAsInputPin                    
+00010102  main                                  
+0001012c  GPIO_setAsOutputPin                   
+00010154  GPIO_setOutputHighOnPin               
+00010170  GPIO_setOutputLowOnPin                
+0001018c  set_clock                             
+0001019e  C$$EXIT                               
+0001019e  abort                                 
+000101a4  _system_pre_init                      
 ffffffff  __TI_pprof_out_hndl                   
 ffffffff  __TI_prof_data_size                   
 ffffffff  __TI_prof_data_start                  
