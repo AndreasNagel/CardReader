@@ -1,6 +1,7 @@
 #include <msp430.h> 
 #include "UARTmodule.h"
 #include "initClock.h"
+#include "timer.h"
 
 /*
  * main.c
