@@ -140,6 +140,8 @@
 	 * 110b = Divide by 7
 	 * 111b = Divide by 8
 	 */
+#include <msp430.h>
+#include "MSP430F5xx_6xx/driverlib.h"
 
 void timer_init()
 {

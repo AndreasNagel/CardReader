@@ -1,0 +1,2126 @@
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 C/C++ Codegen                                       PC v15.12.3.LTS *
+       3            ;* Date/Time created: Wed Oct 12 11:22:58 2016                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=large --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../MSP430F5xx_6xx/usci_a_uart.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 C/C++ Codegen PC v15.12.3.LTS Copyright (c) 2003-2
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Programmeerimine\Code Composer WS\CardReader\src\Debug")
+      12            ;       D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\bin\opt430.exe D:/Programmee
+      13 000000               .sect   ".text:USCI_A_UART_init"
+      14                    .clink
+      15                    .global USCI_A_UART_init
+      16            
+      17            $C$DW$1 .dwtag  DW_TAG_subprogram
+      18                    .dwattr $C$DW$1, DW_AT_name("USCI_A_UART_init")
+      19                    .dwattr $C$DW$1, DW_AT_low_pc(USCI_A_UART_init)
+      20                    .dwattr $C$DW$1, DW_AT_high_pc(0x00)
+      21                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("USCI_A_UART_init")
+      22                    .dwattr $C$DW$1, DW_AT_external
+      23                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$67)
+      24                    .dwattr $C$DW$1, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+      25                    .dwattr $C$DW$1, DW_AT_TI_begin_line(0x34)
+      26                    .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
+      27                    .dwattr $C$DW$1, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+      28                    .dwattr $C$DW$1, DW_AT_decl_line(0x34)
+      29                    .dwattr $C$DW$1, DW_AT_decl_column(0x06)
+      30                    .dwattr $C$DW$1, DW_AT_TI_max_frame_size(0x04)
+      31                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 54,column 1,is_stmt,address USCI_A_UART_in
+      32            
+      33                    .dwfde $C$DW$CIE, USCI_A_UART_init
+      34            $C$DW$2 .dwtag  DW_TAG_formal_parameter
+      35                    .dwattr $C$DW$2, DW_AT_name("baseAddress")
+      36                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("baseAddress")
+      37                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$20)
+      38                    .dwattr $C$DW$2, DW_AT_location[DW_OP_reg12]
+      39            
+      40            $C$DW$3 .dwtag  DW_TAG_formal_parameter
+      41                    .dwattr $C$DW$3, DW_AT_name("param")
+      42                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("param")
+      43                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$23)
+      44                    .dwattr $C$DW$3, DW_AT_location[DW_OP_reg13]
+      45            
+      46            
+      47            ;*****************************************************************************
+      48            ;* FUNCTION NAME: USCI_A_UART_init                                           *
+      49            ;*                                                                           *
+      50            ;*   Regs Modified     : SP,SR,r11,r12,r14,r15                               *
+      51            ;*   Regs Used         : SP,SR,r11,r12,r13,r14,r15                           *
+      52            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      53            ;*****************************************************************************
+      54 000000       USCI_A_UART_init:
+      55            ;* --------------------------------------------------------------------------*
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    2
+
+      56                    .dwcfi  cfa_offset, 4
+      57                    .dwcfi  save_reg_to_mem, 16, -4
+      58            ;* r12   assigned to baseAddress
+      59            $C$DW$4 .dwtag  DW_TAG_variable
+      60                    .dwattr $C$DW$4, DW_AT_name("baseAddress")
+      61                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("baseAddress")
+      62                    .dwattr $C$DW$4, DW_AT_type(*$C$DW$T$20)
+      63                    .dwattr $C$DW$4, DW_AT_location[DW_OP_reg12]
+      64            
+      65            ;* r13   assigned to param
+      66            $C$DW$5 .dwtag  DW_TAG_variable
+      67                    .dwattr $C$DW$5, DW_AT_name("param")
+      68                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("param")
+      69                    .dwattr $C$DW$5, DW_AT_type(*$C$DW$T$23)
+      70                    .dwattr $C$DW$5, DW_AT_location[DW_OP_reg13]
+      71            
+      72            ;* r15   assigned to retVal
+      73            $C$DW$6 .dwtag  DW_TAG_variable
+      74                    .dwattr $C$DW$6, DW_AT_name("retVal")
+      75                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("retVal")
+      76                    .dwattr $C$DW$6, DW_AT_type(*$C$DW$T$67)
+      77                    .dwattr $C$DW$6, DW_AT_location[DW_OP_reg15]
+      78            
+      79                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 55,column 17,is_stmt,isa 0
+      80 000000 435F          MOV.B     #1,r15                ; [] |55| 
+      81                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 58,column 5,is_stmt,isa 0
+      82 000002 D3DC          OR.B      #1,0(r12)             ; [] |58| 
+         000004 0000 
+      83                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 61,column 5,is_stmt,isa 0
+      84 000006 F0FC          AND.B     #63,0(r12)            ; [] |61| 
+         000008 003F 
+         00000a 0000 
+      85                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 62,column 5,is_stmt,isa 0
+      86 00000c DDEC          OR.B      @r13,0(r12)           ; [] |62| 
+         00000e 0000 
+      87                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 65,column 5,is_stmt,isa 0
+      88 000010 0CCE          MOVA      r12,r14               ; [] |65| 
+      89 000012 531E          ADD.W     #1,r14                ; [] |65| 
+      90 000014 4E0E          MOV.W     r14,r14               ; [] |65| 
+      91 000016 F0FE          AND.B     #223,0(r14)           ; [] |65| 
+         000018 00DF 
+         00001a 0000 
+      92                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 66,column 5,is_stmt,isa 0
+      93 00001c 0CCE          MOVA      r12,r14               ; [] |66| 
+      94 00001e 531E          ADD.W     #1,r14                ; [] |66| 
+      95 000020 4E0E          MOV.W     r14,r14               ; [] |66| 
+      96 000022 DDDE          OR.B      7(r13),0(r14)         ; [] |66| 
+         000024 0007 
+         000026 0000 
+      97                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 69,column 5,is_stmt,isa 0
+      98 000028 0CCE          MOVA      r12,r14               ; [] |69| 
+      99 00002a 531E          ADD.W     #1,r14                ; [] |69| 
+     100 00002c 4E0E          MOV.W     r14,r14               ; [] |69| 
+     101 00002e C2FE          BIC.B     #8,0(r14)             ; [] |69| 
+         000030 0000 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    3
+
+     102                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 70,column 5,is_stmt,isa 0
+     103 000032 0CCE          MOVA      r12,r14               ; [] |70| 
+     104 000034 531E          ADD.W     #1,r14                ; [] |70| 
+     105 000036 4E0E          MOV.W     r14,r14               ; [] |70| 
+     106 000038 DDDE          OR.B      8(r13),0(r14)         ; [] |70| 
+         00003a 0008 
+         00003c 0000 
+     107                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 73,column 5,is_stmt,isa 0
+     108 00003e 4D5E          MOV.B     6(r13),r14            ; [] |73| 
+         000040 0006 
+     109 000042 930E          TST.W     r14                   ; [] |73| 
+     110 000044 241E          JEQ       $C$L2                 ; [] |73| 
+     111                                                      ; [] |73| 
+     112            ;* --------------------------------------------------------------------------*
+     113 000046 831E          SUB.W     #1,r14                ; [] |73| 
+     114 000048 240F          JEQ       $C$L1                 ; [] |73| 
+     115                                                      ; [] |73| 
+     116            ;* --------------------------------------------------------------------------*
+     117 00004a 831E          SUB.W     #1,r14                ; [] |73| 
+     118 00004c 2020          JNE       $C$L3                 ; [] |73| 
+     119                                                      ; [] |73| 
+     120            ;* --------------------------------------------------------------------------*
+     121                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 86,column 9,is_stmt,isa 0
+     122 00004e 0CCE          MOVA      r12,r14               ; [] |86| 
+     123 000050 531E          ADD.W     #1,r14                ; [] |86| 
+     124 000052 4E0E          MOV.W     r14,r14               ; [] |86| 
+     125 000054 D0FE          OR.B      #128,0(r14)           ; [] |86| 
+         000056 0080 
+         000058 0000 
+     126                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 87,column 9,is_stmt,isa 0
+     127 00005a 0CCE          MOVA      r12,r14               ; [] |87| 
+     128 00005c 531E          ADD.W     #1,r14                ; [] |87| 
+     129 00005e 4E0E          MOV.W     r14,r14               ; [] |87| 
+     130 000060 D0FE          OR.B      #64,0(r14)            ; [] |87| 
+         000062 0040 
+         000064 0000 
+     131                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 88,column 9,is_stmt,isa 0
+     132 000066 3C13          JMP       $C$L3                 ; [] |88| 
+     133                                                      ; [] |88| 
+     134            ;* --------------------------------------------------------------------------*
+     135 000068       $C$L1:    
+     136                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 81,column 9,is_stmt,isa 0
+     137 000068 0CCE          MOVA      r12,r14               ; [] |81| 
+     138 00006a 531E          ADD.W     #1,r14                ; [] |81| 
+     139 00006c 4E0E          MOV.W     r14,r14               ; [] |81| 
+     140 00006e D0FE          OR.B      #128,0(r14)           ; [] |81| 
+         000070 0080 
+         000072 0000 
+     141                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 82,column 9,is_stmt,isa 0
+     142 000074 0CCE          MOVA      r12,r14               ; [] |82| 
+     143 000076 531E          ADD.W     #1,r14                ; [] |82| 
+     144 000078 4E0E          MOV.W     r14,r14               ; [] |82| 
+     145 00007a F0FE          AND.B     #191,0(r14)           ; [] |82| 
+         00007c 00BF 
+         00007e 0000 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    4
+
+     146                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 83,column 9,is_stmt,isa 0
+     147 000080 3C06          JMP       $C$L3                 ; [] |83| 
+     148                                                      ; [] |83| 
+     149            ;* --------------------------------------------------------------------------*
+     150 000082       $C$L2:    
+     151                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 77,column 9,is_stmt,isa 0
+     152 000082 0CCE          MOVA      r12,r14               ; [] |77| 
+     153 000084 531E          ADD.W     #1,r14                ; [] |77| 
+     154 000086 4E0E          MOV.W     r14,r14               ; [] |77| 
+     155 000088 F0FE          AND.B     #127,0(r14)           ; [] |77| 
+         00008a 007F 
+         00008c 0000 
+     156            ;* --------------------------------------------------------------------------*
+     157 00008e       $C$L3:    
+     158                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 92,column 5,is_stmt,isa 0
+     159 00008e 0CCE          MOVA      r12,r14               ; [] |92| 
+     160 000090 503E          ADD.W     #6,r14                ; [] |92| 
+         000092 0006 
+     161 000094 4D9E          MOV.W     2(r13),0(r14)         ; [] |92| 
+         000096 0002 
+         000098 0000 
+     162                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 93,column 5,is_stmt,isa 0
+     163 00009a 4D5E          MOV.B     4(r13),r14            ; [] |93| 
+         00009c 0004 
+     164 00009e 1842          RPT #3 || RLAX.B r14 ; [] |93| 
+         0000a0 5E4E 
+     165 0000a2 5D5E          ADD.B     5(r13),r14            ; [] |93| 
+         0000a4 0005 
+     166 0000a6 5E4E          RLA.B     r14                   ; [] |93| 
+     167 0000a8 5D5E          ADD.B     10(r13),r14           ; [] |93| 
+         0000aa 000A 
+     168 0000ac 0CCB          MOVA      r12,r11               ; [] |93| 
+     169 0000ae 523B          ADD.W     #8,r11                ; [] |93| 
+     170 0000b0 4ECB          MOV.B     r14,0(r11)            ; [] |93| 
+         0000b2 0000 
+     171                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 98,column 5,is_stmt,isa 0
+     172 0000b4 0CCE          MOVA      r12,r14               ; [] |98| 
+     173 0000b6 531E          ADD.W     #1,r14                ; [] |98| 
+     174 0000b8 4E0E          MOV.W     r14,r14               ; [] |98| 
+     175 0000ba F0FE          AND.B     #232,0(r14)           ; [] |98| 
+         0000bc 00E8 
+         0000be 0000 
+     176                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 104,column 5,is_stmt,isa 0
+     177 0000c0 0CCE          MOVA      r12,r14               ; [] |104| 
+     178 0000c2 531E          ADD.W     #1,r14                ; [] |104| 
+     179 0000c4 4E0E          MOV.W     r14,r14               ; [] |104| 
+     180 0000c6 DDDE          OR.B      9(r13),0(r14)         ; [] |104| 
+         0000c8 0009 
+         0000ca 0000 
+     181                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 107,column 5,is_stmt,isa 0
+     182 0000cc F0FC          AND.B     #193,0(r12)           ; [] |107| 
+         0000ce 00C1 
+         0000d0 0000 
+     183                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 110,column 5,is_stmt,isa 0
+     184 0000d2 0FCC          MOVA      r15,r12               ; [] |110| 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    5
+
+     185                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 111,column 1,is_stmt,isa 0
+     186            $C$DW$7 .dwtag  DW_TAG_TI_branch
+     187                    .dwattr $C$DW$7, DW_AT_low_pc(0x00)
+     188                    .dwattr $C$DW$7, DW_AT_TI_return
+     189            
+     190 0000d4 0110          RETA      ; [] 
+     191                    ; [] 
+     192                    .dwattr $C$DW$1, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     193                    .dwattr $C$DW$1, DW_AT_TI_end_line(0x6f)
+     194                    .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
+     195                    .dwendentry
+     196                    .dwendtag $C$DW$1
+     197            
+     198 000000               .sect   ".text:USCI_A_UART_transmitData"
+     199                    .clink
+     200                    .global USCI_A_UART_transmitData
+     201            
+     202            $C$DW$8 .dwtag  DW_TAG_subprogram
+     203                    .dwattr $C$DW$8, DW_AT_name("USCI_A_UART_transmitData")
+     204                    .dwattr $C$DW$8, DW_AT_low_pc(USCI_A_UART_transmitData)
+     205                    .dwattr $C$DW$8, DW_AT_high_pc(0x00)
+     206                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("USCI_A_UART_transmitData")
+     207                    .dwattr $C$DW$8, DW_AT_external
+     208                    .dwattr $C$DW$8, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     209                    .dwattr $C$DW$8, DW_AT_TI_begin_line(0x71)
+     210                    .dwattr $C$DW$8, DW_AT_TI_begin_column(0x06)
+     211                    .dwattr $C$DW$8, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     212                    .dwattr $C$DW$8, DW_AT_decl_line(0x71)
+     213                    .dwattr $C$DW$8, DW_AT_decl_column(0x06)
+     214                    .dwattr $C$DW$8, DW_AT_TI_max_frame_size(0x04)
+     215                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 115,column 1,is_stmt,address USCI_A_UART_t
+     216            
+     217                    .dwfde $C$DW$CIE, USCI_A_UART_transmitData
+     218            $C$DW$9 .dwtag  DW_TAG_formal_parameter
+     219                    .dwattr $C$DW$9, DW_AT_name("baseAddress")
+     220                    .dwattr $C$DW$9, DW_AT_TI_symbol_name("baseAddress")
+     221                    .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$20)
+     222                    .dwattr $C$DW$9, DW_AT_location[DW_OP_reg12]
+     223            
+     224            $C$DW$10        .dwtag  DW_TAG_formal_parameter
+     225                    .dwattr $C$DW$10, DW_AT_name("transmitData")
+     226                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("transmitData")
+     227                    .dwattr $C$DW$10, DW_AT_type(*$C$DW$T$19)
+     228                    .dwattr $C$DW$10, DW_AT_location[DW_OP_reg13]
+     229            
+     230            
+     231            ;*****************************************************************************
+     232            ;* FUNCTION NAME: USCI_A_UART_transmitData                                   *
+     233            ;*                                                                           *
+     234            ;*   Regs Modified     : SP,SR,r12,r14,r15                                   *
+     235            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     236            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     237            ;*****************************************************************************
+     238 000000       USCI_A_UART_transmitData:
+     239            ;* --------------------------------------------------------------------------*
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    6
+
+     240                    .dwcfi  cfa_offset, 4
+     241                    .dwcfi  save_reg_to_mem, 16, -4
+     242            ;* r12   assigned to baseAddress
+     243            $C$DW$11        .dwtag  DW_TAG_variable
+     244                    .dwattr $C$DW$11, DW_AT_name("baseAddress")
+     245                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("baseAddress")
+     246                    .dwattr $C$DW$11, DW_AT_type(*$C$DW$T$20)
+     247                    .dwattr $C$DW$11, DW_AT_location[DW_OP_reg12]
+     248            
+     249            ;* r13   assigned to transmitData
+     250            $C$DW$12        .dwtag  DW_TAG_variable
+     251                    .dwattr $C$DW$12, DW_AT_name("transmitData")
+     252                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("transmitData")
+     253                    .dwattr $C$DW$12, DW_AT_type(*$C$DW$T$19)
+     254                    .dwattr $C$DW$12, DW_AT_location[DW_OP_reg13]
+     255            
+     256                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 117,column 5,is_stmt,isa 0
+     257 000000 0CCF          MOVA      r12,r15               ; [] |117| 
+     258 000002 503F          ADD.W     #28,r15               ; [] |117| 
+         000004 001C 
+     259 000006 432E          MOV.W     #2,r14                ; [] |117| 
+     260 000008 BF6E          BIT.B     @r15,r14              ; [] |117| 
+     261 00000a 2005          JNE       $C$L5                 ; [] |117| 
+     262                                                      ; [] |117| 
+     263            ;* --------------------------------------------------------------------------*
+     264            ;*   BEGIN LOOP $C$L4
+     265            ;*
+     266            ;*   Loop source line                : 120
+     267            ;*   Loop closing brace source line  : 123
+     268            ;*   Known Minimum Trip Count        : 1
+     269            ;*   Known Maximum Trip Count        : 4294967295
+     270            ;*   Known Max Trip Count Factor     : 1
+     271            ;* --------------------------------------------------------------------------*
+     272 00000c       $C$L4:    
+     273                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 120,column 15,is_stmt,isa 0
+     274 00000c 0CCF          MOVA      r12,r15               ; [] |120| 
+     275 00000e 503F          ADD.W     #29,r15               ; [] |120| 
+         000010 001D 
+     276 000012 BF6E          BIT.B     @r15,r14              ; [] |120| 
+     277 000014 27FB          JEQ       $C$L4                 ; [] |120| 
+     278                                                      ; [] |120| 
+     279            ;* --------------------------------------------------------------------------*
+     280 000016       $C$L5:    
+     281                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 126,column 5,is_stmt,isa 0
+     282 000016 503C          ADD.W     #14,r12               ; [] |126| 
+         000018 000E 
+     283 00001a 4DCC          MOV.B     r13,0(r12)            ; [] |126| 
+         00001c 0000 
+     284                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 127,column 1,is_stmt,isa 0
+     285            $C$DW$13        .dwtag  DW_TAG_TI_branch
+     286                    .dwattr $C$DW$13, DW_AT_low_pc(0x00)
+     287                    .dwattr $C$DW$13, DW_AT_TI_return
+     288            
+     289 00001e 0110          RETA      ; [] 
+     290                    ; [] 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    7
+
+     291                    .dwattr $C$DW$8, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     292                    .dwattr $C$DW$8, DW_AT_TI_end_line(0x7f)
+     293                    .dwattr $C$DW$8, DW_AT_TI_end_column(0x01)
+     294                    .dwendentry
+     295                    .dwendtag $C$DW$8
+     296            
+     297 000000               .sect   ".text:USCI_A_UART_receiveData"
+     298                    .clink
+     299                    .global USCI_A_UART_receiveData
+     300            
+     301            $C$DW$14        .dwtag  DW_TAG_subprogram
+     302                    .dwattr $C$DW$14, DW_AT_name("USCI_A_UART_receiveData")
+     303                    .dwattr $C$DW$14, DW_AT_low_pc(USCI_A_UART_receiveData)
+     304                    .dwattr $C$DW$14, DW_AT_high_pc(0x00)
+     305                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("USCI_A_UART_receiveData")
+     306                    .dwattr $C$DW$14, DW_AT_external
+     307                    .dwattr $C$DW$14, DW_AT_type(*$C$DW$T$19)
+     308                    .dwattr $C$DW$14, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     309                    .dwattr $C$DW$14, DW_AT_TI_begin_line(0x81)
+     310                    .dwattr $C$DW$14, DW_AT_TI_begin_column(0x09)
+     311                    .dwattr $C$DW$14, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     312                    .dwattr $C$DW$14, DW_AT_decl_line(0x81)
+     313                    .dwattr $C$DW$14, DW_AT_decl_column(0x09)
+     314                    .dwattr $C$DW$14, DW_AT_TI_max_frame_size(0x04)
+     315                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 130,column 1,is_stmt,address USCI_A_UART_r
+     316            
+     317                    .dwfde $C$DW$CIE, USCI_A_UART_receiveData
+     318            $C$DW$15        .dwtag  DW_TAG_formal_parameter
+     319                    .dwattr $C$DW$15, DW_AT_name("baseAddress")
+     320                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("baseAddress")
+     321                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$20)
+     322                    .dwattr $C$DW$15, DW_AT_location[DW_OP_reg12]
+     323            
+     324            
+     325            ;*****************************************************************************
+     326            ;* FUNCTION NAME: USCI_A_UART_receiveData                                    *
+     327            ;*                                                                           *
+     328            ;*   Regs Modified     : SP,SR,r12,r14,r15                                   *
+     329            ;*   Regs Used         : SP,SR,r12,r14,r15                                   *
+     330            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     331            ;*****************************************************************************
+     332 000000       USCI_A_UART_receiveData:
+     333            ;* --------------------------------------------------------------------------*
+     334                    .dwcfi  cfa_offset, 4
+     335                    .dwcfi  save_reg_to_mem, 16, -4
+     336            ;* r12   assigned to baseAddress
+     337            $C$DW$16        .dwtag  DW_TAG_variable
+     338                    .dwattr $C$DW$16, DW_AT_name("baseAddress")
+     339                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("baseAddress")
+     340                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$20)
+     341                    .dwattr $C$DW$16, DW_AT_location[DW_OP_reg12]
+     342            
+     343                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 132,column 5,is_stmt,isa 0
+     344 000000 0CCF          MOVA      r12,r15               ; [] |132| 
+     345 000002 503F          ADD.W     #28,r15               ; [] |132| 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    8
+
+         000004 001C 
+     346 000006 431E          MOV.W     #1,r14                ; [] |132| 
+     347 000008 BF6E          BIT.B     @r15,r14              ; [] |132| 
+     348 00000a 2005          JNE       $C$L7                 ; [] |132| 
+     349                                                      ; [] |132| 
+     350            ;* --------------------------------------------------------------------------*
+     351            ;*   BEGIN LOOP $C$L6
+     352            ;*
+     353            ;*   Loop source line                : 135
+     354            ;*   Loop closing brace source line  : 138
+     355            ;*   Known Minimum Trip Count        : 1
+     356            ;*   Known Maximum Trip Count        : 4294967295
+     357            ;*   Known Max Trip Count Factor     : 1
+     358            ;* --------------------------------------------------------------------------*
+     359 00000c       $C$L6:    
+     360                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 135,column 15,is_stmt,isa 0
+     361 00000c 0CCF          MOVA      r12,r15               ; [] |135| 
+     362 00000e 503F          ADD.W     #29,r15               ; [] |135| 
+         000010 001D 
+     363 000012 BF6E          BIT.B     @r15,r14              ; [] |135| 
+     364 000014 27FB          JEQ       $C$L6                 ; [] |135| 
+     365                                                      ; [] |135| 
+     366            ;* --------------------------------------------------------------------------*
+     367 000016       $C$L7:    
+     368                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 141,column 5,is_stmt,isa 0
+     369 000016 503C          ADD.W     #12,r12               ; [] |141| 
+         000018 000C 
+     370 00001a 4C6C          MOV.B     @r12,r12              ; [] |141| 
+     371                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 142,column 1,is_stmt,isa 0
+     372            $C$DW$17        .dwtag  DW_TAG_TI_branch
+     373                    .dwattr $C$DW$17, DW_AT_low_pc(0x00)
+     374                    .dwattr $C$DW$17, DW_AT_TI_return
+     375            
+     376 00001c 0110          RETA      ; [] 
+     377                    ; [] 
+     378                    .dwattr $C$DW$14, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     379                    .dwattr $C$DW$14, DW_AT_TI_end_line(0x8e)
+     380                    .dwattr $C$DW$14, DW_AT_TI_end_column(0x01)
+     381                    .dwendentry
+     382                    .dwendtag $C$DW$14
+     383            
+     384 000000               .sect   ".text:USCI_A_UART_enableInterrupt"
+     385                    .clink
+     386                    .global USCI_A_UART_enableInterrupt
+     387            
+     388            $C$DW$18        .dwtag  DW_TAG_subprogram
+     389                    .dwattr $C$DW$18, DW_AT_name("USCI_A_UART_enableInterrupt")
+     390                    .dwattr $C$DW$18, DW_AT_low_pc(USCI_A_UART_enableInterrupt)
+     391                    .dwattr $C$DW$18, DW_AT_high_pc(0x00)
+     392                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("USCI_A_UART_enableInterrupt")
+     393                    .dwattr $C$DW$18, DW_AT_external
+     394                    .dwattr $C$DW$18, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     395                    .dwattr $C$DW$18, DW_AT_TI_begin_line(0x90)
+     396                    .dwattr $C$DW$18, DW_AT_TI_begin_column(0x06)
+     397                    .dwattr $C$DW$18, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE    9
+
+     398                    .dwattr $C$DW$18, DW_AT_decl_line(0x90)
+     399                    .dwattr $C$DW$18, DW_AT_decl_column(0x06)
+     400                    .dwattr $C$DW$18, DW_AT_TI_max_frame_size(0x04)
+     401                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 146,column 1,is_stmt,address USCI_A_UART_e
+     402            
+     403                    .dwfde $C$DW$CIE, USCI_A_UART_enableInterrupt
+     404            $C$DW$19        .dwtag  DW_TAG_formal_parameter
+     405                    .dwattr $C$DW$19, DW_AT_name("baseAddress")
+     406                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("baseAddress")
+     407                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$20)
+     408                    .dwattr $C$DW$19, DW_AT_location[DW_OP_reg12]
+     409            
+     410            $C$DW$20        .dwtag  DW_TAG_formal_parameter
+     411                    .dwattr $C$DW$20, DW_AT_name("mask")
+     412                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("mask")
+     413                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$19)
+     414                    .dwattr $C$DW$20, DW_AT_location[DW_OP_reg13]
+     415            
+     416            
+     417            ;*****************************************************************************
+     418            ;* FUNCTION NAME: USCI_A_UART_enableInterrupt                                *
+     419            ;*                                                                           *
+     420            ;*   Regs Modified     : SP,SR,r14,r15                                       *
+     421            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     422            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     423            ;*****************************************************************************
+     424 000000       USCI_A_UART_enableInterrupt:
+     425            ;* --------------------------------------------------------------------------*
+     426                    .dwcfi  cfa_offset, 4
+     427                    .dwcfi  save_reg_to_mem, 16, -4
+     428            ;* r12   assigned to baseAddress
+     429            $C$DW$21        .dwtag  DW_TAG_variable
+     430                    .dwattr $C$DW$21, DW_AT_name("baseAddress")
+     431                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("baseAddress")
+     432                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$20)
+     433                    .dwattr $C$DW$21, DW_AT_location[DW_OP_reg12]
+     434            
+     435            ;* r13   assigned to mask
+     436            $C$DW$22        .dwtag  DW_TAG_variable
+     437                    .dwattr $C$DW$22, DW_AT_name("mask")
+     438                    .dwattr $C$DW$22, DW_AT_TI_symbol_name("mask")
+     439                    .dwattr $C$DW$22, DW_AT_type(*$C$DW$T$19)
+     440                    .dwattr $C$DW$22, DW_AT_location[DW_OP_reg13]
+     441            
+     442            ;* r15   assigned to locMask
+     443            $C$DW$23        .dwtag  DW_TAG_variable
+     444                    .dwattr $C$DW$23, DW_AT_name("locMask")
+     445                    .dwattr $C$DW$23, DW_AT_TI_symbol_name("locMask")
+     446                    .dwattr $C$DW$23, DW_AT_type(*$C$DW$T$19)
+     447                    .dwattr $C$DW$23, DW_AT_location[DW_OP_reg15]
+     448            
+     449                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 149,column 5,is_stmt,isa 0
+     450 000000 403F          MOV.W     #3,r15                ; [] |149| 
+         000002 0003 
+     451 000004 FD4F          AND.B     r13,r15               ; [] |149| 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   10
+
+     452                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 151,column 5,is_stmt,isa 0
+     453 000006 0CCE          MOVA      r12,r14               ; [] |151| 
+     454 000008 503E          ADD.W     #28,r14               ; [] |151| 
+         00000a 001C 
+     455 00000c 4E0E          MOV.W     r14,r14               ; [] |151| 
+     456 00000e DFCE          OR.B      r15,0(r14)            ; [] |151| 
+         000010 0000 
+     457                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 153,column 5,is_stmt,isa 0
+     458 000012 403F          MOV.W     #48,r15               ; [] |153| 
+         000014 0030 
+     459 000016 FD4F          AND.B     r13,r15               ; [] |153| 
+     460                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 155,column 5,is_stmt,isa 0
+     461 000018 DFCC          OR.B      r15,0(r12)            ; [] |155| 
+         00001a 0000 
+     462                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 156,column 1,is_stmt,isa 0
+     463            $C$DW$24        .dwtag  DW_TAG_TI_branch
+     464                    .dwattr $C$DW$24, DW_AT_low_pc(0x00)
+     465                    .dwattr $C$DW$24, DW_AT_TI_return
+     466            
+     467 00001c 0110          RETA      ; [] 
+     468                    ; [] 
+     469                    .dwattr $C$DW$18, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     470                    .dwattr $C$DW$18, DW_AT_TI_end_line(0x9c)
+     471                    .dwattr $C$DW$18, DW_AT_TI_end_column(0x01)
+     472                    .dwendentry
+     473                    .dwendtag $C$DW$18
+     474            
+     475 000000               .sect   ".text:USCI_A_UART_disableInterrupt"
+     476                    .clink
+     477                    .global USCI_A_UART_disableInterrupt
+     478            
+     479            $C$DW$25        .dwtag  DW_TAG_subprogram
+     480                    .dwattr $C$DW$25, DW_AT_name("USCI_A_UART_disableInterrupt")
+     481                    .dwattr $C$DW$25, DW_AT_low_pc(USCI_A_UART_disableInterrupt)
+     482                    .dwattr $C$DW$25, DW_AT_high_pc(0x00)
+     483                    .dwattr $C$DW$25, DW_AT_TI_symbol_name("USCI_A_UART_disableInterrupt")
+     484                    .dwattr $C$DW$25, DW_AT_external
+     485                    .dwattr $C$DW$25, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     486                    .dwattr $C$DW$25, DW_AT_TI_begin_line(0x9e)
+     487                    .dwattr $C$DW$25, DW_AT_TI_begin_column(0x06)
+     488                    .dwattr $C$DW$25, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     489                    .dwattr $C$DW$25, DW_AT_decl_line(0x9e)
+     490                    .dwattr $C$DW$25, DW_AT_decl_column(0x06)
+     491                    .dwattr $C$DW$25, DW_AT_TI_max_frame_size(0x04)
+     492                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 160,column 1,is_stmt,address USCI_A_UART_d
+     493            
+     494                    .dwfde $C$DW$CIE, USCI_A_UART_disableInterrupt
+     495            $C$DW$26        .dwtag  DW_TAG_formal_parameter
+     496                    .dwattr $C$DW$26, DW_AT_name("baseAddress")
+     497                    .dwattr $C$DW$26, DW_AT_TI_symbol_name("baseAddress")
+     498                    .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$20)
+     499                    .dwattr $C$DW$26, DW_AT_location[DW_OP_reg12]
+     500            
+     501            $C$DW$27        .dwtag  DW_TAG_formal_parameter
+     502                    .dwattr $C$DW$27, DW_AT_name("mask")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   11
+
+     503                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("mask")
+     504                    .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$19)
+     505                    .dwattr $C$DW$27, DW_AT_location[DW_OP_reg13]
+     506            
+     507            
+     508            ;*****************************************************************************
+     509            ;* FUNCTION NAME: USCI_A_UART_disableInterrupt                               *
+     510            ;*                                                                           *
+     511            ;*   Regs Modified     : SP,SR,r14,r15                                       *
+     512            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     513            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     514            ;*****************************************************************************
+     515 000000       USCI_A_UART_disableInterrupt:
+     516            ;* --------------------------------------------------------------------------*
+     517                    .dwcfi  cfa_offset, 4
+     518                    .dwcfi  save_reg_to_mem, 16, -4
+     519            ;* r12   assigned to baseAddress
+     520            $C$DW$28        .dwtag  DW_TAG_variable
+     521                    .dwattr $C$DW$28, DW_AT_name("baseAddress")
+     522                    .dwattr $C$DW$28, DW_AT_TI_symbol_name("baseAddress")
+     523                    .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$20)
+     524                    .dwattr $C$DW$28, DW_AT_location[DW_OP_reg12]
+     525            
+     526            ;* r13   assigned to mask
+     527            $C$DW$29        .dwtag  DW_TAG_variable
+     528                    .dwattr $C$DW$29, DW_AT_name("mask")
+     529                    .dwattr $C$DW$29, DW_AT_TI_symbol_name("mask")
+     530                    .dwattr $C$DW$29, DW_AT_type(*$C$DW$T$19)
+     531                    .dwattr $C$DW$29, DW_AT_location[DW_OP_reg13]
+     532            
+     533            ;* r15   assigned to locMask
+     534            $C$DW$30        .dwtag  DW_TAG_variable
+     535                    .dwattr $C$DW$30, DW_AT_name("locMask")
+     536                    .dwattr $C$DW$30, DW_AT_TI_symbol_name("locMask")
+     537                    .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$19)
+     538                    .dwattr $C$DW$30, DW_AT_location[DW_OP_reg15]
+     539            
+     540                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 163,column 5,is_stmt,isa 0
+     541 000000 403F          MOV.W     #3,r15                ; [] |163| 
+         000002 0003 
+     542 000004 FD4F          AND.B     r13,r15               ; [] |163| 
+     543 000006 934F          TST.B     r15                   ; [] |163| 
+     544 000008 2406          JEQ       $C$L8                 ; [] |163| 
+     545                                                      ; [] |163| 
+     546            ;* --------------------------------------------------------------------------*
+     547                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 166,column 9,is_stmt,isa 0
+     548 00000a 0CCE          MOVA      r12,r14               ; [] |166| 
+     549 00000c 503E          ADD.W     #28,r14               ; [] |166| 
+         00000e 001C 
+     550 000010 4E0E          MOV.W     r14,r14               ; [] |166| 
+     551 000012 CFCE          BIC.B     r15,0(r14)            ; [] |166| 
+         000014 0000 
+     552            ;* --------------------------------------------------------------------------*
+     553 000016       $C$L8:    
+     554                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 169,column 5,is_stmt,isa 0
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   12
+
+     555 000016 403F          MOV.W     #48,r15               ; [] |169| 
+         000018 0030 
+     556 00001a FD4F          AND.B     r13,r15               ; [] |169| 
+     557 00001c 934F          TST.B     r15                   ; [] |169| 
+     558 00001e 2402          JEQ       $C$L9                 ; [] |169| 
+     559                                                      ; [] |169| 
+     560            ;* --------------------------------------------------------------------------*
+     561                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 172,column 9,is_stmt,isa 0
+     562 000020 CFCC          BIC.B     r15,0(r12)            ; [] |172| 
+         000022 0000 
+     563            ;* --------------------------------------------------------------------------*
+     564 000024       $C$L9:    
+     565                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 174,column 1,is_stmt,isa 0
+     566            $C$DW$31        .dwtag  DW_TAG_TI_branch
+     567                    .dwattr $C$DW$31, DW_AT_low_pc(0x00)
+     568                    .dwattr $C$DW$31, DW_AT_TI_return
+     569            
+     570 000024 0110          RETA      ; [] 
+     571                    ; [] 
+     572                    .dwattr $C$DW$25, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     573                    .dwattr $C$DW$25, DW_AT_TI_end_line(0xae)
+     574                    .dwattr $C$DW$25, DW_AT_TI_end_column(0x01)
+     575                    .dwendentry
+     576                    .dwendtag $C$DW$25
+     577            
+     578 000000               .sect   ".text:USCI_A_UART_getInterruptStatus"
+     579                    .clink
+     580                    .global USCI_A_UART_getInterruptStatus
+     581            
+     582            $C$DW$32        .dwtag  DW_TAG_subprogram
+     583                    .dwattr $C$DW$32, DW_AT_name("USCI_A_UART_getInterruptStatus")
+     584                    .dwattr $C$DW$32, DW_AT_low_pc(USCI_A_UART_getInterruptStatus)
+     585                    .dwattr $C$DW$32, DW_AT_high_pc(0x00)
+     586                    .dwattr $C$DW$32, DW_AT_TI_symbol_name("USCI_A_UART_getInterruptStatus")
+     587                    .dwattr $C$DW$32, DW_AT_external
+     588                    .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$19)
+     589                    .dwattr $C$DW$32, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     590                    .dwattr $C$DW$32, DW_AT_TI_begin_line(0xb0)
+     591                    .dwattr $C$DW$32, DW_AT_TI_begin_column(0x09)
+     592                    .dwattr $C$DW$32, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     593                    .dwattr $C$DW$32, DW_AT_decl_line(0xb0)
+     594                    .dwattr $C$DW$32, DW_AT_decl_column(0x09)
+     595                    .dwattr $C$DW$32, DW_AT_TI_max_frame_size(0x04)
+     596                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 178,column 1,is_stmt,address USCI_A_UART_g
+     597            
+     598                    .dwfde $C$DW$CIE, USCI_A_UART_getInterruptStatus
+     599            $C$DW$33        .dwtag  DW_TAG_formal_parameter
+     600                    .dwattr $C$DW$33, DW_AT_name("baseAddress")
+     601                    .dwattr $C$DW$33, DW_AT_TI_symbol_name("baseAddress")
+     602                    .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$20)
+     603                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg12]
+     604            
+     605            $C$DW$34        .dwtag  DW_TAG_formal_parameter
+     606                    .dwattr $C$DW$34, DW_AT_name("mask")
+     607                    .dwattr $C$DW$34, DW_AT_TI_symbol_name("mask")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   13
+
+     608                    .dwattr $C$DW$34, DW_AT_type(*$C$DW$T$19)
+     609                    .dwattr $C$DW$34, DW_AT_location[DW_OP_reg13]
+     610            
+     611            
+     612            ;*****************************************************************************
+     613            ;* FUNCTION NAME: USCI_A_UART_getInterruptStatus                             *
+     614            ;*                                                                           *
+     615            ;*   Regs Modified     : SP,SR,r12                                           *
+     616            ;*   Regs Used         : SP,SR,r12,r13                                       *
+     617            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     618            ;*****************************************************************************
+     619 000000       USCI_A_UART_getInterruptStatus:
+     620            ;* --------------------------------------------------------------------------*
+     621                    .dwcfi  cfa_offset, 4
+     622                    .dwcfi  save_reg_to_mem, 16, -4
+     623            ;* r13   assigned to mask
+     624            $C$DW$35        .dwtag  DW_TAG_variable
+     625                    .dwattr $C$DW$35, DW_AT_name("mask")
+     626                    .dwattr $C$DW$35, DW_AT_TI_symbol_name("mask")
+     627                    .dwattr $C$DW$35, DW_AT_type(*$C$DW$T$19)
+     628                    .dwattr $C$DW$35, DW_AT_location[DW_OP_reg13]
+     629            
+     630                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 179,column 5,is_stmt,isa 0
+     631 000000 503C          ADD.W     #29,r12               ; [] |179| 
+         000002 001D 
+     632 000004 4C6C          MOV.B     @r12,r12              ; [] |179| 
+     633 000006 FD4C          AND.B     r13,r12               ; [] |179| 
+     634                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 180,column 1,is_stmt,isa 0
+     635            $C$DW$36        .dwtag  DW_TAG_TI_branch
+     636                    .dwattr $C$DW$36, DW_AT_low_pc(0x00)
+     637                    .dwattr $C$DW$36, DW_AT_TI_return
+     638            
+     639 000008 0110          RETA      ; [] 
+     640                    ; [] 
+     641                    .dwattr $C$DW$32, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     642                    .dwattr $C$DW$32, DW_AT_TI_end_line(0xb4)
+     643                    .dwattr $C$DW$32, DW_AT_TI_end_column(0x01)
+     644                    .dwendentry
+     645                    .dwendtag $C$DW$32
+     646            
+     647 000000               .sect   ".text:USCI_A_UART_clearInterrupt"
+     648                    .clink
+     649                    .global USCI_A_UART_clearInterrupt
+     650            
+     651            $C$DW$37        .dwtag  DW_TAG_subprogram
+     652                    .dwattr $C$DW$37, DW_AT_name("USCI_A_UART_clearInterrupt")
+     653                    .dwattr $C$DW$37, DW_AT_low_pc(USCI_A_UART_clearInterrupt)
+     654                    .dwattr $C$DW$37, DW_AT_high_pc(0x00)
+     655                    .dwattr $C$DW$37, DW_AT_TI_symbol_name("USCI_A_UART_clearInterrupt")
+     656                    .dwattr $C$DW$37, DW_AT_external
+     657                    .dwattr $C$DW$37, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     658                    .dwattr $C$DW$37, DW_AT_TI_begin_line(0xb6)
+     659                    .dwattr $C$DW$37, DW_AT_TI_begin_column(0x06)
+     660                    .dwattr $C$DW$37, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     661                    .dwattr $C$DW$37, DW_AT_decl_line(0xb6)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   14
+
+     662                    .dwattr $C$DW$37, DW_AT_decl_column(0x06)
+     663                    .dwattr $C$DW$37, DW_AT_TI_max_frame_size(0x04)
+     664                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 184,column 1,is_stmt,address USCI_A_UART_c
+     665            
+     666                    .dwfde $C$DW$CIE, USCI_A_UART_clearInterrupt
+     667            $C$DW$38        .dwtag  DW_TAG_formal_parameter
+     668                    .dwattr $C$DW$38, DW_AT_name("baseAddress")
+     669                    .dwattr $C$DW$38, DW_AT_TI_symbol_name("baseAddress")
+     670                    .dwattr $C$DW$38, DW_AT_type(*$C$DW$T$20)
+     671                    .dwattr $C$DW$38, DW_AT_location[DW_OP_reg12]
+     672            
+     673            $C$DW$39        .dwtag  DW_TAG_formal_parameter
+     674                    .dwattr $C$DW$39, DW_AT_name("mask")
+     675                    .dwattr $C$DW$39, DW_AT_TI_symbol_name("mask")
+     676                    .dwattr $C$DW$39, DW_AT_type(*$C$DW$T$19)
+     677                    .dwattr $C$DW$39, DW_AT_location[DW_OP_reg13]
+     678            
+     679            
+     680            ;*****************************************************************************
+     681            ;* FUNCTION NAME: USCI_A_UART_clearInterrupt                                 *
+     682            ;*                                                                           *
+     683            ;*   Regs Modified     : SP,SR,r12,r15                                       *
+     684            ;*   Regs Used         : SP,SR,r12,r13,r15                                   *
+     685            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     686            ;*****************************************************************************
+     687 000000       USCI_A_UART_clearInterrupt:
+     688            ;* --------------------------------------------------------------------------*
+     689                    .dwcfi  cfa_offset, 4
+     690                    .dwcfi  save_reg_to_mem, 16, -4
+     691            ;* r13   assigned to mask
+     692            $C$DW$40        .dwtag  DW_TAG_variable
+     693                    .dwattr $C$DW$40, DW_AT_name("mask")
+     694                    .dwattr $C$DW$40, DW_AT_TI_symbol_name("mask")
+     695                    .dwattr $C$DW$40, DW_AT_type(*$C$DW$T$19)
+     696                    .dwattr $C$DW$40, DW_AT_location[DW_OP_reg13]
+     697            
+     698                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 186,column 5,is_stmt,isa 0
+     699 000000 503C          ADD.W     #29,r12               ; [] |186| 
+         000002 001D 
+     700 000004 4C0F          MOV.W     r12,r15               ; [] |186| 
+     701 000006 CDCF          BIC.B     r13,0(r15)            ; [] |186| 
+         000008 0000 
+     702                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 187,column 1,is_stmt,isa 0
+     703            $C$DW$41        .dwtag  DW_TAG_TI_branch
+     704                    .dwattr $C$DW$41, DW_AT_low_pc(0x00)
+     705                    .dwattr $C$DW$41, DW_AT_TI_return
+     706            
+     707 00000a 0110          RETA      ; [] 
+     708                    ; [] 
+     709                    .dwattr $C$DW$37, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     710                    .dwattr $C$DW$37, DW_AT_TI_end_line(0xbb)
+     711                    .dwattr $C$DW$37, DW_AT_TI_end_column(0x01)
+     712                    .dwendentry
+     713                    .dwendtag $C$DW$37
+     714            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   15
+
+     715 000000               .sect   ".text:USCI_A_UART_enable"
+     716                    .clink
+     717                    .global USCI_A_UART_enable
+     718            
+     719            $C$DW$42        .dwtag  DW_TAG_subprogram
+     720                    .dwattr $C$DW$42, DW_AT_name("USCI_A_UART_enable")
+     721                    .dwattr $C$DW$42, DW_AT_low_pc(USCI_A_UART_enable)
+     722                    .dwattr $C$DW$42, DW_AT_high_pc(0x00)
+     723                    .dwattr $C$DW$42, DW_AT_TI_symbol_name("USCI_A_UART_enable")
+     724                    .dwattr $C$DW$42, DW_AT_external
+     725                    .dwattr $C$DW$42, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     726                    .dwattr $C$DW$42, DW_AT_TI_begin_line(0xbd)
+     727                    .dwattr $C$DW$42, DW_AT_TI_begin_column(0x06)
+     728                    .dwattr $C$DW$42, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     729                    .dwattr $C$DW$42, DW_AT_decl_line(0xbd)
+     730                    .dwattr $C$DW$42, DW_AT_decl_column(0x06)
+     731                    .dwattr $C$DW$42, DW_AT_TI_max_frame_size(0x04)
+     732                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 190,column 1,is_stmt,address USCI_A_UART_e
+     733            
+     734                    .dwfde $C$DW$CIE, USCI_A_UART_enable
+     735            $C$DW$43        .dwtag  DW_TAG_formal_parameter
+     736                    .dwattr $C$DW$43, DW_AT_name("baseAddress")
+     737                    .dwattr $C$DW$43, DW_AT_TI_symbol_name("baseAddress")
+     738                    .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$20)
+     739                    .dwattr $C$DW$43, DW_AT_location[DW_OP_reg12]
+     740            
+     741            
+     742            ;*****************************************************************************
+     743            ;* FUNCTION NAME: USCI_A_UART_enable                                         *
+     744            ;*                                                                           *
+     745            ;*   Regs Modified     : SP                                                  *
+     746            ;*   Regs Used         : SP,r12                                              *
+     747            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     748            ;*****************************************************************************
+     749 000000       USCI_A_UART_enable:
+     750            ;* --------------------------------------------------------------------------*
+     751                    .dwcfi  cfa_offset, 4
+     752                    .dwcfi  save_reg_to_mem, 16, -4
+     753            ;* r12   assigned to baseAddress
+     754            $C$DW$44        .dwtag  DW_TAG_variable
+     755                    .dwattr $C$DW$44, DW_AT_name("baseAddress")
+     756                    .dwattr $C$DW$44, DW_AT_TI_symbol_name("baseAddress")
+     757                    .dwattr $C$DW$44, DW_AT_type(*$C$DW$T$20)
+     758                    .dwattr $C$DW$44, DW_AT_location[DW_OP_reg12]
+     759            
+     760                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 192,column 5,is_stmt,isa 0
+     761 000000 C3DC          BIC.B     #1,0(r12)             ; [] |192| 
+         000002 0000 
+     762                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 193,column 1,is_stmt,isa 0
+     763            $C$DW$45        .dwtag  DW_TAG_TI_branch
+     764                    .dwattr $C$DW$45, DW_AT_low_pc(0x00)
+     765                    .dwattr $C$DW$45, DW_AT_TI_return
+     766            
+     767 000004 0110          RETA      ; [] 
+     768                    ; [] 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   16
+
+     769                    .dwattr $C$DW$42, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     770                    .dwattr $C$DW$42, DW_AT_TI_end_line(0xc1)
+     771                    .dwattr $C$DW$42, DW_AT_TI_end_column(0x01)
+     772                    .dwendentry
+     773                    .dwendtag $C$DW$42
+     774            
+     775 000000               .sect   ".text:USCI_A_UART_disable"
+     776                    .clink
+     777                    .global USCI_A_UART_disable
+     778            
+     779            $C$DW$46        .dwtag  DW_TAG_subprogram
+     780                    .dwattr $C$DW$46, DW_AT_name("USCI_A_UART_disable")
+     781                    .dwattr $C$DW$46, DW_AT_low_pc(USCI_A_UART_disable)
+     782                    .dwattr $C$DW$46, DW_AT_high_pc(0x00)
+     783                    .dwattr $C$DW$46, DW_AT_TI_symbol_name("USCI_A_UART_disable")
+     784                    .dwattr $C$DW$46, DW_AT_external
+     785                    .dwattr $C$DW$46, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     786                    .dwattr $C$DW$46, DW_AT_TI_begin_line(0xc3)
+     787                    .dwattr $C$DW$46, DW_AT_TI_begin_column(0x06)
+     788                    .dwattr $C$DW$46, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     789                    .dwattr $C$DW$46, DW_AT_decl_line(0xc3)
+     790                    .dwattr $C$DW$46, DW_AT_decl_column(0x06)
+     791                    .dwattr $C$DW$46, DW_AT_TI_max_frame_size(0x04)
+     792                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 196,column 1,is_stmt,address USCI_A_UART_d
+     793            
+     794                    .dwfde $C$DW$CIE, USCI_A_UART_disable
+     795            $C$DW$47        .dwtag  DW_TAG_formal_parameter
+     796                    .dwattr $C$DW$47, DW_AT_name("baseAddress")
+     797                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("baseAddress")
+     798                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$20)
+     799                    .dwattr $C$DW$47, DW_AT_location[DW_OP_reg12]
+     800            
+     801            
+     802            ;*****************************************************************************
+     803            ;* FUNCTION NAME: USCI_A_UART_disable                                        *
+     804            ;*                                                                           *
+     805            ;*   Regs Modified     : SP                                                  *
+     806            ;*   Regs Used         : SP,r12                                              *
+     807            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     808            ;*****************************************************************************
+     809 000000       USCI_A_UART_disable:
+     810            ;* --------------------------------------------------------------------------*
+     811                    .dwcfi  cfa_offset, 4
+     812                    .dwcfi  save_reg_to_mem, 16, -4
+     813            ;* r12   assigned to baseAddress
+     814            $C$DW$48        .dwtag  DW_TAG_variable
+     815                    .dwattr $C$DW$48, DW_AT_name("baseAddress")
+     816                    .dwattr $C$DW$48, DW_AT_TI_symbol_name("baseAddress")
+     817                    .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$20)
+     818                    .dwattr $C$DW$48, DW_AT_location[DW_OP_reg12]
+     819            
+     820                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 198,column 5,is_stmt,isa 0
+     821 000000 D3DC          OR.B      #1,0(r12)             ; [] |198| 
+         000002 0000 
+     822                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 199,column 1,is_stmt,isa 0
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   17
+
+     823            $C$DW$49        .dwtag  DW_TAG_TI_branch
+     824                    .dwattr $C$DW$49, DW_AT_low_pc(0x00)
+     825                    .dwattr $C$DW$49, DW_AT_TI_return
+     826            
+     827 000004 0110          RETA      ; [] 
+     828                    ; [] 
+     829                    .dwattr $C$DW$46, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     830                    .dwattr $C$DW$46, DW_AT_TI_end_line(0xc7)
+     831                    .dwattr $C$DW$46, DW_AT_TI_end_column(0x01)
+     832                    .dwendentry
+     833                    .dwendtag $C$DW$46
+     834            
+     835 000000               .sect   ".text:USCI_A_UART_queryStatusFlags"
+     836                    .clink
+     837                    .global USCI_A_UART_queryStatusFlags
+     838            
+     839            $C$DW$50        .dwtag  DW_TAG_subprogram
+     840                    .dwattr $C$DW$50, DW_AT_name("USCI_A_UART_queryStatusFlags")
+     841                    .dwattr $C$DW$50, DW_AT_low_pc(USCI_A_UART_queryStatusFlags)
+     842                    .dwattr $C$DW$50, DW_AT_high_pc(0x00)
+     843                    .dwattr $C$DW$50, DW_AT_TI_symbol_name("USCI_A_UART_queryStatusFlags")
+     844                    .dwattr $C$DW$50, DW_AT_external
+     845                    .dwattr $C$DW$50, DW_AT_type(*$C$DW$T$19)
+     846                    .dwattr $C$DW$50, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     847                    .dwattr $C$DW$50, DW_AT_TI_begin_line(0xc9)
+     848                    .dwattr $C$DW$50, DW_AT_TI_begin_column(0x09)
+     849                    .dwattr $C$DW$50, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     850                    .dwattr $C$DW$50, DW_AT_decl_line(0xc9)
+     851                    .dwattr $C$DW$50, DW_AT_decl_column(0x09)
+     852                    .dwattr $C$DW$50, DW_AT_TI_max_frame_size(0x04)
+     853                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 203,column 1,is_stmt,address USCI_A_UART_q
+     854            
+     855                    .dwfde $C$DW$CIE, USCI_A_UART_queryStatusFlags
+     856            $C$DW$51        .dwtag  DW_TAG_formal_parameter
+     857                    .dwattr $C$DW$51, DW_AT_name("baseAddress")
+     858                    .dwattr $C$DW$51, DW_AT_TI_symbol_name("baseAddress")
+     859                    .dwattr $C$DW$51, DW_AT_type(*$C$DW$T$20)
+     860                    .dwattr $C$DW$51, DW_AT_location[DW_OP_reg12]
+     861            
+     862            $C$DW$52        .dwtag  DW_TAG_formal_parameter
+     863                    .dwattr $C$DW$52, DW_AT_name("mask")
+     864                    .dwattr $C$DW$52, DW_AT_TI_symbol_name("mask")
+     865                    .dwattr $C$DW$52, DW_AT_type(*$C$DW$T$19)
+     866                    .dwattr $C$DW$52, DW_AT_location[DW_OP_reg13]
+     867            
+     868            
+     869            ;*****************************************************************************
+     870            ;* FUNCTION NAME: USCI_A_UART_queryStatusFlags                               *
+     871            ;*                                                                           *
+     872            ;*   Regs Modified     : SP,SR,r12                                           *
+     873            ;*   Regs Used         : SP,SR,r12,r13                                       *
+     874            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     875            ;*****************************************************************************
+     876 000000       USCI_A_UART_queryStatusFlags:
+     877            ;* --------------------------------------------------------------------------*
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   18
+
+     878                    .dwcfi  cfa_offset, 4
+     879                    .dwcfi  save_reg_to_mem, 16, -4
+     880            ;* r13   assigned to mask
+     881            $C$DW$53        .dwtag  DW_TAG_variable
+     882                    .dwattr $C$DW$53, DW_AT_name("mask")
+     883                    .dwattr $C$DW$53, DW_AT_TI_symbol_name("mask")
+     884                    .dwattr $C$DW$53, DW_AT_type(*$C$DW$T$19)
+     885                    .dwattr $C$DW$53, DW_AT_location[DW_OP_reg13]
+     886            
+     887                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 204,column 5,is_stmt,isa 0
+     888 000000 503C          ADD.W     #10,r12               ; [] |204| 
+         000002 000A 
+     889 000004 4C6C          MOV.B     @r12,r12              ; [] |204| 
+     890 000006 FD4C          AND.B     r13,r12               ; [] |204| 
+     891                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 205,column 1,is_stmt,isa 0
+     892            $C$DW$54        .dwtag  DW_TAG_TI_branch
+     893                    .dwattr $C$DW$54, DW_AT_low_pc(0x00)
+     894                    .dwattr $C$DW$54, DW_AT_TI_return
+     895            
+     896 000008 0110          RETA      ; [] 
+     897                    ; [] 
+     898                    .dwattr $C$DW$50, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     899                    .dwattr $C$DW$50, DW_AT_TI_end_line(0xcd)
+     900                    .dwattr $C$DW$50, DW_AT_TI_end_column(0x01)
+     901                    .dwendentry
+     902                    .dwendtag $C$DW$50
+     903            
+     904 000000               .sect   ".text:USCI_A_UART_setDormant"
+     905                    .clink
+     906                    .global USCI_A_UART_setDormant
+     907            
+     908            $C$DW$55        .dwtag  DW_TAG_subprogram
+     909                    .dwattr $C$DW$55, DW_AT_name("USCI_A_UART_setDormant")
+     910                    .dwattr $C$DW$55, DW_AT_low_pc(USCI_A_UART_setDormant)
+     911                    .dwattr $C$DW$55, DW_AT_high_pc(0x00)
+     912                    .dwattr $C$DW$55, DW_AT_TI_symbol_name("USCI_A_UART_setDormant")
+     913                    .dwattr $C$DW$55, DW_AT_external
+     914                    .dwattr $C$DW$55, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     915                    .dwattr $C$DW$55, DW_AT_TI_begin_line(0xcf)
+     916                    .dwattr $C$DW$55, DW_AT_TI_begin_column(0x06)
+     917                    .dwattr $C$DW$55, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     918                    .dwattr $C$DW$55, DW_AT_decl_line(0xcf)
+     919                    .dwattr $C$DW$55, DW_AT_decl_column(0x06)
+     920                    .dwattr $C$DW$55, DW_AT_TI_max_frame_size(0x04)
+     921                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 208,column 1,is_stmt,address USCI_A_UART_s
+     922            
+     923                    .dwfde $C$DW$CIE, USCI_A_UART_setDormant
+     924            $C$DW$56        .dwtag  DW_TAG_formal_parameter
+     925                    .dwattr $C$DW$56, DW_AT_name("baseAddress")
+     926                    .dwattr $C$DW$56, DW_AT_TI_symbol_name("baseAddress")
+     927                    .dwattr $C$DW$56, DW_AT_type(*$C$DW$T$20)
+     928                    .dwattr $C$DW$56, DW_AT_location[DW_OP_reg12]
+     929            
+     930            
+     931            ;*****************************************************************************
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   19
+
+     932            ;* FUNCTION NAME: USCI_A_UART_setDormant                                     *
+     933            ;*                                                                           *
+     934            ;*   Regs Modified     : SP                                                  *
+     935            ;*   Regs Used         : SP,r12                                              *
+     936            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     937            ;*****************************************************************************
+     938 000000       USCI_A_UART_setDormant:
+     939            ;* --------------------------------------------------------------------------*
+     940                    .dwcfi  cfa_offset, 4
+     941                    .dwcfi  save_reg_to_mem, 16, -4
+     942            ;* r12   assigned to baseAddress
+     943            $C$DW$57        .dwtag  DW_TAG_variable
+     944                    .dwattr $C$DW$57, DW_AT_name("baseAddress")
+     945                    .dwattr $C$DW$57, DW_AT_TI_symbol_name("baseAddress")
+     946                    .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$20)
+     947                    .dwattr $C$DW$57, DW_AT_location[DW_OP_reg12]
+     948            
+     949                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 209,column 5,is_stmt,isa 0
+     950 000000 D2FC          OR.B      #8,0(r12)             ; [] |209| 
+         000002 0000 
+     951                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 210,column 1,is_stmt,isa 0
+     952            $C$DW$58        .dwtag  DW_TAG_TI_branch
+     953                    .dwattr $C$DW$58, DW_AT_low_pc(0x00)
+     954                    .dwattr $C$DW$58, DW_AT_TI_return
+     955            
+     956 000004 0110          RETA      ; [] 
+     957                    ; [] 
+     958                    .dwattr $C$DW$55, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     959                    .dwattr $C$DW$55, DW_AT_TI_end_line(0xd2)
+     960                    .dwattr $C$DW$55, DW_AT_TI_end_column(0x01)
+     961                    .dwendentry
+     962                    .dwendtag $C$DW$55
+     963            
+     964 000000               .sect   ".text:USCI_A_UART_resetDormant"
+     965                    .clink
+     966                    .global USCI_A_UART_resetDormant
+     967            
+     968            $C$DW$59        .dwtag  DW_TAG_subprogram
+     969                    .dwattr $C$DW$59, DW_AT_name("USCI_A_UART_resetDormant")
+     970                    .dwattr $C$DW$59, DW_AT_low_pc(USCI_A_UART_resetDormant)
+     971                    .dwattr $C$DW$59, DW_AT_high_pc(0x00)
+     972                    .dwattr $C$DW$59, DW_AT_TI_symbol_name("USCI_A_UART_resetDormant")
+     973                    .dwattr $C$DW$59, DW_AT_external
+     974                    .dwattr $C$DW$59, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     975                    .dwattr $C$DW$59, DW_AT_TI_begin_line(0xd4)
+     976                    .dwattr $C$DW$59, DW_AT_TI_begin_column(0x06)
+     977                    .dwattr $C$DW$59, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+     978                    .dwattr $C$DW$59, DW_AT_decl_line(0xd4)
+     979                    .dwattr $C$DW$59, DW_AT_decl_column(0x06)
+     980                    .dwattr $C$DW$59, DW_AT_TI_max_frame_size(0x04)
+     981                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 213,column 1,is_stmt,address USCI_A_UART_r
+     982            
+     983                    .dwfde $C$DW$CIE, USCI_A_UART_resetDormant
+     984            $C$DW$60        .dwtag  DW_TAG_formal_parameter
+     985                    .dwattr $C$DW$60, DW_AT_name("baseAddress")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   20
+
+     986                    .dwattr $C$DW$60, DW_AT_TI_symbol_name("baseAddress")
+     987                    .dwattr $C$DW$60, DW_AT_type(*$C$DW$T$20)
+     988                    .dwattr $C$DW$60, DW_AT_location[DW_OP_reg12]
+     989            
+     990            
+     991            ;*****************************************************************************
+     992            ;* FUNCTION NAME: USCI_A_UART_resetDormant                                   *
+     993            ;*                                                                           *
+     994            ;*   Regs Modified     : SP                                                  *
+     995            ;*   Regs Used         : SP,r12                                              *
+     996            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     997            ;*****************************************************************************
+     998 000000       USCI_A_UART_resetDormant:
+     999            ;* --------------------------------------------------------------------------*
+    1000                    .dwcfi  cfa_offset, 4
+    1001                    .dwcfi  save_reg_to_mem, 16, -4
+    1002            ;* r12   assigned to baseAddress
+    1003            $C$DW$61        .dwtag  DW_TAG_variable
+    1004                    .dwattr $C$DW$61, DW_AT_name("baseAddress")
+    1005                    .dwattr $C$DW$61, DW_AT_TI_symbol_name("baseAddress")
+    1006                    .dwattr $C$DW$61, DW_AT_type(*$C$DW$T$20)
+    1007                    .dwattr $C$DW$61, DW_AT_location[DW_OP_reg12]
+    1008            
+    1009                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 214,column 5,is_stmt,isa 0
+    1010 000000 C2FC          BIC.B     #8,0(r12)             ; [] |214| 
+         000002 0000 
+    1011                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 215,column 1,is_stmt,isa 0
+    1012            $C$DW$62        .dwtag  DW_TAG_TI_branch
+    1013                    .dwattr $C$DW$62, DW_AT_low_pc(0x00)
+    1014                    .dwattr $C$DW$62, DW_AT_TI_return
+    1015            
+    1016 000004 0110          RETA      ; [] 
+    1017                    ; [] 
+    1018                    .dwattr $C$DW$59, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1019                    .dwattr $C$DW$59, DW_AT_TI_end_line(0xd7)
+    1020                    .dwattr $C$DW$59, DW_AT_TI_end_column(0x01)
+    1021                    .dwendentry
+    1022                    .dwendtag $C$DW$59
+    1023            
+    1024 000000               .sect   ".text:USCI_A_UART_transmitAddress"
+    1025                    .clink
+    1026                    .global USCI_A_UART_transmitAddress
+    1027            
+    1028            $C$DW$63        .dwtag  DW_TAG_subprogram
+    1029                    .dwattr $C$DW$63, DW_AT_name("USCI_A_UART_transmitAddress")
+    1030                    .dwattr $C$DW$63, DW_AT_low_pc(USCI_A_UART_transmitAddress)
+    1031                    .dwattr $C$DW$63, DW_AT_high_pc(0x00)
+    1032                    .dwattr $C$DW$63, DW_AT_TI_symbol_name("USCI_A_UART_transmitAddress")
+    1033                    .dwattr $C$DW$63, DW_AT_external
+    1034                    .dwattr $C$DW$63, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1035                    .dwattr $C$DW$63, DW_AT_TI_begin_line(0xd9)
+    1036                    .dwattr $C$DW$63, DW_AT_TI_begin_column(0x06)
+    1037                    .dwattr $C$DW$63, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1038                    .dwattr $C$DW$63, DW_AT_decl_line(0xd9)
+    1039                    .dwattr $C$DW$63, DW_AT_decl_column(0x06)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   21
+
+    1040                    .dwattr $C$DW$63, DW_AT_TI_max_frame_size(0x04)
+    1041                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 219,column 1,is_stmt,address USCI_A_UART_t
+    1042            
+    1043                    .dwfde $C$DW$CIE, USCI_A_UART_transmitAddress
+    1044            $C$DW$64        .dwtag  DW_TAG_formal_parameter
+    1045                    .dwattr $C$DW$64, DW_AT_name("baseAddress")
+    1046                    .dwattr $C$DW$64, DW_AT_TI_symbol_name("baseAddress")
+    1047                    .dwattr $C$DW$64, DW_AT_type(*$C$DW$T$20)
+    1048                    .dwattr $C$DW$64, DW_AT_location[DW_OP_reg12]
+    1049            
+    1050            $C$DW$65        .dwtag  DW_TAG_formal_parameter
+    1051                    .dwattr $C$DW$65, DW_AT_name("transmitAddress")
+    1052                    .dwattr $C$DW$65, DW_AT_TI_symbol_name("transmitAddress")
+    1053                    .dwattr $C$DW$65, DW_AT_type(*$C$DW$T$19)
+    1054                    .dwattr $C$DW$65, DW_AT_location[DW_OP_reg13]
+    1055            
+    1056            
+    1057            ;*****************************************************************************
+    1058            ;* FUNCTION NAME: USCI_A_UART_transmitAddress                                *
+    1059            ;*                                                                           *
+    1060            ;*   Regs Modified     : SP,SR,r12                                           *
+    1061            ;*   Regs Used         : SP,SR,r12,r13                                       *
+    1062            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1063            ;*****************************************************************************
+    1064 000000       USCI_A_UART_transmitAddress:
+    1065            ;* --------------------------------------------------------------------------*
+    1066                    .dwcfi  cfa_offset, 4
+    1067                    .dwcfi  save_reg_to_mem, 16, -4
+    1068            ;* r12   assigned to baseAddress
+    1069            $C$DW$66        .dwtag  DW_TAG_variable
+    1070                    .dwattr $C$DW$66, DW_AT_name("baseAddress")
+    1071                    .dwattr $C$DW$66, DW_AT_TI_symbol_name("baseAddress")
+    1072                    .dwattr $C$DW$66, DW_AT_type(*$C$DW$T$20)
+    1073                    .dwattr $C$DW$66, DW_AT_location[DW_OP_reg12]
+    1074            
+    1075            ;* r13   assigned to transmitAddress
+    1076            $C$DW$67        .dwtag  DW_TAG_variable
+    1077                    .dwattr $C$DW$67, DW_AT_name("transmitAddress")
+    1078                    .dwattr $C$DW$67, DW_AT_TI_symbol_name("transmitAddress")
+    1079                    .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$19)
+    1080                    .dwattr $C$DW$67, DW_AT_location[DW_OP_reg13]
+    1081            
+    1082                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 221,column 5,is_stmt,isa 0
+    1083 000000 D2EC          OR.B      #4,0(r12)             ; [] |221| 
+         000002 0000 
+    1084                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 224,column 5,is_stmt,isa 0
+    1085 000004 503C          ADD.W     #14,r12               ; [] |224| 
+         000006 000E 
+    1086 000008 4DCC          MOV.B     r13,0(r12)            ; [] |224| 
+         00000a 0000 
+    1087                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 225,column 1,is_stmt,isa 0
+    1088            $C$DW$68        .dwtag  DW_TAG_TI_branch
+    1089                    .dwattr $C$DW$68, DW_AT_low_pc(0x00)
+    1090                    .dwattr $C$DW$68, DW_AT_TI_return
+    1091            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   22
+
+    1092 00000c 0110          RETA      ; [] 
+    1093                    ; [] 
+    1094                    .dwattr $C$DW$63, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1095                    .dwattr $C$DW$63, DW_AT_TI_end_line(0xe1)
+    1096                    .dwattr $C$DW$63, DW_AT_TI_end_column(0x01)
+    1097                    .dwendentry
+    1098                    .dwendtag $C$DW$63
+    1099            
+    1100 000000               .sect   ".text:USCI_A_UART_transmitBreak"
+    1101                    .clink
+    1102                    .global USCI_A_UART_transmitBreak
+    1103            
+    1104            $C$DW$69        .dwtag  DW_TAG_subprogram
+    1105                    .dwattr $C$DW$69, DW_AT_name("USCI_A_UART_transmitBreak")
+    1106                    .dwattr $C$DW$69, DW_AT_low_pc(USCI_A_UART_transmitBreak)
+    1107                    .dwattr $C$DW$69, DW_AT_high_pc(0x00)
+    1108                    .dwattr $C$DW$69, DW_AT_TI_symbol_name("USCI_A_UART_transmitBreak")
+    1109                    .dwattr $C$DW$69, DW_AT_external
+    1110                    .dwattr $C$DW$69, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1111                    .dwattr $C$DW$69, DW_AT_TI_begin_line(0xe3)
+    1112                    .dwattr $C$DW$69, DW_AT_TI_begin_column(0x06)
+    1113                    .dwattr $C$DW$69, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1114                    .dwattr $C$DW$69, DW_AT_decl_line(0xe3)
+    1115                    .dwattr $C$DW$69, DW_AT_decl_column(0x06)
+    1116                    .dwattr $C$DW$69, DW_AT_TI_max_frame_size(0x04)
+    1117                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 228,column 1,is_stmt,address USCI_A_UART_t
+    1118            
+    1119                    .dwfde $C$DW$CIE, USCI_A_UART_transmitBreak
+    1120            $C$DW$70        .dwtag  DW_TAG_formal_parameter
+    1121                    .dwattr $C$DW$70, DW_AT_name("baseAddress")
+    1122                    .dwattr $C$DW$70, DW_AT_TI_symbol_name("baseAddress")
+    1123                    .dwattr $C$DW$70, DW_AT_type(*$C$DW$T$20)
+    1124                    .dwattr $C$DW$70, DW_AT_location[DW_OP_reg12]
+    1125            
+    1126            
+    1127            ;*****************************************************************************
+    1128            ;* FUNCTION NAME: USCI_A_UART_transmitBreak                                  *
+    1129            ;*                                                                           *
+    1130            ;*   Regs Modified     : SP,SR,r14,r15                                       *
+    1131            ;*   Regs Used         : SP,SR,r12,r14,r15                                   *
+    1132            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1133            ;*****************************************************************************
+    1134 000000       USCI_A_UART_transmitBreak:
+    1135            ;* --------------------------------------------------------------------------*
+    1136                    .dwcfi  cfa_offset, 4
+    1137                    .dwcfi  save_reg_to_mem, 16, -4
+    1138            ;* r12   assigned to baseAddress
+    1139            $C$DW$71        .dwtag  DW_TAG_variable
+    1140                    .dwattr $C$DW$71, DW_AT_name("baseAddress")
+    1141                    .dwattr $C$DW$71, DW_AT_TI_symbol_name("baseAddress")
+    1142                    .dwattr $C$DW$71, DW_AT_type(*$C$DW$T$20)
+    1143                    .dwattr $C$DW$71, DW_AT_location[DW_OP_reg12]
+    1144            
+    1145                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 230,column 5,is_stmt,isa 0
+    1146 000000 D3EC          OR.B      #2,0(r12)             ; [] |230| 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   23
+
+         000002 0000 
+    1147                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 233,column 5,is_stmt,isa 0
+    1148 000004 0CCF          MOVA      r12,r15               ; [] |233| 
+    1149 000006 531F          ADD.W     #1,r15                ; [] |233| 
+    1150 000008 4F6F          MOV.B     @r15,r15              ; [] |233| 
+    1151 00000a F03F          AND.W     #6,r15                ; [] |233| 
+         00000c 0006 
+    1152 00000e 903F          CMP.W     #6,r15                ; [] |233| 
+         000010 0006 
+    1153 000012 2406          JEQ       $C$L10                ; [] |233| 
+    1154                                                      ; [] |233| 
+    1155            ;* --------------------------------------------------------------------------*
+    1156                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 242,column 9,is_stmt,isa 0
+    1157 000014 0CCF          MOVA      r12,r15               ; [] |242| 
+    1158 000016 503F          ADD.W     #14,r15               ; [] |242| 
+         000018 000E 
+    1159 00001a 43CF          MOV.B     #0,0(r15)             ; [] |242| 
+         00001c 0000 
+    1160 00001e 3C06          JMP       $C$L11                ; [] |242| 
+    1161                                                      ; [] |242| 
+    1162            ;* --------------------------------------------------------------------------*
+    1163 000020       $C$L10:    
+    1164                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 237,column 9,is_stmt,isa 0
+    1165 000020 0CCF          MOVA      r12,r15               ; [] |237| 
+    1166 000022 503F          ADD.W     #14,r15               ; [] |237| 
+         000024 000E 
+    1167 000026 40FF          MOV.B     #85,0(r15)            ; [] |237| 
+         000028 0055 
+         00002a 0000 
+    1168            ;* --------------------------------------------------------------------------*
+    1169 00002c       $C$L11:    
+    1170                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 246,column 5,is_stmt,isa 0
+    1171 00002c 0CCF          MOVA      r12,r15               ; [] |246| 
+    1172 00002e 503F          ADD.W     #28,r15               ; [] |246| 
+         000030 001C 
+    1173 000032 432E          MOV.W     #2,r14                ; [] |246| 
+    1174 000034 BF6E          BIT.B     @r15,r14              ; [] |246| 
+    1175 000036 2005          JNE       $C$L13                ; [] |246| 
+    1176                                                      ; [] |246| 
+    1177            ;* --------------------------------------------------------------------------*
+    1178            ;*   BEGIN LOOP $C$L12
+    1179            ;*
+    1180            ;*   Loop source line                : 249
+    1181            ;*   Loop closing brace source line  : 252
+    1182            ;*   Known Minimum Trip Count        : 1
+    1183            ;*   Known Maximum Trip Count        : 4294967295
+    1184            ;*   Known Max Trip Count Factor     : 1
+    1185            ;* --------------------------------------------------------------------------*
+    1186 000038       $C$L12:    
+    1187                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 249,column 15,is_stmt,isa 0
+    1188 000038 0CCF          MOVA      r12,r15               ; [] |249| 
+    1189 00003a 503F          ADD.W     #29,r15               ; [] |249| 
+         00003c 001D 
+    1190 00003e BF6E          BIT.B     @r15,r14              ; [] |249| 
+    1191 000040 27FB          JEQ       $C$L12                ; [] |249| 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   24
+
+    1192                                                      ; [] |249| 
+    1193            ;* --------------------------------------------------------------------------*
+    1194 000042       $C$L13:    
+    1195                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 254,column 1,is_stmt,isa 0
+    1196            $C$DW$72        .dwtag  DW_TAG_TI_branch
+    1197                    .dwattr $C$DW$72, DW_AT_low_pc(0x00)
+    1198                    .dwattr $C$DW$72, DW_AT_TI_return
+    1199            
+    1200 000042 0110          RETA      ; [] 
+    1201                    ; [] 
+    1202                    .dwattr $C$DW$69, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1203                    .dwattr $C$DW$69, DW_AT_TI_end_line(0xfe)
+    1204                    .dwattr $C$DW$69, DW_AT_TI_end_column(0x01)
+    1205                    .dwendentry
+    1206                    .dwendtag $C$DW$69
+    1207            
+    1208 000000               .sect   ".text:USCI_A_UART_getReceiveBufferAddressForDMA"
+    1209                    .clink
+    1210                    .global USCI_A_UART_getReceiveBufferAddressForDMA
+    1211            
+    1212            $C$DW$73        .dwtag  DW_TAG_subprogram
+    1213                    .dwattr $C$DW$73, DW_AT_name("USCI_A_UART_getReceiveBufferAddressForDMA")
+    1214                    .dwattr $C$DW$73, DW_AT_low_pc(USCI_A_UART_getReceiveBufferAddressForDMA)
+    1215                    .dwattr $C$DW$73, DW_AT_high_pc(0x00)
+    1216                    .dwattr $C$DW$73, DW_AT_TI_symbol_name("USCI_A_UART_getReceiveBufferAddressForDMA")
+    1217                    .dwattr $C$DW$73, DW_AT_external
+    1218                    .dwattr $C$DW$73, DW_AT_type(*$C$DW$T$54)
+    1219                    .dwattr $C$DW$73, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1220                    .dwattr $C$DW$73, DW_AT_TI_begin_line(0x100)
+    1221                    .dwattr $C$DW$73, DW_AT_TI_begin_column(0x0a)
+    1222                    .dwattr $C$DW$73, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1223                    .dwattr $C$DW$73, DW_AT_decl_line(0x100)
+    1224                    .dwattr $C$DW$73, DW_AT_decl_column(0x0a)
+    1225                    .dwattr $C$DW$73, DW_AT_TI_max_frame_size(0x04)
+    1226                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 257,column 1,is_stmt,address USCI_A_UART_g
+    1227            
+    1228                    .dwfde $C$DW$CIE, USCI_A_UART_getReceiveBufferAddressForDMA
+    1229            $C$DW$74        .dwtag  DW_TAG_formal_parameter
+    1230                    .dwattr $C$DW$74, DW_AT_name("baseAddress")
+    1231                    .dwattr $C$DW$74, DW_AT_TI_symbol_name("baseAddress")
+    1232                    .dwattr $C$DW$74, DW_AT_type(*$C$DW$T$20)
+    1233                    .dwattr $C$DW$74, DW_AT_location[DW_OP_reg12]
+    1234            
+    1235            
+    1236            ;*****************************************************************************
+    1237            ;* FUNCTION NAME: USCI_A_UART_getReceiveBufferAddressForDMA                  *
+    1238            ;*                                                                           *
+    1239            ;*   Regs Modified     : SP,SR,r12,r13                                       *
+    1240            ;*   Regs Used         : SP,SR,r12,r13                                       *
+    1241            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1242            ;*****************************************************************************
+    1243 000000       USCI_A_UART_getReceiveBufferAddressForDMA:
+    1244            ;* --------------------------------------------------------------------------*
+    1245                    .dwcfi  cfa_offset, 4
+    1246                    .dwcfi  save_reg_to_mem, 16, -4
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   25
+
+    1247                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 258,column 5,is_stmt,isa 0
+    1248 000000 503C          ADD.W     #12,r12               ; [] |258| 
+         000002 000C 
+    1249 000004 430D          MOV.W     #0,r13                ; [] |258| 
+    1250                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 259,column 1,is_stmt,isa 0
+    1251            $C$DW$75        .dwtag  DW_TAG_TI_branch
+    1252                    .dwattr $C$DW$75, DW_AT_low_pc(0x00)
+    1253                    .dwattr $C$DW$75, DW_AT_TI_return
+    1254            
+    1255 000006 0110          RETA      ; [] 
+    1256                    ; [] 
+    1257                    .dwattr $C$DW$73, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1258                    .dwattr $C$DW$73, DW_AT_TI_end_line(0x103)
+    1259                    .dwattr $C$DW$73, DW_AT_TI_end_column(0x01)
+    1260                    .dwendentry
+    1261                    .dwendtag $C$DW$73
+    1262            
+    1263 000000               .sect   ".text:USCI_A_UART_getTransmitBufferAddressForDMA"
+    1264                    .clink
+    1265                    .global USCI_A_UART_getTransmitBufferAddressForDMA
+    1266            
+    1267            $C$DW$76        .dwtag  DW_TAG_subprogram
+    1268                    .dwattr $C$DW$76, DW_AT_name("USCI_A_UART_getTransmitBufferAddressForDMA")
+    1269                    .dwattr $C$DW$76, DW_AT_low_pc(USCI_A_UART_getTransmitBufferAddressForDMA)
+    1270                    .dwattr $C$DW$76, DW_AT_high_pc(0x00)
+    1271                    .dwattr $C$DW$76, DW_AT_TI_symbol_name("USCI_A_UART_getTransmitBufferAddressForDMA")
+    1272                    .dwattr $C$DW$76, DW_AT_external
+    1273                    .dwattr $C$DW$76, DW_AT_type(*$C$DW$T$54)
+    1274                    .dwattr $C$DW$76, DW_AT_TI_begin_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1275                    .dwattr $C$DW$76, DW_AT_TI_begin_line(0x105)
+    1276                    .dwattr $C$DW$76, DW_AT_TI_begin_column(0x0a)
+    1277                    .dwattr $C$DW$76, DW_AT_decl_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1278                    .dwattr $C$DW$76, DW_AT_decl_line(0x105)
+    1279                    .dwattr $C$DW$76, DW_AT_decl_column(0x0a)
+    1280                    .dwattr $C$DW$76, DW_AT_TI_max_frame_size(0x04)
+    1281                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 262,column 1,is_stmt,address USCI_A_UART_g
+    1282            
+    1283                    .dwfde $C$DW$CIE, USCI_A_UART_getTransmitBufferAddressForDMA
+    1284            $C$DW$77        .dwtag  DW_TAG_formal_parameter
+    1285                    .dwattr $C$DW$77, DW_AT_name("baseAddress")
+    1286                    .dwattr $C$DW$77, DW_AT_TI_symbol_name("baseAddress")
+    1287                    .dwattr $C$DW$77, DW_AT_type(*$C$DW$T$20)
+    1288                    .dwattr $C$DW$77, DW_AT_location[DW_OP_reg12]
+    1289            
+    1290            
+    1291            ;*****************************************************************************
+    1292            ;* FUNCTION NAME: USCI_A_UART_getTransmitBufferAddressForDMA                 *
+    1293            ;*                                                                           *
+    1294            ;*   Regs Modified     : SP,SR,r12,r13                                       *
+    1295            ;*   Regs Used         : SP,SR,r12,r13                                       *
+    1296            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1297            ;*****************************************************************************
+    1298 000000       USCI_A_UART_getTransmitBufferAddressForDMA:
+    1299            ;* --------------------------------------------------------------------------*
+    1300                    .dwcfi  cfa_offset, 4
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   26
+
+    1301                    .dwcfi  save_reg_to_mem, 16, -4
+    1302                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 263,column 5,is_stmt,isa 0
+    1303 000000 503C          ADD.W     #14,r12               ; [] |263| 
+         000002 000E 
+    1304 000004 430D          MOV.W     #0,r13                ; [] |263| 
+    1305                    .dwpsn  file "../MSP430F5xx_6xx/usci_a_uart.c",line 264,column 1,is_stmt,isa 0
+    1306            $C$DW$78        .dwtag  DW_TAG_TI_branch
+    1307                    .dwattr $C$DW$78, DW_AT_low_pc(0x00)
+    1308                    .dwattr $C$DW$78, DW_AT_TI_return
+    1309            
+    1310 000006 0110          RETA      ; [] 
+    1311                    ; [] 
+    1312                    .dwattr $C$DW$76, DW_AT_TI_end_file("../MSP430F5xx_6xx/usci_a_uart.c")
+    1313                    .dwattr $C$DW$76, DW_AT_TI_end_line(0x108)
+    1314                    .dwattr $C$DW$76, DW_AT_TI_end_column(0x01)
+    1315                    .dwendentry
+    1316                    .dwendtag $C$DW$76
+    1317            
+    1318            
+    1319            ;******************************************************************************
+    1320            ;* BUILD ATTRIBUTES                                                           *
+    1321            ;******************************************************************************
+    1322                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
+    1323                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0000000000001111000000000
+    1324                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(2)
+    1325                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+    1326                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+    1327                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+    1328            
+    1329            ;******************************************************************************
+    1330            ;* TYPE INFORMATION                                                           *
+    1331            ;******************************************************************************
+    1332            
+    1333            $C$DW$T$21      .dwtag  DW_TAG_structure_type
+    1334                    .dwattr $C$DW$T$21, DW_AT_name("USCI_A_UART_initParam")
+    1335                    .dwattr $C$DW$T$21, DW_AT_byte_size(0x0c)
+    1336            $C$DW$79        .dwtag  DW_TAG_member
+    1337                    .dwattr $C$DW$79, DW_AT_type(*$C$DW$T$19)
+    1338                    .dwattr $C$DW$79, DW_AT_name("selectClockSource")
+    1339                    .dwattr $C$DW$79, DW_AT_TI_symbol_name("selectClockSource")
+    1340                    .dwattr $C$DW$79, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1341                    .dwattr $C$DW$79, DW_AT_accessibility(DW_ACCESS_public)
+    1342                    .dwattr $C$DW$79, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1343                    .dwattr $C$DW$79, DW_AT_decl_line(0x4c)
+    1344                    .dwattr $C$DW$79, DW_AT_decl_column(0x0d)
+    1345            
+    1346            $C$DW$80        .dwtag  DW_TAG_member
+    1347                    .dwattr $C$DW$80, DW_AT_type(*$C$DW$T$20)
+    1348                    .dwattr $C$DW$80, DW_AT_name("clockPrescalar")
+    1349                    .dwattr $C$DW$80, DW_AT_TI_symbol_name("clockPrescalar")
+    1350                    .dwattr $C$DW$80, DW_AT_data_member_location[DW_OP_plus_uconst 0x2]
+    1351                    .dwattr $C$DW$80, DW_AT_accessibility(DW_ACCESS_public)
+    1352                    .dwattr $C$DW$80, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1353                    .dwattr $C$DW$80, DW_AT_decl_line(0x4e)
+    1354                    .dwattr $C$DW$80, DW_AT_decl_column(0x0e)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   27
+
+    1355            
+    1356            $C$DW$81        .dwtag  DW_TAG_member
+    1357                    .dwattr $C$DW$81, DW_AT_type(*$C$DW$T$19)
+    1358                    .dwattr $C$DW$81, DW_AT_name("firstModReg")
+    1359                    .dwattr $C$DW$81, DW_AT_TI_symbol_name("firstModReg")
+    1360                    .dwattr $C$DW$81, DW_AT_data_member_location[DW_OP_plus_uconst 0x4]
+    1361                    .dwattr $C$DW$81, DW_AT_accessibility(DW_ACCESS_public)
+    1362                    .dwattr $C$DW$81, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1363                    .dwattr $C$DW$81, DW_AT_decl_line(0x52)
+    1364                    .dwattr $C$DW$81, DW_AT_decl_column(0x0d)
+    1365            
+    1366            $C$DW$82        .dwtag  DW_TAG_member
+    1367                    .dwattr $C$DW$82, DW_AT_type(*$C$DW$T$19)
+    1368                    .dwattr $C$DW$82, DW_AT_name("secondModReg")
+    1369                    .dwattr $C$DW$82, DW_AT_TI_symbol_name("secondModReg")
+    1370                    .dwattr $C$DW$82, DW_AT_data_member_location[DW_OP_plus_uconst 0x5]
+    1371                    .dwattr $C$DW$82, DW_AT_accessibility(DW_ACCESS_public)
+    1372                    .dwattr $C$DW$82, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1373                    .dwattr $C$DW$82, DW_AT_decl_line(0x56)
+    1374                    .dwattr $C$DW$82, DW_AT_decl_column(0x0d)
+    1375            
+    1376            $C$DW$83        .dwtag  DW_TAG_member
+    1377                    .dwattr $C$DW$83, DW_AT_type(*$C$DW$T$19)
+    1378                    .dwattr $C$DW$83, DW_AT_name("parity")
+    1379                    .dwattr $C$DW$83, DW_AT_TI_symbol_name("parity")
+    1380                    .dwattr $C$DW$83, DW_AT_data_member_location[DW_OP_plus_uconst 0x6]
+    1381                    .dwattr $C$DW$83, DW_AT_accessibility(DW_ACCESS_public)
+    1382                    .dwattr $C$DW$83, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1383                    .dwattr $C$DW$83, DW_AT_decl_line(0x5c)
+    1384                    .dwattr $C$DW$83, DW_AT_decl_column(0x0d)
+    1385            
+    1386            $C$DW$84        .dwtag  DW_TAG_member
+    1387                    .dwattr $C$DW$84, DW_AT_type(*$C$DW$T$19)
+    1388                    .dwattr $C$DW$84, DW_AT_name("msborLsbFirst")
+    1389                    .dwattr $C$DW$84, DW_AT_TI_symbol_name("msborLsbFirst")
+    1390                    .dwattr $C$DW$84, DW_AT_data_member_location[DW_OP_plus_uconst 0x7]
+    1391                    .dwattr $C$DW$84, DW_AT_accessibility(DW_ACCESS_public)
+    1392                    .dwattr $C$DW$84, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1393                    .dwattr $C$DW$84, DW_AT_decl_line(0x61)
+    1394                    .dwattr $C$DW$84, DW_AT_decl_column(0x0d)
+    1395            
+    1396            $C$DW$85        .dwtag  DW_TAG_member
+    1397                    .dwattr $C$DW$85, DW_AT_type(*$C$DW$T$19)
+    1398                    .dwattr $C$DW$85, DW_AT_name("numberofStopBits")
+    1399                    .dwattr $C$DW$85, DW_AT_TI_symbol_name("numberofStopBits")
+    1400                    .dwattr $C$DW$85, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1401                    .dwattr $C$DW$85, DW_AT_accessibility(DW_ACCESS_public)
+    1402                    .dwattr $C$DW$85, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1403                    .dwattr $C$DW$85, DW_AT_decl_line(0x66)
+    1404                    .dwattr $C$DW$85, DW_AT_decl_column(0x0d)
+    1405            
+    1406            $C$DW$86        .dwtag  DW_TAG_member
+    1407                    .dwattr $C$DW$86, DW_AT_type(*$C$DW$T$19)
+    1408                    .dwattr $C$DW$86, DW_AT_name("uartMode")
+    1409                    .dwattr $C$DW$86, DW_AT_TI_symbol_name("uartMode")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   28
+
+    1410                    .dwattr $C$DW$86, DW_AT_data_member_location[DW_OP_plus_uconst 0x9]
+    1411                    .dwattr $C$DW$86, DW_AT_accessibility(DW_ACCESS_public)
+    1412                    .dwattr $C$DW$86, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1413                    .dwattr $C$DW$86, DW_AT_decl_line(0x6d)
+    1414                    .dwattr $C$DW$86, DW_AT_decl_column(0x0d)
+    1415            
+    1416            $C$DW$87        .dwtag  DW_TAG_member
+    1417                    .dwattr $C$DW$87, DW_AT_type(*$C$DW$T$19)
+    1418                    .dwattr $C$DW$87, DW_AT_name("overSampling")
+    1419                    .dwattr $C$DW$87, DW_AT_TI_symbol_name("overSampling")
+    1420                    .dwattr $C$DW$87, DW_AT_data_member_location[DW_OP_plus_uconst 0xa]
+    1421                    .dwattr $C$DW$87, DW_AT_accessibility(DW_ACCESS_public)
+    1422                    .dwattr $C$DW$87, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1423                    .dwattr $C$DW$87, DW_AT_decl_line(0x72)
+    1424                    .dwattr $C$DW$87, DW_AT_decl_column(0x0d)
+    1425            
+    1426                    .dwattr $C$DW$T$21, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1427                    .dwattr $C$DW$T$21, DW_AT_decl_line(0x46)
+    1428                    .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
+    1429                    .dwendtag $C$DW$T$21
+    1430            
+    1431            $C$DW$T$22      .dwtag  DW_TAG_typedef
+    1432                    .dwattr $C$DW$T$22, DW_AT_name("USCI_A_UART_initParam")
+    1433                    .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$21)
+    1434                    .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    1435                    .dwattr $C$DW$T$22, DW_AT_decl_file("..\MSP430F5xx_6xx\usci_a_uart.h")
+    1436                    .dwattr $C$DW$T$22, DW_AT_decl_line(0x73)
+    1437                    .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
+    1438            
+    1439            $C$DW$T$23      .dwtag  DW_TAG_pointer_type
+    1440                    .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$22)
+    1441                    .dwattr $C$DW$T$23, DW_AT_address_class(0x14)
+    1442            
+    1443            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1444                    .dwattr $C$DW$T$2, DW_AT_name("void")
+    1445            
+    1446            
+    1447            $C$DW$T$27      .dwtag  DW_TAG_subroutine_type
+    1448                    .dwattr $C$DW$T$27, DW_AT_language(DW_LANG_C)
+    1449                    .dwendtag $C$DW$T$27
+    1450            
+    1451            $C$DW$T$28      .dwtag  DW_TAG_pointer_type
+    1452                    .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$27)
+    1453                    .dwattr $C$DW$T$28, DW_AT_address_class(0x14)
+    1454            
+    1455            $C$DW$T$29      .dwtag  DW_TAG_typedef
+    1456                    .dwattr $C$DW$T$29, DW_AT_name("__SFR_FARPTR")
+    1457                    .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$28)
+    1458                    .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
+    1459                    .dwattr $C$DW$T$29, DW_AT_decl_file("D:\Program Files\TI CCSv6\ccsv6\ccs_base\msp430\include\m
+    1460                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x47)
+    1461                    .dwattr $C$DW$T$29, DW_AT_decl_column(0x11)
+    1462            
+    1463            $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1464                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   29
+
+    1465                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1466                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1467            
+    1468            $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1469                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1470                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1471                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1472            
+    1473            $C$DW$T$30      .dwtag  DW_TAG_typedef
+    1474                    .dwattr $C$DW$T$30, DW_AT_name("int8_t")
+    1475                    .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$5)
+    1476                    .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+    1477                    .dwattr $C$DW$T$30, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1478                    .dwattr $C$DW$T$30, DW_AT_decl_line(0x2a)
+    1479                    .dwattr $C$DW$T$30, DW_AT_decl_column(0x1e)
+    1480            
+    1481            $C$DW$T$31      .dwtag  DW_TAG_typedef
+    1482                    .dwattr $C$DW$T$31, DW_AT_name("int_least8_t")
+    1483                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$30)
+    1484                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+    1485                    .dwattr $C$DW$T$31, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1486                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x37)
+    1487                    .dwattr $C$DW$T$31, DW_AT_decl_column(0x17)
+    1488            
+    1489            $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1490                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1491                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1492                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1493            
+    1494            $C$DW$T$19      .dwtag  DW_TAG_typedef
+    1495                    .dwattr $C$DW$T$19, DW_AT_name("uint8_t")
+    1496                    .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$6)
+    1497                    .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+    1498                    .dwattr $C$DW$T$19, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1499                    .dwattr $C$DW$T$19, DW_AT_decl_line(0x2b)
+    1500                    .dwattr $C$DW$T$19, DW_AT_decl_column(0x1d)
+    1501            
+    1502            $C$DW$T$39      .dwtag  DW_TAG_typedef
+    1503                    .dwattr $C$DW$T$39, DW_AT_name("uint_least8_t")
+    1504                    .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$19)
+    1505                    .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+    1506                    .dwattr $C$DW$T$39, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1507                    .dwattr $C$DW$T$39, DW_AT_decl_line(0x38)
+    1508                    .dwattr $C$DW$T$39, DW_AT_decl_column(0x16)
+    1509            
+    1510            $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1511                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1512                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1513                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    1514            
+    1515            $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1516                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1517                    .dwattr $C$DW$T$8, DW_AT_name("short")
+    1518                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+    1519            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   30
+
+    1520            $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1521                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1522                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1523                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    1524            
+    1525            $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1526                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1527                    .dwattr $C$DW$T$10, DW_AT_name("int")
+    1528                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+    1529            
+    1530            $C$DW$T$40      .dwtag  DW_TAG_typedef
+    1531                    .dwattr $C$DW$T$40, DW_AT_name("int16_t")
+    1532                    .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$10)
+    1533                    .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+    1534                    .dwattr $C$DW$T$40, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1535                    .dwattr $C$DW$T$40, DW_AT_decl_line(0x2c)
+    1536                    .dwattr $C$DW$T$40, DW_AT_decl_column(0x1d)
+    1537            
+    1538            $C$DW$T$41      .dwtag  DW_TAG_typedef
+    1539                    .dwattr $C$DW$T$41, DW_AT_name("int_fast16_t")
+    1540                    .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$40)
+    1541                    .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+    1542                    .dwattr $C$DW$T$41, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1543                    .dwattr $C$DW$T$41, DW_AT_decl_line(0x47)
+    1544                    .dwattr $C$DW$T$41, DW_AT_decl_column(0x17)
+    1545            
+    1546            $C$DW$T$42      .dwtag  DW_TAG_typedef
+    1547                    .dwattr $C$DW$T$42, DW_AT_name("int_fast8_t")
+    1548                    .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$40)
+    1549                    .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+    1550                    .dwattr $C$DW$T$42, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1551                    .dwattr $C$DW$T$42, DW_AT_decl_line(0x45)
+    1552                    .dwattr $C$DW$T$42, DW_AT_decl_column(0x17)
+    1553            
+    1554            $C$DW$T$43      .dwtag  DW_TAG_typedef
+    1555                    .dwattr $C$DW$T$43, DW_AT_name("int_least16_t")
+    1556                    .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$40)
+    1557                    .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    1558                    .dwattr $C$DW$T$43, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1559                    .dwattr $C$DW$T$43, DW_AT_decl_line(0x3a)
+    1560                    .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
+    1561            
+    1562            $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1563                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1564                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1565                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+    1566            
+    1567            $C$DW$T$20      .dwtag  DW_TAG_typedef
+    1568                    .dwattr $C$DW$T$20, DW_AT_name("uint16_t")
+    1569                    .dwattr $C$DW$T$20, DW_AT_type(*$C$DW$T$11)
+    1570                    .dwattr $C$DW$T$20, DW_AT_language(DW_LANG_C)
+    1571                    .dwattr $C$DW$T$20, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1572                    .dwattr $C$DW$T$20, DW_AT_decl_line(0x2d)
+    1573                    .dwattr $C$DW$T$20, DW_AT_decl_column(0x1c)
+    1574            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   31
+
+    1575            $C$DW$T$46      .dwtag  DW_TAG_typedef
+    1576                    .dwattr $C$DW$T$46, DW_AT_name("uint_fast16_t")
+    1577                    .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$20)
+    1578                    .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+    1579                    .dwattr $C$DW$T$46, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1580                    .dwattr $C$DW$T$46, DW_AT_decl_line(0x48)
+    1581                    .dwattr $C$DW$T$46, DW_AT_decl_column(0x16)
+    1582            
+    1583            $C$DW$T$47      .dwtag  DW_TAG_typedef
+    1584                    .dwattr $C$DW$T$47, DW_AT_name("uint_fast8_t")
+    1585                    .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$20)
+    1586                    .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+    1587                    .dwattr $C$DW$T$47, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1588                    .dwattr $C$DW$T$47, DW_AT_decl_line(0x46)
+    1589                    .dwattr $C$DW$T$47, DW_AT_decl_column(0x16)
+    1590            
+    1591            $C$DW$T$48      .dwtag  DW_TAG_typedef
+    1592                    .dwattr $C$DW$T$48, DW_AT_name("uint_least16_t")
+    1593                    .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$20)
+    1594                    .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+    1595                    .dwattr $C$DW$T$48, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1596                    .dwattr $C$DW$T$48, DW_AT_decl_line(0x3b)
+    1597                    .dwattr $C$DW$T$48, DW_AT_decl_column(0x16)
+    1598            
+    1599            $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1600                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1601                    .dwattr $C$DW$T$12, DW_AT_name("long")
+    1602                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1603            
+    1604            $C$DW$T$49      .dwtag  DW_TAG_typedef
+    1605                    .dwattr $C$DW$T$49, DW_AT_name("int32_t")
+    1606                    .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$12)
+    1607                    .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    1608                    .dwattr $C$DW$T$49, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1609                    .dwattr $C$DW$T$49, DW_AT_decl_line(0x2e)
+    1610                    .dwattr $C$DW$T$49, DW_AT_decl_column(0x1d)
+    1611            
+    1612            $C$DW$T$50      .dwtag  DW_TAG_typedef
+    1613                    .dwattr $C$DW$T$50, DW_AT_name("int_fast32_t")
+    1614                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$49)
+    1615                    .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    1616                    .dwattr $C$DW$T$50, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1617                    .dwattr $C$DW$T$50, DW_AT_decl_line(0x4a)
+    1618                    .dwattr $C$DW$T$50, DW_AT_decl_column(0x17)
+    1619            
+    1620            $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1621                    .dwattr $C$DW$T$51, DW_AT_name("int_least32_t")
+    1622                    .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$49)
+    1623                    .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1624                    .dwattr $C$DW$T$51, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1625                    .dwattr $C$DW$T$51, DW_AT_decl_line(0x3c)
+    1626                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x17)
+    1627            
+    1628            $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1629                    .dwattr $C$DW$T$52, DW_AT_name("intptr_t")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   32
+
+    1630                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$12)
+    1631                    .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1632                    .dwattr $C$DW$T$52, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1633                    .dwattr $C$DW$T$52, DW_AT_decl_line(0x55)
+    1634                    .dwattr $C$DW$T$52, DW_AT_decl_column(0x1b)
+    1635            
+    1636            $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1637                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1638                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1639                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1640            
+    1641            $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1642                    .dwattr $C$DW$T$54, DW_AT_name("uint32_t")
+    1643                    .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$13)
+    1644                    .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1645                    .dwattr $C$DW$T$54, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1646                    .dwattr $C$DW$T$54, DW_AT_decl_line(0x2f)
+    1647                    .dwattr $C$DW$T$54, DW_AT_decl_column(0x1c)
+    1648            
+    1649            $C$DW$T$56      .dwtag  DW_TAG_typedef
+    1650                    .dwattr $C$DW$T$56, DW_AT_name("uint_fast32_t")
+    1651                    .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$54)
+    1652                    .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    1653                    .dwattr $C$DW$T$56, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1654                    .dwattr $C$DW$T$56, DW_AT_decl_line(0x4b)
+    1655                    .dwattr $C$DW$T$56, DW_AT_decl_column(0x16)
+    1656            
+    1657            $C$DW$T$57      .dwtag  DW_TAG_typedef
+    1658                    .dwattr $C$DW$T$57, DW_AT_name("uint_least32_t")
+    1659                    .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$54)
+    1660                    .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    1661                    .dwattr $C$DW$T$57, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1662                    .dwattr $C$DW$T$57, DW_AT_decl_line(0x3d)
+    1663                    .dwattr $C$DW$T$57, DW_AT_decl_column(0x16)
+    1664            
+    1665            $C$DW$T$58      .dwtag  DW_TAG_typedef
+    1666                    .dwattr $C$DW$T$58, DW_AT_name("uintptr_t")
+    1667                    .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$13)
+    1668                    .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1669                    .dwattr $C$DW$T$58, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1670                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x56)
+    1671                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x1b)
+    1672            
+    1673            $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1674                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1675                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1676                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1677            
+    1678            $C$DW$T$59      .dwtag  DW_TAG_typedef
+    1679                    .dwattr $C$DW$T$59, DW_AT_name("int64_t")
+    1680                    .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$14)
+    1681                    .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    1682                    .dwattr $C$DW$T$59, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1683                    .dwattr $C$DW$T$59, DW_AT_decl_line(0x32)
+    1684                    .dwattr $C$DW$T$59, DW_AT_decl_column(0x21)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   33
+
+    1685            
+    1686            $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1687                    .dwattr $C$DW$T$60, DW_AT_name("int_fast64_t")
+    1688                    .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$59)
+    1689                    .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1690                    .dwattr $C$DW$T$60, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1691                    .dwattr $C$DW$T$60, DW_AT_decl_line(0x4e)
+    1692                    .dwattr $C$DW$T$60, DW_AT_decl_column(0x17)
+    1693            
+    1694            $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1695                    .dwattr $C$DW$T$61, DW_AT_name("int_least64_t")
+    1696                    .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$59)
+    1697                    .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1698                    .dwattr $C$DW$T$61, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1699                    .dwattr $C$DW$T$61, DW_AT_decl_line(0x40)
+    1700                    .dwattr $C$DW$T$61, DW_AT_decl_column(0x17)
+    1701            
+    1702            $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1703                    .dwattr $C$DW$T$62, DW_AT_name("intmax_t")
+    1704                    .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$14)
+    1705                    .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1706                    .dwattr $C$DW$T$62, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1707                    .dwattr $C$DW$T$62, DW_AT_decl_line(0x5d)
+    1708                    .dwattr $C$DW$T$62, DW_AT_decl_column(0x20)
+    1709            
+    1710            $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1711                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1712                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1713                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    1714            
+    1715            $C$DW$T$63      .dwtag  DW_TAG_typedef
+    1716                    .dwattr $C$DW$T$63, DW_AT_name("uint64_t")
+    1717                    .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$15)
+    1718                    .dwattr $C$DW$T$63, DW_AT_language(DW_LANG_C)
+    1719                    .dwattr $C$DW$T$63, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1720                    .dwattr $C$DW$T$63, DW_AT_decl_line(0x33)
+    1721                    .dwattr $C$DW$T$63, DW_AT_decl_column(0x20)
+    1722            
+    1723            $C$DW$T$64      .dwtag  DW_TAG_typedef
+    1724                    .dwattr $C$DW$T$64, DW_AT_name("uint_fast64_t")
+    1725                    .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$63)
+    1726                    .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1727                    .dwattr $C$DW$T$64, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1728                    .dwattr $C$DW$T$64, DW_AT_decl_line(0x4f)
+    1729                    .dwattr $C$DW$T$64, DW_AT_decl_column(0x16)
+    1730            
+    1731            $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1732                    .dwattr $C$DW$T$65, DW_AT_name("uint_least64_t")
+    1733                    .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$63)
+    1734                    .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    1735                    .dwattr $C$DW$T$65, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1736                    .dwattr $C$DW$T$65, DW_AT_decl_line(0x41)
+    1737                    .dwattr $C$DW$T$65, DW_AT_decl_column(0x16)
+    1738            
+    1739            $C$DW$T$66      .dwtag  DW_TAG_typedef
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   34
+
+    1740                    .dwattr $C$DW$T$66, DW_AT_name("uintmax_t")
+    1741                    .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$15)
+    1742                    .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1743                    .dwattr $C$DW$T$66, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1744                    .dwattr $C$DW$T$66, DW_AT_decl_line(0x5e)
+    1745                    .dwattr $C$DW$T$66, DW_AT_decl_column(0x20)
+    1746            
+    1747            $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1748                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1749                    .dwattr $C$DW$T$16, DW_AT_name("float")
+    1750                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    1751            
+    1752            $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1753                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1754                    .dwattr $C$DW$T$17, DW_AT_name("double")
+    1755                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    1756            
+    1757            $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1758                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1759                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1760                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    1761            
+    1762            $C$DW$T$67      .dwtag  DW_TAG_base_type
+    1763                    .dwattr $C$DW$T$67, DW_AT_encoding(DW_ATE_unsigned_char)
+    1764                    .dwattr $C$DW$T$67, DW_AT_name("unsigned char")
+    1765                    .dwattr $C$DW$T$67, DW_AT_byte_size(0x01)
+    1766            
+    1767                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1768            
+    1769            ;***************************************************************
+    1770            ;* DWARF CIE ENTRIES                                           *
+    1771            ;***************************************************************
+    1772            
+    1773            $C$DW$CIE       .dwcie 16
+    1774                    .dwcfi  cfa_register, 1
+    1775                    .dwcfi  cfa_offset, 0
+    1776                    .dwcfi  same_value, 0
+    1777                    .dwcfi  same_value, 1
+    1778                    .dwcfi  undefined, 2
+    1779                    .dwcfi  same_value, 3
+    1780                    .dwcfi  same_value, 4
+    1781                    .dwcfi  same_value, 5
+    1782                    .dwcfi  same_value, 6
+    1783                    .dwcfi  same_value, 7
+    1784                    .dwcfi  same_value, 8
+    1785                    .dwcfi  same_value, 9
+    1786                    .dwcfi  same_value, 10
+    1787                    .dwcfi  undefined, 11
+    1788                    .dwcfi  undefined, 12
+    1789                    .dwcfi  undefined, 13
+    1790                    .dwcfi  undefined, 14
+    1791                    .dwcfi  undefined, 15
+    1792                    .dwcfi  undefined, 16
+    1793                    .dwendentry
+    1794            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   35
+
+    1795            ;***************************************************************
+    1796            ;* DWARF REGISTER MAP                                          *
+    1797            ;***************************************************************
+    1798            
+    1799            $C$DW$88        .dwtag  DW_TAG_TI_assign_register
+    1800                    .dwattr $C$DW$88, DW_AT_name("PC")
+    1801                    .dwattr $C$DW$88, DW_AT_location[DW_OP_reg0]
+    1802            
+    1803            $C$DW$89        .dwtag  DW_TAG_TI_assign_register
+    1804                    .dwattr $C$DW$89, DW_AT_name("SP")
+    1805                    .dwattr $C$DW$89, DW_AT_location[DW_OP_reg1]
+    1806            
+    1807            $C$DW$90        .dwtag  DW_TAG_TI_assign_register
+    1808                    .dwattr $C$DW$90, DW_AT_name("SR")
+    1809                    .dwattr $C$DW$90, DW_AT_location[DW_OP_reg2]
+    1810            
+    1811            $C$DW$91        .dwtag  DW_TAG_TI_assign_register
+    1812                    .dwattr $C$DW$91, DW_AT_name("CG")
+    1813                    .dwattr $C$DW$91, DW_AT_location[DW_OP_reg3]
+    1814            
+    1815            $C$DW$92        .dwtag  DW_TAG_TI_assign_register
+    1816                    .dwattr $C$DW$92, DW_AT_name("r4")
+    1817                    .dwattr $C$DW$92, DW_AT_location[DW_OP_reg4]
+    1818            
+    1819            $C$DW$93        .dwtag  DW_TAG_TI_assign_register
+    1820                    .dwattr $C$DW$93, DW_AT_name("r5")
+    1821                    .dwattr $C$DW$93, DW_AT_location[DW_OP_reg5]
+    1822            
+    1823            $C$DW$94        .dwtag  DW_TAG_TI_assign_register
+    1824                    .dwattr $C$DW$94, DW_AT_name("r6")
+    1825                    .dwattr $C$DW$94, DW_AT_location[DW_OP_reg6]
+    1826            
+    1827            $C$DW$95        .dwtag  DW_TAG_TI_assign_register
+    1828                    .dwattr $C$DW$95, DW_AT_name("r7")
+    1829                    .dwattr $C$DW$95, DW_AT_location[DW_OP_reg7]
+    1830            
+    1831            $C$DW$96        .dwtag  DW_TAG_TI_assign_register
+    1832                    .dwattr $C$DW$96, DW_AT_name("r8")
+    1833                    .dwattr $C$DW$96, DW_AT_location[DW_OP_reg8]
+    1834            
+    1835            $C$DW$97        .dwtag  DW_TAG_TI_assign_register
+    1836                    .dwattr $C$DW$97, DW_AT_name("r9")
+    1837                    .dwattr $C$DW$97, DW_AT_location[DW_OP_reg9]
+    1838            
+    1839            $C$DW$98        .dwtag  DW_TAG_TI_assign_register
+    1840                    .dwattr $C$DW$98, DW_AT_name("r10")
+    1841                    .dwattr $C$DW$98, DW_AT_location[DW_OP_reg10]
+    1842            
+    1843            $C$DW$99        .dwtag  DW_TAG_TI_assign_register
+    1844                    .dwattr $C$DW$99, DW_AT_name("r11")
+    1845                    .dwattr $C$DW$99, DW_AT_location[DW_OP_reg11]
+    1846            
+    1847            $C$DW$100       .dwtag  DW_TAG_TI_assign_register
+    1848                    .dwattr $C$DW$100, DW_AT_name("r12")
+    1849                    .dwattr $C$DW$100, DW_AT_location[DW_OP_reg12]
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:22:58 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\105202                            PAGE   36
+
+    1850            
+    1851            $C$DW$101       .dwtag  DW_TAG_TI_assign_register
+    1852                    .dwattr $C$DW$101, DW_AT_name("r13")
+    1853                    .dwattr $C$DW$101, DW_AT_location[DW_OP_reg13]
+    1854            
+    1855            $C$DW$102       .dwtag  DW_TAG_TI_assign_register
+    1856                    .dwattr $C$DW$102, DW_AT_name("r14")
+    1857                    .dwattr $C$DW$102, DW_AT_location[DW_OP_reg14]
+    1858            
+    1859            $C$DW$103       .dwtag  DW_TAG_TI_assign_register
+    1860                    .dwattr $C$DW$103, DW_AT_name("r15")
+    1861                    .dwattr $C$DW$103, DW_AT_location[DW_OP_reg15]
+    1862            
+    1863            $C$DW$104       .dwtag  DW_TAG_TI_assign_register
+    1864                    .dwattr $C$DW$104, DW_AT_name("CIE_RETA")
+    1865                    .dwattr $C$DW$104, DW_AT_location[DW_OP_reg16]
+    1866            
+    1867                    .dwendtag $C$DW$CU
+    1868            
+
+No Assembly Errors, No Assembly Warnings

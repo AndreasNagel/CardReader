@@ -1,0 +1,1828 @@
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 C/C++ Codegen                                       PC v15.12.3.LTS *
+       3            ;* Date/Time created: Wed Oct 12 11:18:54 2016                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=large --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../MSP430F5xx_6xx/mpy32.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 C/C++ Codegen PC v15.12.3.LTS Copyright (c) 2003-2
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Programmeerimine\Code Composer WS\CardReader\src\Debug")
+      12            ;       D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\bin\opt430.exe D:/Programmee
+      13 000000               .sect   ".text:MPY32_setWriteDelay"
+      14                    .clink
+      15                    .global MPY32_setWriteDelay
+      16            
+      17            $C$DW$1 .dwtag  DW_TAG_subprogram
+      18                    .dwattr $C$DW$1, DW_AT_name("MPY32_setWriteDelay")
+      19                    .dwattr $C$DW$1, DW_AT_low_pc(MPY32_setWriteDelay)
+      20                    .dwattr $C$DW$1, DW_AT_high_pc(0x00)
+      21                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("MPY32_setWriteDelay")
+      22                    .dwattr $C$DW$1, DW_AT_external
+      23                    .dwattr $C$DW$1, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+      24                    .dwattr $C$DW$1, DW_AT_TI_begin_line(0x34)
+      25                    .dwattr $C$DW$1, DW_AT_TI_begin_column(0x06)
+      26                    .dwattr $C$DW$1, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+      27                    .dwattr $C$DW$1, DW_AT_decl_line(0x34)
+      28                    .dwattr $C$DW$1, DW_AT_decl_column(0x06)
+      29                    .dwattr $C$DW$1, DW_AT_TI_max_frame_size(0x04)
+      30                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 53,column 1,is_stmt,address MPY32_setWriteDelay,
+      31            
+      32                    .dwfde $C$DW$CIE, MPY32_setWriteDelay
+      33            $C$DW$2 .dwtag  DW_TAG_formal_parameter
+      34                    .dwattr $C$DW$2, DW_AT_name("writeDelaySelect")
+      35                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("writeDelaySelect")
+      36                    .dwattr $C$DW$2, DW_AT_type(*$C$DW$T$19)
+      37                    .dwattr $C$DW$2, DW_AT_location[DW_OP_reg12]
+      38            
+      39            
+      40            ;*****************************************************************************
+      41            ;* FUNCTION NAME: MPY32_setWriteDelay                                        *
+      42            ;*                                                                           *
+      43            ;*   Regs Modified     : SP,SR                                               *
+      44            ;*   Regs Used         : SP,SR,r12                                           *
+      45            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      46            ;*****************************************************************************
+      47 000000       MPY32_setWriteDelay:
+      48            ;* --------------------------------------------------------------------------*
+      49                    .dwcfi  cfa_offset, 4
+      50                    .dwcfi  save_reg_to_mem, 16, -4
+      51            ;* r12   assigned to writeDelaySelect
+      52            $C$DW$3 .dwtag  DW_TAG_variable
+      53                    .dwattr $C$DW$3, DW_AT_name("writeDelaySelect")
+      54                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("writeDelaySelect")
+      55                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$19)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    2
+
+      56                    .dwattr $C$DW$3, DW_AT_location[DW_OP_reg12]
+      57            
+      58                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 54,column 5,is_stmt,isa 0
+      59 000000 F0B2          AND.W     #64767,&0x4ec         ; [] |54| 
+         000002 FCFF 
+         000004 04EC 
+      60                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 55,column 5,is_stmt,isa 0
+      61 000006 DC82          OR.W      r12,&0x4ec            ; [] |55| 
+         000008 04EC 
+      62                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 56,column 1,is_stmt,isa 0
+      63            $C$DW$4 .dwtag  DW_TAG_TI_branch
+      64                    .dwattr $C$DW$4, DW_AT_low_pc(0x00)
+      65                    .dwattr $C$DW$4, DW_AT_TI_return
+      66            
+      67 00000a 0110          RETA      ; [] 
+      68                    ; [] 
+      69                    .dwattr $C$DW$1, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+      70                    .dwattr $C$DW$1, DW_AT_TI_end_line(0x38)
+      71                    .dwattr $C$DW$1, DW_AT_TI_end_column(0x01)
+      72                    .dwendentry
+      73                    .dwendtag $C$DW$1
+      74            
+      75 000000               .sect   ".text:MPY32_enableSaturationMode"
+      76                    .clink
+      77                    .global MPY32_enableSaturationMode
+      78            
+      79            $C$DW$5 .dwtag  DW_TAG_subprogram
+      80                    .dwattr $C$DW$5, DW_AT_name("MPY32_enableSaturationMode")
+      81                    .dwattr $C$DW$5, DW_AT_low_pc(MPY32_enableSaturationMode)
+      82                    .dwattr $C$DW$5, DW_AT_high_pc(0x00)
+      83                    .dwattr $C$DW$5, DW_AT_TI_symbol_name("MPY32_enableSaturationMode")
+      84                    .dwattr $C$DW$5, DW_AT_external
+      85                    .dwattr $C$DW$5, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+      86                    .dwattr $C$DW$5, DW_AT_TI_begin_line(0x3a)
+      87                    .dwattr $C$DW$5, DW_AT_TI_begin_column(0x06)
+      88                    .dwattr $C$DW$5, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+      89                    .dwattr $C$DW$5, DW_AT_decl_line(0x3a)
+      90                    .dwattr $C$DW$5, DW_AT_decl_column(0x06)
+      91                    .dwattr $C$DW$5, DW_AT_TI_max_frame_size(0x04)
+      92                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 59,column 1,is_stmt,address MPY32_enableSaturati
+      93            
+      94                    .dwfde $C$DW$CIE, MPY32_enableSaturationMode
+      95            
+      96            ;*****************************************************************************
+      97            ;* FUNCTION NAME: MPY32_enableSaturationMode                                 *
+      98            ;*                                                                           *
+      99            ;*   Regs Modified     : SP                                                  *
+     100            ;*   Regs Used         : SP                                                  *
+     101            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     102            ;*****************************************************************************
+     103 000000       MPY32_enableSaturationMode:
+     104            ;* --------------------------------------------------------------------------*
+     105                    .dwcfi  cfa_offset, 4
+     106                    .dwcfi  save_reg_to_mem, 16, -4
+     107                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 60,column 5,is_stmt,isa 0
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    3
+
+     108 000000 D2F2          OR.B      #8,&0x4ec             ; [] |60| 
+         000002 04EC 
+     109                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 61,column 1,is_stmt,isa 0
+     110            $C$DW$6 .dwtag  DW_TAG_TI_branch
+     111                    .dwattr $C$DW$6, DW_AT_low_pc(0x00)
+     112                    .dwattr $C$DW$6, DW_AT_TI_return
+     113            
+     114 000004 0110          RETA      ; [] 
+     115                    ; [] 
+     116                    .dwattr $C$DW$5, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     117                    .dwattr $C$DW$5, DW_AT_TI_end_line(0x3d)
+     118                    .dwattr $C$DW$5, DW_AT_TI_end_column(0x01)
+     119                    .dwendentry
+     120                    .dwendtag $C$DW$5
+     121            
+     122 000000               .sect   ".text:MPY32_disableSaturationMode"
+     123                    .clink
+     124                    .global MPY32_disableSaturationMode
+     125            
+     126            $C$DW$7 .dwtag  DW_TAG_subprogram
+     127                    .dwattr $C$DW$7, DW_AT_name("MPY32_disableSaturationMode")
+     128                    .dwattr $C$DW$7, DW_AT_low_pc(MPY32_disableSaturationMode)
+     129                    .dwattr $C$DW$7, DW_AT_high_pc(0x00)
+     130                    .dwattr $C$DW$7, DW_AT_TI_symbol_name("MPY32_disableSaturationMode")
+     131                    .dwattr $C$DW$7, DW_AT_external
+     132                    .dwattr $C$DW$7, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     133                    .dwattr $C$DW$7, DW_AT_TI_begin_line(0x3f)
+     134                    .dwattr $C$DW$7, DW_AT_TI_begin_column(0x06)
+     135                    .dwattr $C$DW$7, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     136                    .dwattr $C$DW$7, DW_AT_decl_line(0x3f)
+     137                    .dwattr $C$DW$7, DW_AT_decl_column(0x06)
+     138                    .dwattr $C$DW$7, DW_AT_TI_max_frame_size(0x04)
+     139                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 64,column 1,is_stmt,address MPY32_disableSaturat
+     140            
+     141                    .dwfde $C$DW$CIE, MPY32_disableSaturationMode
+     142            
+     143            ;*****************************************************************************
+     144            ;* FUNCTION NAME: MPY32_disableSaturationMode                                *
+     145            ;*                                                                           *
+     146            ;*   Regs Modified     : SP                                                  *
+     147            ;*   Regs Used         : SP                                                  *
+     148            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     149            ;*****************************************************************************
+     150 000000       MPY32_disableSaturationMode:
+     151            ;* --------------------------------------------------------------------------*
+     152                    .dwcfi  cfa_offset, 4
+     153                    .dwcfi  save_reg_to_mem, 16, -4
+     154                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 65,column 5,is_stmt,isa 0
+     155 000000 C2F2          BIC.B     #8,&0x4ec             ; [] |65| 
+         000002 04EC 
+     156                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 66,column 1,is_stmt,isa 0
+     157            $C$DW$8 .dwtag  DW_TAG_TI_branch
+     158                    .dwattr $C$DW$8, DW_AT_low_pc(0x00)
+     159                    .dwattr $C$DW$8, DW_AT_TI_return
+     160            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    4
+
+     161 000004 0110          RETA      ; [] 
+     162                    ; [] 
+     163                    .dwattr $C$DW$7, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     164                    .dwattr $C$DW$7, DW_AT_TI_end_line(0x42)
+     165                    .dwattr $C$DW$7, DW_AT_TI_end_column(0x01)
+     166                    .dwendentry
+     167                    .dwendtag $C$DW$7
+     168            
+     169 000000               .sect   ".text:MPY32_getSaturationMode"
+     170                    .clink
+     171                    .global MPY32_getSaturationMode
+     172            
+     173            $C$DW$9 .dwtag  DW_TAG_subprogram
+     174                    .dwattr $C$DW$9, DW_AT_name("MPY32_getSaturationMode")
+     175                    .dwattr $C$DW$9, DW_AT_low_pc(MPY32_getSaturationMode)
+     176                    .dwattr $C$DW$9, DW_AT_high_pc(0x00)
+     177                    .dwattr $C$DW$9, DW_AT_TI_symbol_name("MPY32_getSaturationMode")
+     178                    .dwattr $C$DW$9, DW_AT_external
+     179                    .dwattr $C$DW$9, DW_AT_type(*$C$DW$T$22)
+     180                    .dwattr $C$DW$9, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     181                    .dwattr $C$DW$9, DW_AT_TI_begin_line(0x44)
+     182                    .dwattr $C$DW$9, DW_AT_TI_begin_column(0x09)
+     183                    .dwattr $C$DW$9, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     184                    .dwattr $C$DW$9, DW_AT_decl_line(0x44)
+     185                    .dwattr $C$DW$9, DW_AT_decl_column(0x09)
+     186                    .dwattr $C$DW$9, DW_AT_TI_max_frame_size(0x04)
+     187                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 69,column 1,is_stmt,address MPY32_getSaturationM
+     188            
+     189                    .dwfde $C$DW$CIE, MPY32_getSaturationMode
+     190            
+     191            ;*****************************************************************************
+     192            ;* FUNCTION NAME: MPY32_getSaturationMode                                    *
+     193            ;*                                                                           *
+     194            ;*   Regs Modified     : SP,SR,r12                                           *
+     195            ;*   Regs Used         : SP,SR,r12                                           *
+     196            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     197            ;*****************************************************************************
+     198 000000       MPY32_getSaturationMode:
+     199            ;* --------------------------------------------------------------------------*
+     200                    .dwcfi  cfa_offset, 4
+     201                    .dwcfi  save_reg_to_mem, 16, -4
+     202                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 70,column 5,is_stmt,isa 0
+     203 000000 423C          MOV.W     #8,r12                ; [] |70| 
+     204 000002 F25C          AND.B     &0x4ec,r12            ; [] |70| 
+         000004 04EC 
+     205                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 71,column 1,is_stmt,isa 0
+     206            $C$DW$10        .dwtag  DW_TAG_TI_branch
+     207                    .dwattr $C$DW$10, DW_AT_low_pc(0x00)
+     208                    .dwattr $C$DW$10, DW_AT_TI_return
+     209            
+     210 000006 0110          RETA      ; [] 
+     211                    ; [] 
+     212                    .dwattr $C$DW$9, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     213                    .dwattr $C$DW$9, DW_AT_TI_end_line(0x47)
+     214                    .dwattr $C$DW$9, DW_AT_TI_end_column(0x01)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    5
+
+     215                    .dwendentry
+     216                    .dwendtag $C$DW$9
+     217            
+     218 000000               .sect   ".text:MPY32_enableFractionalMode"
+     219                    .clink
+     220                    .global MPY32_enableFractionalMode
+     221            
+     222            $C$DW$11        .dwtag  DW_TAG_subprogram
+     223                    .dwattr $C$DW$11, DW_AT_name("MPY32_enableFractionalMode")
+     224                    .dwattr $C$DW$11, DW_AT_low_pc(MPY32_enableFractionalMode)
+     225                    .dwattr $C$DW$11, DW_AT_high_pc(0x00)
+     226                    .dwattr $C$DW$11, DW_AT_TI_symbol_name("MPY32_enableFractionalMode")
+     227                    .dwattr $C$DW$11, DW_AT_external
+     228                    .dwattr $C$DW$11, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     229                    .dwattr $C$DW$11, DW_AT_TI_begin_line(0x49)
+     230                    .dwattr $C$DW$11, DW_AT_TI_begin_column(0x06)
+     231                    .dwattr $C$DW$11, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     232                    .dwattr $C$DW$11, DW_AT_decl_line(0x49)
+     233                    .dwattr $C$DW$11, DW_AT_decl_column(0x06)
+     234                    .dwattr $C$DW$11, DW_AT_TI_max_frame_size(0x04)
+     235                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 74,column 1,is_stmt,address MPY32_enableFraction
+     236            
+     237                    .dwfde $C$DW$CIE, MPY32_enableFractionalMode
+     238            
+     239            ;*****************************************************************************
+     240            ;* FUNCTION NAME: MPY32_enableFractionalMode                                 *
+     241            ;*                                                                           *
+     242            ;*   Regs Modified     : SP                                                  *
+     243            ;*   Regs Used         : SP                                                  *
+     244            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     245            ;*****************************************************************************
+     246 000000       MPY32_enableFractionalMode:
+     247            ;* --------------------------------------------------------------------------*
+     248                    .dwcfi  cfa_offset, 4
+     249                    .dwcfi  save_reg_to_mem, 16, -4
+     250                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 75,column 5,is_stmt,isa 0
+     251 000000 D2E2          OR.B      #4,&0x4ec             ; [] |75| 
+         000002 04EC 
+     252                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 76,column 1,is_stmt,isa 0
+     253            $C$DW$12        .dwtag  DW_TAG_TI_branch
+     254                    .dwattr $C$DW$12, DW_AT_low_pc(0x00)
+     255                    .dwattr $C$DW$12, DW_AT_TI_return
+     256            
+     257 000004 0110          RETA      ; [] 
+     258                    ; [] 
+     259                    .dwattr $C$DW$11, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     260                    .dwattr $C$DW$11, DW_AT_TI_end_line(0x4c)
+     261                    .dwattr $C$DW$11, DW_AT_TI_end_column(0x01)
+     262                    .dwendentry
+     263                    .dwendtag $C$DW$11
+     264            
+     265 000000               .sect   ".text:MPY32_disableFractionalMode"
+     266                    .clink
+     267                    .global MPY32_disableFractionalMode
+     268            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    6
+
+     269            $C$DW$13        .dwtag  DW_TAG_subprogram
+     270                    .dwattr $C$DW$13, DW_AT_name("MPY32_disableFractionalMode")
+     271                    .dwattr $C$DW$13, DW_AT_low_pc(MPY32_disableFractionalMode)
+     272                    .dwattr $C$DW$13, DW_AT_high_pc(0x00)
+     273                    .dwattr $C$DW$13, DW_AT_TI_symbol_name("MPY32_disableFractionalMode")
+     274                    .dwattr $C$DW$13, DW_AT_external
+     275                    .dwattr $C$DW$13, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     276                    .dwattr $C$DW$13, DW_AT_TI_begin_line(0x4e)
+     277                    .dwattr $C$DW$13, DW_AT_TI_begin_column(0x06)
+     278                    .dwattr $C$DW$13, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     279                    .dwattr $C$DW$13, DW_AT_decl_line(0x4e)
+     280                    .dwattr $C$DW$13, DW_AT_decl_column(0x06)
+     281                    .dwattr $C$DW$13, DW_AT_TI_max_frame_size(0x04)
+     282                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 79,column 1,is_stmt,address MPY32_disableFractio
+     283            
+     284                    .dwfde $C$DW$CIE, MPY32_disableFractionalMode
+     285            
+     286            ;*****************************************************************************
+     287            ;* FUNCTION NAME: MPY32_disableFractionalMode                                *
+     288            ;*                                                                           *
+     289            ;*   Regs Modified     : SP                                                  *
+     290            ;*   Regs Used         : SP                                                  *
+     291            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     292            ;*****************************************************************************
+     293 000000       MPY32_disableFractionalMode:
+     294            ;* --------------------------------------------------------------------------*
+     295                    .dwcfi  cfa_offset, 4
+     296                    .dwcfi  save_reg_to_mem, 16, -4
+     297                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 80,column 5,is_stmt,isa 0
+     298 000000 C2E2          BIC.B     #4,&0x4ec             ; [] |80| 
+         000002 04EC 
+     299                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 81,column 1,is_stmt,isa 0
+     300            $C$DW$14        .dwtag  DW_TAG_TI_branch
+     301                    .dwattr $C$DW$14, DW_AT_low_pc(0x00)
+     302                    .dwattr $C$DW$14, DW_AT_TI_return
+     303            
+     304 000004 0110          RETA      ; [] 
+     305                    ; [] 
+     306                    .dwattr $C$DW$13, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     307                    .dwattr $C$DW$13, DW_AT_TI_end_line(0x51)
+     308                    .dwattr $C$DW$13, DW_AT_TI_end_column(0x01)
+     309                    .dwendentry
+     310                    .dwendtag $C$DW$13
+     311            
+     312 000000               .sect   ".text:MPY32_getFractionalMode"
+     313                    .clink
+     314                    .global MPY32_getFractionalMode
+     315            
+     316            $C$DW$15        .dwtag  DW_TAG_subprogram
+     317                    .dwattr $C$DW$15, DW_AT_name("MPY32_getFractionalMode")
+     318                    .dwattr $C$DW$15, DW_AT_low_pc(MPY32_getFractionalMode)
+     319                    .dwattr $C$DW$15, DW_AT_high_pc(0x00)
+     320                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("MPY32_getFractionalMode")
+     321                    .dwattr $C$DW$15, DW_AT_external
+     322                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$22)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    7
+
+     323                    .dwattr $C$DW$15, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     324                    .dwattr $C$DW$15, DW_AT_TI_begin_line(0x53)
+     325                    .dwattr $C$DW$15, DW_AT_TI_begin_column(0x09)
+     326                    .dwattr $C$DW$15, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     327                    .dwattr $C$DW$15, DW_AT_decl_line(0x53)
+     328                    .dwattr $C$DW$15, DW_AT_decl_column(0x09)
+     329                    .dwattr $C$DW$15, DW_AT_TI_max_frame_size(0x04)
+     330                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 84,column 1,is_stmt,address MPY32_getFractionalM
+     331            
+     332                    .dwfde $C$DW$CIE, MPY32_getFractionalMode
+     333            
+     334            ;*****************************************************************************
+     335            ;* FUNCTION NAME: MPY32_getFractionalMode                                    *
+     336            ;*                                                                           *
+     337            ;*   Regs Modified     : SP,SR,r12                                           *
+     338            ;*   Regs Used         : SP,SR,r12                                           *
+     339            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     340            ;*****************************************************************************
+     341 000000       MPY32_getFractionalMode:
+     342            ;* --------------------------------------------------------------------------*
+     343                    .dwcfi  cfa_offset, 4
+     344                    .dwcfi  save_reg_to_mem, 16, -4
+     345                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 85,column 5,is_stmt,isa 0
+     346 000000 422C          MOV.W     #4,r12                ; [] |85| 
+     347 000002 F25C          AND.B     &0x4ec,r12            ; [] |85| 
+         000004 04EC 
+     348                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 86,column 1,is_stmt,isa 0
+     349            $C$DW$16        .dwtag  DW_TAG_TI_branch
+     350                    .dwattr $C$DW$16, DW_AT_low_pc(0x00)
+     351                    .dwattr $C$DW$16, DW_AT_TI_return
+     352            
+     353 000006 0110          RETA      ; [] 
+     354                    ; [] 
+     355                    .dwattr $C$DW$15, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     356                    .dwattr $C$DW$15, DW_AT_TI_end_line(0x56)
+     357                    .dwattr $C$DW$15, DW_AT_TI_end_column(0x01)
+     358                    .dwendentry
+     359                    .dwendtag $C$DW$15
+     360            
+     361 000000               .sect   ".text:MPY32_setOperandOne8Bit"
+     362                    .clink
+     363                    .global MPY32_setOperandOne8Bit
+     364            
+     365            $C$DW$17        .dwtag  DW_TAG_subprogram
+     366                    .dwattr $C$DW$17, DW_AT_name("MPY32_setOperandOne8Bit")
+     367                    .dwattr $C$DW$17, DW_AT_low_pc(MPY32_setOperandOne8Bit)
+     368                    .dwattr $C$DW$17, DW_AT_high_pc(0x00)
+     369                    .dwattr $C$DW$17, DW_AT_TI_symbol_name("MPY32_setOperandOne8Bit")
+     370                    .dwattr $C$DW$17, DW_AT_external
+     371                    .dwattr $C$DW$17, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     372                    .dwattr $C$DW$17, DW_AT_TI_begin_line(0x58)
+     373                    .dwattr $C$DW$17, DW_AT_TI_begin_column(0x06)
+     374                    .dwattr $C$DW$17, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     375                    .dwattr $C$DW$17, DW_AT_decl_line(0x58)
+     376                    .dwattr $C$DW$17, DW_AT_decl_column(0x06)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    8
+
+     377                    .dwattr $C$DW$17, DW_AT_TI_max_frame_size(0x04)
+     378                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 90,column 1,is_stmt,address MPY32_setOperandOne8
+     379            
+     380                    .dwfde $C$DW$CIE, MPY32_setOperandOne8Bit
+     381            $C$DW$18        .dwtag  DW_TAG_formal_parameter
+     382                    .dwattr $C$DW$18, DW_AT_name("multiplicationType")
+     383                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("multiplicationType")
+     384                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$22)
+     385                    .dwattr $C$DW$18, DW_AT_location[DW_OP_reg12]
+     386            
+     387            $C$DW$19        .dwtag  DW_TAG_formal_parameter
+     388                    .dwattr $C$DW$19, DW_AT_name("operand")
+     389                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("operand")
+     390                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$22)
+     391                    .dwattr $C$DW$19, DW_AT_location[DW_OP_reg13]
+     392            
+     393            
+     394            ;*****************************************************************************
+     395            ;* FUNCTION NAME: MPY32_setOperandOne8Bit                                    *
+     396            ;*                                                                           *
+     397            ;*   Regs Modified     : SP,SR,r12                                           *
+     398            ;*   Regs Used         : SP,SR,r12,r13                                       *
+     399            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     400            ;*****************************************************************************
+     401 000000       MPY32_setOperandOne8Bit:
+     402            ;* --------------------------------------------------------------------------*
+     403                    .dwcfi  cfa_offset, 4
+     404                    .dwcfi  save_reg_to_mem, 16, -4
+     405            ;* r12   assigned to multiplicationType
+     406            $C$DW$20        .dwtag  DW_TAG_variable
+     407                    .dwattr $C$DW$20, DW_AT_name("multiplicationType")
+     408                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("multiplicationType")
+     409                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$22)
+     410                    .dwattr $C$DW$20, DW_AT_location[DW_OP_reg12]
+     411            
+     412            ;* r13   assigned to operand
+     413            $C$DW$21        .dwtag  DW_TAG_variable
+     414                    .dwattr $C$DW$21, DW_AT_name("operand")
+     415                    .dwattr $C$DW$21, DW_AT_TI_symbol_name("operand")
+     416                    .dwattr $C$DW$21, DW_AT_type(*$C$DW$T$22)
+     417                    .dwattr $C$DW$21, DW_AT_location[DW_OP_reg13]
+     418            
+     419                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 91,column 5,is_stmt,isa 0
+     420 000000 4C4C          MOV.B     r12,r12               ; [] |91| 
+     421 000002 503C          ADD.W     #1216,r12             ; [] |91| 
+         000004 04C0 
+     422 000006 4DCC          MOV.B     r13,0(r12)            ; [] |91| 
+         000008 0000 
+     423                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 92,column 1,is_stmt,isa 0
+     424            $C$DW$22        .dwtag  DW_TAG_TI_branch
+     425                    .dwattr $C$DW$22, DW_AT_low_pc(0x00)
+     426                    .dwattr $C$DW$22, DW_AT_TI_return
+     427            
+     428 00000a 0110          RETA      ; [] 
+     429                    ; [] 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE    9
+
+     430                    .dwattr $C$DW$17, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     431                    .dwattr $C$DW$17, DW_AT_TI_end_line(0x5c)
+     432                    .dwattr $C$DW$17, DW_AT_TI_end_column(0x01)
+     433                    .dwendentry
+     434                    .dwendtag $C$DW$17
+     435            
+     436 000000               .sect   ".text:MPY32_setOperandOne16Bit"
+     437                    .clink
+     438                    .global MPY32_setOperandOne16Bit
+     439            
+     440            $C$DW$23        .dwtag  DW_TAG_subprogram
+     441                    .dwattr $C$DW$23, DW_AT_name("MPY32_setOperandOne16Bit")
+     442                    .dwattr $C$DW$23, DW_AT_low_pc(MPY32_setOperandOne16Bit)
+     443                    .dwattr $C$DW$23, DW_AT_high_pc(0x00)
+     444                    .dwattr $C$DW$23, DW_AT_TI_symbol_name("MPY32_setOperandOne16Bit")
+     445                    .dwattr $C$DW$23, DW_AT_external
+     446                    .dwattr $C$DW$23, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     447                    .dwattr $C$DW$23, DW_AT_TI_begin_line(0x5e)
+     448                    .dwattr $C$DW$23, DW_AT_TI_begin_column(0x06)
+     449                    .dwattr $C$DW$23, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     450                    .dwattr $C$DW$23, DW_AT_decl_line(0x5e)
+     451                    .dwattr $C$DW$23, DW_AT_decl_column(0x06)
+     452                    .dwattr $C$DW$23, DW_AT_TI_max_frame_size(0x04)
+     453                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 96,column 1,is_stmt,address MPY32_setOperandOne1
+     454            
+     455                    .dwfde $C$DW$CIE, MPY32_setOperandOne16Bit
+     456            $C$DW$24        .dwtag  DW_TAG_formal_parameter
+     457                    .dwattr $C$DW$24, DW_AT_name("multiplicationType")
+     458                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("multiplicationType")
+     459                    .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$22)
+     460                    .dwattr $C$DW$24, DW_AT_location[DW_OP_reg12]
+     461            
+     462            $C$DW$25        .dwtag  DW_TAG_formal_parameter
+     463                    .dwattr $C$DW$25, DW_AT_name("operand")
+     464                    .dwattr $C$DW$25, DW_AT_TI_symbol_name("operand")
+     465                    .dwattr $C$DW$25, DW_AT_type(*$C$DW$T$19)
+     466                    .dwattr $C$DW$25, DW_AT_location[DW_OP_reg13]
+     467            
+     468            
+     469            ;*****************************************************************************
+     470            ;* FUNCTION NAME: MPY32_setOperandOne16Bit                                   *
+     471            ;*                                                                           *
+     472            ;*   Regs Modified     : SP,SR,r12                                           *
+     473            ;*   Regs Used         : SP,SR,r12,r13                                       *
+     474            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     475            ;*****************************************************************************
+     476 000000       MPY32_setOperandOne16Bit:
+     477            ;* --------------------------------------------------------------------------*
+     478                    .dwcfi  cfa_offset, 4
+     479                    .dwcfi  save_reg_to_mem, 16, -4
+     480            ;* r12   assigned to multiplicationType
+     481            $C$DW$26        .dwtag  DW_TAG_variable
+     482                    .dwattr $C$DW$26, DW_AT_name("multiplicationType")
+     483                    .dwattr $C$DW$26, DW_AT_TI_symbol_name("multiplicationType")
+     484                    .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$22)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   10
+
+     485                    .dwattr $C$DW$26, DW_AT_location[DW_OP_reg12]
+     486            
+     487            ;* r13   assigned to operand
+     488            $C$DW$27        .dwtag  DW_TAG_variable
+     489                    .dwattr $C$DW$27, DW_AT_name("operand")
+     490                    .dwattr $C$DW$27, DW_AT_TI_symbol_name("operand")
+     491                    .dwattr $C$DW$27, DW_AT_type(*$C$DW$T$19)
+     492                    .dwattr $C$DW$27, DW_AT_location[DW_OP_reg13]
+     493            
+     494                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 97,column 5,is_stmt,isa 0
+     495 000000 4C4C          MOV.B     r12,r12               ; [] |97| 
+     496 000002 503C          ADD.W     #1216,r12             ; [] |97| 
+         000004 04C0 
+     497 000006 4D8C          MOV.W     r13,0(r12)            ; [] |97| 
+         000008 0000 
+     498                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 98,column 1,is_stmt,isa 0
+     499            $C$DW$28        .dwtag  DW_TAG_TI_branch
+     500                    .dwattr $C$DW$28, DW_AT_low_pc(0x00)
+     501                    .dwattr $C$DW$28, DW_AT_TI_return
+     502            
+     503 00000a 0110          RETA      ; [] 
+     504                    ; [] 
+     505                    .dwattr $C$DW$23, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     506                    .dwattr $C$DW$23, DW_AT_TI_end_line(0x62)
+     507                    .dwattr $C$DW$23, DW_AT_TI_end_column(0x01)
+     508                    .dwendentry
+     509                    .dwendtag $C$DW$23
+     510            
+     511 000000               .sect   ".text:MPY32_setOperandOne24Bit"
+     512                    .clink
+     513                    .global MPY32_setOperandOne24Bit
+     514            
+     515            $C$DW$29        .dwtag  DW_TAG_subprogram
+     516                    .dwattr $C$DW$29, DW_AT_name("MPY32_setOperandOne24Bit")
+     517                    .dwattr $C$DW$29, DW_AT_low_pc(MPY32_setOperandOne24Bit)
+     518                    .dwattr $C$DW$29, DW_AT_high_pc(0x00)
+     519                    .dwattr $C$DW$29, DW_AT_TI_symbol_name("MPY32_setOperandOne24Bit")
+     520                    .dwattr $C$DW$29, DW_AT_external
+     521                    .dwattr $C$DW$29, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     522                    .dwattr $C$DW$29, DW_AT_TI_begin_line(0x64)
+     523                    .dwattr $C$DW$29, DW_AT_TI_begin_column(0x06)
+     524                    .dwattr $C$DW$29, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     525                    .dwattr $C$DW$29, DW_AT_decl_line(0x64)
+     526                    .dwattr $C$DW$29, DW_AT_decl_column(0x06)
+     527                    .dwattr $C$DW$29, DW_AT_TI_max_frame_size(0x04)
+     528                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 102,column 1,is_stmt,address MPY32_setOperandOne
+     529            
+     530                    .dwfde $C$DW$CIE, MPY32_setOperandOne24Bit
+     531            $C$DW$30        .dwtag  DW_TAG_formal_parameter
+     532                    .dwattr $C$DW$30, DW_AT_name("multiplicationType")
+     533                    .dwattr $C$DW$30, DW_AT_TI_symbol_name("multiplicationType")
+     534                    .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$22)
+     535                    .dwattr $C$DW$30, DW_AT_location[DW_OP_reg12]
+     536            
+     537            $C$DW$31        .dwtag  DW_TAG_formal_parameter
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   11
+
+     538                    .dwattr $C$DW$31, DW_AT_name("operand")
+     539                    .dwattr $C$DW$31, DW_AT_TI_symbol_name("operand")
+     540                    .dwattr $C$DW$31, DW_AT_type(*$C$DW$T$25)
+     541                    .dwattr $C$DW$31, DW_AT_location[DW_OP_reg13 DW_OP_piece 2 DW_OP_reg14 DW_OP_piece 2]
+     542            
+     543            
+     544            ;*****************************************************************************
+     545            ;* FUNCTION NAME: MPY32_setOperandOne24Bit                                   *
+     546            ;*                                                                           *
+     547            ;*   Regs Modified     : SP,SR,r12,r15                                       *
+     548            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     549            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     550            ;*****************************************************************************
+     551 000000       MPY32_setOperandOne24Bit:
+     552            ;* --------------------------------------------------------------------------*
+     553                    .dwcfi  cfa_offset, 4
+     554                    .dwcfi  save_reg_to_mem, 16, -4
+     555            ;* r12   assigned to multiplicationType
+     556            $C$DW$32        .dwtag  DW_TAG_variable
+     557                    .dwattr $C$DW$32, DW_AT_name("multiplicationType")
+     558                    .dwattr $C$DW$32, DW_AT_TI_symbol_name("multiplicationType")
+     559                    .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$22)
+     560                    .dwattr $C$DW$32, DW_AT_location[DW_OP_reg12]
+     561            
+     562            ;* r13   assigned to operand
+     563            $C$DW$33        .dwtag  DW_TAG_variable
+     564                    .dwattr $C$DW$33, DW_AT_name("operand")
+     565                    .dwattr $C$DW$33, DW_AT_TI_symbol_name("operand")
+     566                    .dwattr $C$DW$33, DW_AT_type(*$C$DW$T$25)
+     567                    .dwattr $C$DW$33, DW_AT_location[DW_OP_reg13 DW_OP_piece 2 DW_OP_reg14 DW_OP_piece 2]
+     568            
+     569                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 104,column 5,is_stmt,isa 0
+     570 000000 5C4C          RLA.B     r12                   ; [] |104| 
+     571 000002 4C4F          MOV.B     r12,r15               ; [] |104| 
+     572 000004 503F          ADD.W     #1232,r15             ; [] |104| 
+         000006 04D0 
+     573 000008 4D8F          MOV.W     r13,0(r15)            ; [] |104| 
+         00000a 0000 
+     574                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 105,column 5,is_stmt,isa 0
+     575 00000c 4C4C          MOV.B     r12,r12               ; [] |105| 
+     576 00000e 503C          ADD.W     #1234,r12             ; [] |105| 
+         000010 04D2 
+     577 000012 4ECC          MOV.B     r14,0(r12)            ; [] |105| 
+         000014 0000 
+     578                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 106,column 1,is_stmt,isa 0
+     579            $C$DW$34        .dwtag  DW_TAG_TI_branch
+     580                    .dwattr $C$DW$34, DW_AT_low_pc(0x00)
+     581                    .dwattr $C$DW$34, DW_AT_TI_return
+     582            
+     583 000016 0110          RETA      ; [] 
+     584                    ; [] 
+     585                    .dwattr $C$DW$29, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     586                    .dwattr $C$DW$29, DW_AT_TI_end_line(0x6a)
+     587                    .dwattr $C$DW$29, DW_AT_TI_end_column(0x01)
+     588                    .dwendentry
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   12
+
+     589                    .dwendtag $C$DW$29
+     590            
+     591 000000               .sect   ".text:MPY32_setOperandOne32Bit"
+     592                    .clink
+     593                    .global MPY32_setOperandOne32Bit
+     594            
+     595            $C$DW$35        .dwtag  DW_TAG_subprogram
+     596                    .dwattr $C$DW$35, DW_AT_name("MPY32_setOperandOne32Bit")
+     597                    .dwattr $C$DW$35, DW_AT_low_pc(MPY32_setOperandOne32Bit)
+     598                    .dwattr $C$DW$35, DW_AT_high_pc(0x00)
+     599                    .dwattr $C$DW$35, DW_AT_TI_symbol_name("MPY32_setOperandOne32Bit")
+     600                    .dwattr $C$DW$35, DW_AT_external
+     601                    .dwattr $C$DW$35, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     602                    .dwattr $C$DW$35, DW_AT_TI_begin_line(0x6c)
+     603                    .dwattr $C$DW$35, DW_AT_TI_begin_column(0x06)
+     604                    .dwattr $C$DW$35, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     605                    .dwattr $C$DW$35, DW_AT_decl_line(0x6c)
+     606                    .dwattr $C$DW$35, DW_AT_decl_column(0x06)
+     607                    .dwattr $C$DW$35, DW_AT_TI_max_frame_size(0x04)
+     608                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 110,column 1,is_stmt,address MPY32_setOperandOne
+     609            
+     610                    .dwfde $C$DW$CIE, MPY32_setOperandOne32Bit
+     611            $C$DW$36        .dwtag  DW_TAG_formal_parameter
+     612                    .dwattr $C$DW$36, DW_AT_name("multiplicationType")
+     613                    .dwattr $C$DW$36, DW_AT_TI_symbol_name("multiplicationType")
+     614                    .dwattr $C$DW$36, DW_AT_type(*$C$DW$T$22)
+     615                    .dwattr $C$DW$36, DW_AT_location[DW_OP_reg12]
+     616            
+     617            $C$DW$37        .dwtag  DW_TAG_formal_parameter
+     618                    .dwattr $C$DW$37, DW_AT_name("operand")
+     619                    .dwattr $C$DW$37, DW_AT_TI_symbol_name("operand")
+     620                    .dwattr $C$DW$37, DW_AT_type(*$C$DW$T$25)
+     621                    .dwattr $C$DW$37, DW_AT_location[DW_OP_reg13 DW_OP_piece 2 DW_OP_reg14 DW_OP_piece 2]
+     622            
+     623            
+     624            ;*****************************************************************************
+     625            ;* FUNCTION NAME: MPY32_setOperandOne32Bit                                   *
+     626            ;*                                                                           *
+     627            ;*   Regs Modified     : SP,SR,r12,r15                                       *
+     628            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     629            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     630            ;*****************************************************************************
+     631 000000       MPY32_setOperandOne32Bit:
+     632            ;* --------------------------------------------------------------------------*
+     633                    .dwcfi  cfa_offset, 4
+     634                    .dwcfi  save_reg_to_mem, 16, -4
+     635            ;* r12   assigned to multiplicationType
+     636            $C$DW$38        .dwtag  DW_TAG_variable
+     637                    .dwattr $C$DW$38, DW_AT_name("multiplicationType")
+     638                    .dwattr $C$DW$38, DW_AT_TI_symbol_name("multiplicationType")
+     639                    .dwattr $C$DW$38, DW_AT_type(*$C$DW$T$22)
+     640                    .dwattr $C$DW$38, DW_AT_location[DW_OP_reg12]
+     641            
+     642            ;* r13   assigned to operand
+     643            $C$DW$39        .dwtag  DW_TAG_variable
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   13
+
+     644                    .dwattr $C$DW$39, DW_AT_name("operand")
+     645                    .dwattr $C$DW$39, DW_AT_TI_symbol_name("operand")
+     646                    .dwattr $C$DW$39, DW_AT_type(*$C$DW$T$25)
+     647                    .dwattr $C$DW$39, DW_AT_location[DW_OP_reg13 DW_OP_piece 2 DW_OP_reg14 DW_OP_piece 2]
+     648            
+     649                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 112,column 5,is_stmt,isa 0
+     650 000000 5C4C          RLA.B     r12                   ; [] |112| 
+     651 000002 4C4F          MOV.B     r12,r15               ; [] |112| 
+     652 000004 503F          ADD.W     #1232,r15             ; [] |112| 
+         000006 04D0 
+     653 000008 4D8F          MOV.W     r13,0(r15)            ; [] |112| 
+         00000a 0000 
+     654                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 113,column 5,is_stmt,isa 0
+     655 00000c 4C4C          MOV.B     r12,r12               ; [] |113| 
+     656 00000e 503C          ADD.W     #1234,r12             ; [] |113| 
+         000010 04D2 
+     657 000012 4E8C          MOV.W     r14,0(r12)            ; [] |113| 
+         000014 0000 
+     658                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 114,column 1,is_stmt,isa 0
+     659            $C$DW$40        .dwtag  DW_TAG_TI_branch
+     660                    .dwattr $C$DW$40, DW_AT_low_pc(0x00)
+     661                    .dwattr $C$DW$40, DW_AT_TI_return
+     662            
+     663 000016 0110          RETA      ; [] 
+     664                    ; [] 
+     665                    .dwattr $C$DW$35, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     666                    .dwattr $C$DW$35, DW_AT_TI_end_line(0x72)
+     667                    .dwattr $C$DW$35, DW_AT_TI_end_column(0x01)
+     668                    .dwendentry
+     669                    .dwendtag $C$DW$35
+     670            
+     671 000000               .sect   ".text:MPY32_setOperandTwo8Bit"
+     672                    .clink
+     673                    .global MPY32_setOperandTwo8Bit
+     674            
+     675            $C$DW$41        .dwtag  DW_TAG_subprogram
+     676                    .dwattr $C$DW$41, DW_AT_name("MPY32_setOperandTwo8Bit")
+     677                    .dwattr $C$DW$41, DW_AT_low_pc(MPY32_setOperandTwo8Bit)
+     678                    .dwattr $C$DW$41, DW_AT_high_pc(0x00)
+     679                    .dwattr $C$DW$41, DW_AT_TI_symbol_name("MPY32_setOperandTwo8Bit")
+     680                    .dwattr $C$DW$41, DW_AT_external
+     681                    .dwattr $C$DW$41, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     682                    .dwattr $C$DW$41, DW_AT_TI_begin_line(0x74)
+     683                    .dwattr $C$DW$41, DW_AT_TI_begin_column(0x06)
+     684                    .dwattr $C$DW$41, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     685                    .dwattr $C$DW$41, DW_AT_decl_line(0x74)
+     686                    .dwattr $C$DW$41, DW_AT_decl_column(0x06)
+     687                    .dwattr $C$DW$41, DW_AT_TI_max_frame_size(0x04)
+     688                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 117,column 1,is_stmt,address MPY32_setOperandTwo
+     689            
+     690                    .dwfde $C$DW$CIE, MPY32_setOperandTwo8Bit
+     691            $C$DW$42        .dwtag  DW_TAG_formal_parameter
+     692                    .dwattr $C$DW$42, DW_AT_name("operand")
+     693                    .dwattr $C$DW$42, DW_AT_TI_symbol_name("operand")
+     694                    .dwattr $C$DW$42, DW_AT_type(*$C$DW$T$22)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   14
+
+     695                    .dwattr $C$DW$42, DW_AT_location[DW_OP_reg12]
+     696            
+     697            
+     698            ;*****************************************************************************
+     699            ;* FUNCTION NAME: MPY32_setOperandTwo8Bit                                    *
+     700            ;*                                                                           *
+     701            ;*   Regs Modified     : SP                                                  *
+     702            ;*   Regs Used         : SP,r12                                              *
+     703            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     704            ;*****************************************************************************
+     705 000000       MPY32_setOperandTwo8Bit:
+     706            ;* --------------------------------------------------------------------------*
+     707                    .dwcfi  cfa_offset, 4
+     708                    .dwcfi  save_reg_to_mem, 16, -4
+     709            ;* r12   assigned to operand
+     710            $C$DW$43        .dwtag  DW_TAG_variable
+     711                    .dwattr $C$DW$43, DW_AT_name("operand")
+     712                    .dwattr $C$DW$43, DW_AT_TI_symbol_name("operand")
+     713                    .dwattr $C$DW$43, DW_AT_type(*$C$DW$T$22)
+     714                    .dwattr $C$DW$43, DW_AT_location[DW_OP_reg12]
+     715            
+     716                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 118,column 5,is_stmt,isa 0
+     717 000000 4CC2          MOV.B     r12,&0x4c8            ; [] |118| 
+         000002 04C8 
+     718                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 119,column 1,is_stmt,isa 0
+     719            $C$DW$44        .dwtag  DW_TAG_TI_branch
+     720                    .dwattr $C$DW$44, DW_AT_low_pc(0x00)
+     721                    .dwattr $C$DW$44, DW_AT_TI_return
+     722            
+     723 000004 0110          RETA      ; [] 
+     724                    ; [] 
+     725                    .dwattr $C$DW$41, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     726                    .dwattr $C$DW$41, DW_AT_TI_end_line(0x77)
+     727                    .dwattr $C$DW$41, DW_AT_TI_end_column(0x01)
+     728                    .dwendentry
+     729                    .dwendtag $C$DW$41
+     730            
+     731 000000               .sect   ".text:MPY32_setOperandTwo16Bit"
+     732                    .clink
+     733                    .global MPY32_setOperandTwo16Bit
+     734            
+     735            $C$DW$45        .dwtag  DW_TAG_subprogram
+     736                    .dwattr $C$DW$45, DW_AT_name("MPY32_setOperandTwo16Bit")
+     737                    .dwattr $C$DW$45, DW_AT_low_pc(MPY32_setOperandTwo16Bit)
+     738                    .dwattr $C$DW$45, DW_AT_high_pc(0x00)
+     739                    .dwattr $C$DW$45, DW_AT_TI_symbol_name("MPY32_setOperandTwo16Bit")
+     740                    .dwattr $C$DW$45, DW_AT_external
+     741                    .dwattr $C$DW$45, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     742                    .dwattr $C$DW$45, DW_AT_TI_begin_line(0x79)
+     743                    .dwattr $C$DW$45, DW_AT_TI_begin_column(0x06)
+     744                    .dwattr $C$DW$45, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     745                    .dwattr $C$DW$45, DW_AT_decl_line(0x79)
+     746                    .dwattr $C$DW$45, DW_AT_decl_column(0x06)
+     747                    .dwattr $C$DW$45, DW_AT_TI_max_frame_size(0x04)
+     748                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 122,column 1,is_stmt,address MPY32_setOperandTwo
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   15
+
+     749            
+     750                    .dwfde $C$DW$CIE, MPY32_setOperandTwo16Bit
+     751            $C$DW$46        .dwtag  DW_TAG_formal_parameter
+     752                    .dwattr $C$DW$46, DW_AT_name("operand")
+     753                    .dwattr $C$DW$46, DW_AT_TI_symbol_name("operand")
+     754                    .dwattr $C$DW$46, DW_AT_type(*$C$DW$T$19)
+     755                    .dwattr $C$DW$46, DW_AT_location[DW_OP_reg12]
+     756            
+     757            
+     758            ;*****************************************************************************
+     759            ;* FUNCTION NAME: MPY32_setOperandTwo16Bit                                   *
+     760            ;*                                                                           *
+     761            ;*   Regs Modified     : SP                                                  *
+     762            ;*   Regs Used         : SP,r12                                              *
+     763            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     764            ;*****************************************************************************
+     765 000000       MPY32_setOperandTwo16Bit:
+     766            ;* --------------------------------------------------------------------------*
+     767                    .dwcfi  cfa_offset, 4
+     768                    .dwcfi  save_reg_to_mem, 16, -4
+     769            ;* r12   assigned to operand
+     770            $C$DW$47        .dwtag  DW_TAG_variable
+     771                    .dwattr $C$DW$47, DW_AT_name("operand")
+     772                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("operand")
+     773                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$19)
+     774                    .dwattr $C$DW$47, DW_AT_location[DW_OP_reg12]
+     775            
+     776                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 123,column 5,is_stmt,isa 0
+     777 000000 4C82          MOV.W     r12,&0x4c8            ; [] |123| 
+         000002 04C8 
+     778                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 124,column 1,is_stmt,isa 0
+     779            $C$DW$48        .dwtag  DW_TAG_TI_branch
+     780                    .dwattr $C$DW$48, DW_AT_low_pc(0x00)
+     781                    .dwattr $C$DW$48, DW_AT_TI_return
+     782            
+     783 000004 0110          RETA      ; [] 
+     784                    ; [] 
+     785                    .dwattr $C$DW$45, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     786                    .dwattr $C$DW$45, DW_AT_TI_end_line(0x7c)
+     787                    .dwattr $C$DW$45, DW_AT_TI_end_column(0x01)
+     788                    .dwendentry
+     789                    .dwendtag $C$DW$45
+     790            
+     791 000000               .sect   ".text:MPY32_setOperandTwo24Bit"
+     792                    .clink
+     793                    .global MPY32_setOperandTwo24Bit
+     794            
+     795            $C$DW$49        .dwtag  DW_TAG_subprogram
+     796                    .dwattr $C$DW$49, DW_AT_name("MPY32_setOperandTwo24Bit")
+     797                    .dwattr $C$DW$49, DW_AT_low_pc(MPY32_setOperandTwo24Bit)
+     798                    .dwattr $C$DW$49, DW_AT_high_pc(0x00)
+     799                    .dwattr $C$DW$49, DW_AT_TI_symbol_name("MPY32_setOperandTwo24Bit")
+     800                    .dwattr $C$DW$49, DW_AT_external
+     801                    .dwattr $C$DW$49, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     802                    .dwattr $C$DW$49, DW_AT_TI_begin_line(0x7e)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   16
+
+     803                    .dwattr $C$DW$49, DW_AT_TI_begin_column(0x06)
+     804                    .dwattr $C$DW$49, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     805                    .dwattr $C$DW$49, DW_AT_decl_line(0x7e)
+     806                    .dwattr $C$DW$49, DW_AT_decl_column(0x06)
+     807                    .dwattr $C$DW$49, DW_AT_TI_max_frame_size(0x04)
+     808                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 127,column 1,is_stmt,address MPY32_setOperandTwo
+     809            
+     810                    .dwfde $C$DW$CIE, MPY32_setOperandTwo24Bit
+     811            $C$DW$50        .dwtag  DW_TAG_formal_parameter
+     812                    .dwattr $C$DW$50, DW_AT_name("operand")
+     813                    .dwattr $C$DW$50, DW_AT_TI_symbol_name("operand")
+     814                    .dwattr $C$DW$50, DW_AT_type(*$C$DW$T$25)
+     815                    .dwattr $C$DW$50, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     816            
+     817            
+     818            ;*****************************************************************************
+     819            ;* FUNCTION NAME: MPY32_setOperandTwo24Bit                                   *
+     820            ;*                                                                           *
+     821            ;*   Regs Modified     : SP                                                  *
+     822            ;*   Regs Used         : SP,r12,r13                                          *
+     823            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     824            ;*****************************************************************************
+     825 000000       MPY32_setOperandTwo24Bit:
+     826            ;* --------------------------------------------------------------------------*
+     827                    .dwcfi  cfa_offset, 4
+     828                    .dwcfi  save_reg_to_mem, 16, -4
+     829            ;* r12   assigned to operand
+     830            $C$DW$51        .dwtag  DW_TAG_variable
+     831                    .dwattr $C$DW$51, DW_AT_name("operand")
+     832                    .dwattr $C$DW$51, DW_AT_TI_symbol_name("operand")
+     833                    .dwattr $C$DW$51, DW_AT_type(*$C$DW$T$25)
+     834                    .dwattr $C$DW$51, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     835            
+     836                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 128,column 5,is_stmt,isa 0
+     837 000000 4C82          MOV.W     r12,&0x4e0            ; [] |128| 
+         000002 04E0 
+     838                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 129,column 5,is_stmt,isa 0
+     839 000004 4DC2          MOV.B     r13,&0x4e2            ; [] |129| 
+         000006 04E2 
+     840                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 130,column 1,is_stmt,isa 0
+     841            $C$DW$52        .dwtag  DW_TAG_TI_branch
+     842                    .dwattr $C$DW$52, DW_AT_low_pc(0x00)
+     843                    .dwattr $C$DW$52, DW_AT_TI_return
+     844            
+     845 000008 0110          RETA      ; [] 
+     846                    ; [] 
+     847                    .dwattr $C$DW$49, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     848                    .dwattr $C$DW$49, DW_AT_TI_end_line(0x82)
+     849                    .dwattr $C$DW$49, DW_AT_TI_end_column(0x01)
+     850                    .dwendentry
+     851                    .dwendtag $C$DW$49
+     852            
+     853 000000               .sect   ".text:MPY32_setOperandTwo32Bit"
+     854                    .clink
+     855                    .global MPY32_setOperandTwo32Bit
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   17
+
+     856            
+     857            $C$DW$53        .dwtag  DW_TAG_subprogram
+     858                    .dwattr $C$DW$53, DW_AT_name("MPY32_setOperandTwo32Bit")
+     859                    .dwattr $C$DW$53, DW_AT_low_pc(MPY32_setOperandTwo32Bit)
+     860                    .dwattr $C$DW$53, DW_AT_high_pc(0x00)
+     861                    .dwattr $C$DW$53, DW_AT_TI_symbol_name("MPY32_setOperandTwo32Bit")
+     862                    .dwattr $C$DW$53, DW_AT_external
+     863                    .dwattr $C$DW$53, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     864                    .dwattr $C$DW$53, DW_AT_TI_begin_line(0x84)
+     865                    .dwattr $C$DW$53, DW_AT_TI_begin_column(0x06)
+     866                    .dwattr $C$DW$53, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     867                    .dwattr $C$DW$53, DW_AT_decl_line(0x84)
+     868                    .dwattr $C$DW$53, DW_AT_decl_column(0x06)
+     869                    .dwattr $C$DW$53, DW_AT_TI_max_frame_size(0x04)
+     870                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 133,column 1,is_stmt,address MPY32_setOperandTwo
+     871            
+     872                    .dwfde $C$DW$CIE, MPY32_setOperandTwo32Bit
+     873            $C$DW$54        .dwtag  DW_TAG_formal_parameter
+     874                    .dwattr $C$DW$54, DW_AT_name("operand")
+     875                    .dwattr $C$DW$54, DW_AT_TI_symbol_name("operand")
+     876                    .dwattr $C$DW$54, DW_AT_type(*$C$DW$T$25)
+     877                    .dwattr $C$DW$54, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     878            
+     879            
+     880            ;*****************************************************************************
+     881            ;* FUNCTION NAME: MPY32_setOperandTwo32Bit                                   *
+     882            ;*                                                                           *
+     883            ;*   Regs Modified     : SP                                                  *
+     884            ;*   Regs Used         : SP,r12,r13                                          *
+     885            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     886            ;*****************************************************************************
+     887 000000       MPY32_setOperandTwo32Bit:
+     888            ;* --------------------------------------------------------------------------*
+     889                    .dwcfi  cfa_offset, 4
+     890                    .dwcfi  save_reg_to_mem, 16, -4
+     891            ;* r12   assigned to operand
+     892            $C$DW$55        .dwtag  DW_TAG_variable
+     893                    .dwattr $C$DW$55, DW_AT_name("operand")
+     894                    .dwattr $C$DW$55, DW_AT_TI_symbol_name("operand")
+     895                    .dwattr $C$DW$55, DW_AT_type(*$C$DW$T$25)
+     896                    .dwattr $C$DW$55, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2]
+     897            
+     898                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 134,column 5,is_stmt,isa 0
+     899 000000 4C82          MOV.W     r12,&0x4e0            ; [] |134| 
+         000002 04E0 
+     900                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 135,column 5,is_stmt,isa 0
+     901 000004 4D82          MOV.W     r13,&0x4e2            ; [] |135| 
+         000006 04E2 
+     902                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 136,column 1,is_stmt,isa 0
+     903            $C$DW$56        .dwtag  DW_TAG_TI_branch
+     904                    .dwattr $C$DW$56, DW_AT_low_pc(0x00)
+     905                    .dwattr $C$DW$56, DW_AT_TI_return
+     906            
+     907 000008 0110          RETA      ; [] 
+     908                    ; [] 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   18
+
+     909                    .dwattr $C$DW$53, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     910                    .dwattr $C$DW$53, DW_AT_TI_end_line(0x88)
+     911                    .dwattr $C$DW$53, DW_AT_TI_end_column(0x01)
+     912                    .dwendentry
+     913                    .dwendtag $C$DW$53
+     914            
+     915 000000               .sect   ".text:MPY32_getResult"
+     916                    .clink
+     917                    .global MPY32_getResult
+     918            
+     919            $C$DW$57        .dwtag  DW_TAG_subprogram
+     920                    .dwattr $C$DW$57, DW_AT_name("MPY32_getResult")
+     921                    .dwattr $C$DW$57, DW_AT_low_pc(MPY32_getResult)
+     922                    .dwattr $C$DW$57, DW_AT_high_pc(0x00)
+     923                    .dwattr $C$DW$57, DW_AT_TI_symbol_name("MPY32_getResult")
+     924                    .dwattr $C$DW$57, DW_AT_external
+     925                    .dwattr $C$DW$57, DW_AT_type(*$C$DW$T$29)
+     926                    .dwattr $C$DW$57, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+     927                    .dwattr $C$DW$57, DW_AT_TI_begin_line(0x8a)
+     928                    .dwattr $C$DW$57, DW_AT_TI_begin_column(0x0a)
+     929                    .dwattr $C$DW$57, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+     930                    .dwattr $C$DW$57, DW_AT_decl_line(0x8a)
+     931                    .dwattr $C$DW$57, DW_AT_decl_column(0x0a)
+     932                    .dwattr $C$DW$57, DW_AT_TI_max_frame_size(0x04)
+     933                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 139,column 1,is_stmt,address MPY32_getResult,isa
+     934            
+     935                    .dwfde $C$DW$CIE, MPY32_getResult
+     936            
+     937            ;*****************************************************************************
+     938            ;* FUNCTION NAME: MPY32_getResult                                            *
+     939            ;*                                                                           *
+     940            ;*   Regs Modified     : SP,SR,r12,r13,r14,r15                               *
+     941            ;*   Regs Used         : SP,SR,r12,r13,r14,r15                               *
+     942            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     943            ;*****************************************************************************
+     944 000000       MPY32_getResult:
+     945            ;* --------------------------------------------------------------------------*
+     946                    .dwcfi  cfa_offset, 4
+     947                    .dwcfi  save_reg_to_mem, 16, -4
+     948            ;* r12   assigned to result
+     949            $C$DW$58        .dwtag  DW_TAG_variable
+     950                    .dwattr $C$DW$58, DW_AT_name("result")
+     951                    .dwattr $C$DW$58, DW_AT_TI_symbol_name("result")
+     952                    .dwattr $C$DW$58, DW_AT_type(*$C$DW$T$29)
+     953                    .dwattr $C$DW$58, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2 DW_OP_reg
+     954            
+     955                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 142,column 5,is_stmt,isa 0
+     956 000000 421C          MOV.W     &0x4e4,r12            ; [] |142| 
+         000002 04E4 
+     957 000004 430D          MOV.W     #0,r13                ; [] |142| 
+     958 000006 430E          MOV.W     #0,r14                ; [] |142| 
+     959 000008 430F          MOV.W     #0,r15                ; [] |142| 
+     960                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 143,column 5,is_stmt,isa 0
+     961 00000a 530C          ADD.W     #0,r12                ; [] |143| 
+     962 00000c 621D          ADDC.W    &0x4e6,r13            ; [] |143| 
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   19
+
+         00000e 04E6 
+     963 000010 630E          ADDC.W    #0,r14                ; [] |143| 
+     964 000012 630F          ADDC.W    #0,r15                ; [] |143| 
+     965                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 144,column 5,is_stmt,isa 0
+     966 000014 530C          ADD.W     #0,r12                ; [] |144| 
+     967 000016 630D          ADDC.W    #0,r13                ; [] |144| 
+     968 000018 621E          ADDC.W    &0x4e8,r14            ; [] |144| 
+         00001a 04E8 
+     969 00001c 630F          ADDC.W    #0,r15                ; [] |144| 
+     970                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 145,column 5,is_stmt,isa 0
+     971 00001e 530C          ADD.W     #0,r12                ; [] |145| 
+     972 000020 630D          ADDC.W    #0,r13                ; [] |145| 
+     973 000022 630E          ADDC.W    #0,r14                ; [] |145| 
+     974 000024 621F          ADDC.W    &0x4ea,r15            ; [] |145| 
+         000026 04EA 
+     975                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 146,column 5,is_stmt,isa 0
+     976                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 147,column 1,is_stmt,isa 0
+     977            $C$DW$59        .dwtag  DW_TAG_TI_branch
+     978                    .dwattr $C$DW$59, DW_AT_low_pc(0x00)
+     979                    .dwattr $C$DW$59, DW_AT_TI_return
+     980            
+     981 000028 0110          RETA      ; [] 
+     982                    ; [] 
+     983                    .dwattr $C$DW$57, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+     984                    .dwattr $C$DW$57, DW_AT_TI_end_line(0x93)
+     985                    .dwattr $C$DW$57, DW_AT_TI_end_column(0x01)
+     986                    .dwendentry
+     987                    .dwendtag $C$DW$57
+     988            
+     989 000000               .sect   ".text:MPY32_getSumExtension"
+     990                    .clink
+     991                    .global MPY32_getSumExtension
+     992            
+     993            $C$DW$60        .dwtag  DW_TAG_subprogram
+     994                    .dwattr $C$DW$60, DW_AT_name("MPY32_getSumExtension")
+     995                    .dwattr $C$DW$60, DW_AT_low_pc(MPY32_getSumExtension)
+     996                    .dwattr $C$DW$60, DW_AT_high_pc(0x00)
+     997                    .dwattr $C$DW$60, DW_AT_TI_symbol_name("MPY32_getSumExtension")
+     998                    .dwattr $C$DW$60, DW_AT_external
+     999                    .dwattr $C$DW$60, DW_AT_type(*$C$DW$T$19)
+    1000                    .dwattr $C$DW$60, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+    1001                    .dwattr $C$DW$60, DW_AT_TI_begin_line(0x95)
+    1002                    .dwattr $C$DW$60, DW_AT_TI_begin_column(0x0a)
+    1003                    .dwattr $C$DW$60, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+    1004                    .dwattr $C$DW$60, DW_AT_decl_line(0x95)
+    1005                    .dwattr $C$DW$60, DW_AT_decl_column(0x0a)
+    1006                    .dwattr $C$DW$60, DW_AT_TI_max_frame_size(0x04)
+    1007                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 150,column 1,is_stmt,address MPY32_getSumExtensi
+    1008            
+    1009                    .dwfde $C$DW$CIE, MPY32_getSumExtension
+    1010            
+    1011            ;*****************************************************************************
+    1012            ;* FUNCTION NAME: MPY32_getSumExtension                                      *
+    1013            ;*                                                                           *
+    1014            ;*   Regs Modified     : SP,r12                                              *
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   20
+
+    1015            ;*   Regs Used         : SP,r12                                              *
+    1016            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1017            ;*****************************************************************************
+    1018 000000       MPY32_getSumExtension:
+    1019            ;* --------------------------------------------------------------------------*
+    1020                    .dwcfi  cfa_offset, 4
+    1021                    .dwcfi  save_reg_to_mem, 16, -4
+    1022                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 151,column 5,is_stmt,isa 0
+    1023 000000 421C          MOV.W     &0x4ce,r12            ; [] |151| 
+         000002 04CE 
+    1024                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 152,column 1,is_stmt,isa 0
+    1025            $C$DW$61        .dwtag  DW_TAG_TI_branch
+    1026                    .dwattr $C$DW$61, DW_AT_low_pc(0x00)
+    1027                    .dwattr $C$DW$61, DW_AT_TI_return
+    1028            
+    1029 000004 0110          RETA      ; [] 
+    1030                    ; [] 
+    1031                    .dwattr $C$DW$60, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+    1032                    .dwattr $C$DW$60, DW_AT_TI_end_line(0x98)
+    1033                    .dwattr $C$DW$60, DW_AT_TI_end_column(0x01)
+    1034                    .dwendentry
+    1035                    .dwendtag $C$DW$60
+    1036            
+    1037 000000               .sect   ".text:MPY32_getCarryBitValue"
+    1038                    .clink
+    1039                    .global MPY32_getCarryBitValue
+    1040            
+    1041            $C$DW$62        .dwtag  DW_TAG_subprogram
+    1042                    .dwattr $C$DW$62, DW_AT_name("MPY32_getCarryBitValue")
+    1043                    .dwattr $C$DW$62, DW_AT_low_pc(MPY32_getCarryBitValue)
+    1044                    .dwattr $C$DW$62, DW_AT_high_pc(0x00)
+    1045                    .dwattr $C$DW$62, DW_AT_TI_symbol_name("MPY32_getCarryBitValue")
+    1046                    .dwattr $C$DW$62, DW_AT_external
+    1047                    .dwattr $C$DW$62, DW_AT_type(*$C$DW$T$19)
+    1048                    .dwattr $C$DW$62, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+    1049                    .dwattr $C$DW$62, DW_AT_TI_begin_line(0x9a)
+    1050                    .dwattr $C$DW$62, DW_AT_TI_begin_column(0x0a)
+    1051                    .dwattr $C$DW$62, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+    1052                    .dwattr $C$DW$62, DW_AT_decl_line(0x9a)
+    1053                    .dwattr $C$DW$62, DW_AT_decl_column(0x0a)
+    1054                    .dwattr $C$DW$62, DW_AT_TI_max_frame_size(0x04)
+    1055                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 155,column 1,is_stmt,address MPY32_getCarryBitVa
+    1056            
+    1057                    .dwfde $C$DW$CIE, MPY32_getCarryBitValue
+    1058            
+    1059            ;*****************************************************************************
+    1060            ;* FUNCTION NAME: MPY32_getCarryBitValue                                     *
+    1061            ;*                                                                           *
+    1062            ;*   Regs Modified     : SP,r12                                              *
+    1063            ;*   Regs Used         : SP,r12                                              *
+    1064            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1065            ;*****************************************************************************
+    1066 000000       MPY32_getCarryBitValue:
+    1067            ;* --------------------------------------------------------------------------*
+    1068                    .dwcfi  cfa_offset, 4
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   21
+
+    1069                    .dwcfi  save_reg_to_mem, 16, -4
+    1070                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 156,column 5,is_stmt,isa 0
+    1071 000000 431C          MOV.W     #1,r12                ; [] |156| 
+    1072 000002 D21C          OR.W      &0x4ec,r12            ; [] |156| 
+         000004 04EC 
+    1073                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 157,column 1,is_stmt,isa 0
+    1074            $C$DW$63        .dwtag  DW_TAG_TI_branch
+    1075                    .dwattr $C$DW$63, DW_AT_low_pc(0x00)
+    1076                    .dwattr $C$DW$63, DW_AT_TI_return
+    1077            
+    1078 000006 0110          RETA      ; [] 
+    1079                    ; [] 
+    1080                    .dwattr $C$DW$62, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+    1081                    .dwattr $C$DW$62, DW_AT_TI_end_line(0x9d)
+    1082                    .dwattr $C$DW$62, DW_AT_TI_end_column(0x01)
+    1083                    .dwendentry
+    1084                    .dwendtag $C$DW$62
+    1085            
+    1086 000000               .sect   ".text:MPY32_clearCarryBitValue"
+    1087                    .clink
+    1088                    .global MPY32_clearCarryBitValue
+    1089            
+    1090            $C$DW$64        .dwtag  DW_TAG_subprogram
+    1091                    .dwattr $C$DW$64, DW_AT_name("MPY32_clearCarryBitValue")
+    1092                    .dwattr $C$DW$64, DW_AT_low_pc(MPY32_clearCarryBitValue)
+    1093                    .dwattr $C$DW$64, DW_AT_high_pc(0x00)
+    1094                    .dwattr $C$DW$64, DW_AT_TI_symbol_name("MPY32_clearCarryBitValue")
+    1095                    .dwattr $C$DW$64, DW_AT_external
+    1096                    .dwattr $C$DW$64, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+    1097                    .dwattr $C$DW$64, DW_AT_TI_begin_line(0x9f)
+    1098                    .dwattr $C$DW$64, DW_AT_TI_begin_column(0x06)
+    1099                    .dwattr $C$DW$64, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+    1100                    .dwattr $C$DW$64, DW_AT_decl_line(0x9f)
+    1101                    .dwattr $C$DW$64, DW_AT_decl_column(0x06)
+    1102                    .dwattr $C$DW$64, DW_AT_TI_max_frame_size(0x04)
+    1103                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 160,column 1,is_stmt,address MPY32_clearCarryBit
+    1104            
+    1105                    .dwfde $C$DW$CIE, MPY32_clearCarryBitValue
+    1106            
+    1107            ;*****************************************************************************
+    1108            ;* FUNCTION NAME: MPY32_clearCarryBitValue                                   *
+    1109            ;*                                                                           *
+    1110            ;*   Regs Modified     : SP                                                  *
+    1111            ;*   Regs Used         : SP                                                  *
+    1112            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1113            ;*****************************************************************************
+    1114 000000       MPY32_clearCarryBitValue:
+    1115            ;* --------------------------------------------------------------------------*
+    1116                    .dwcfi  cfa_offset, 4
+    1117                    .dwcfi  save_reg_to_mem, 16, -4
+    1118                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 161,column 5,is_stmt,isa 0
+    1119 000000 C392          BIC.W     #1,&0x4ec             ; [] |161| 
+         000002 04EC 
+    1120                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 162,column 1,is_stmt,isa 0
+    1121            $C$DW$65        .dwtag  DW_TAG_TI_branch
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   22
+
+    1122                    .dwattr $C$DW$65, DW_AT_low_pc(0x00)
+    1123                    .dwattr $C$DW$65, DW_AT_TI_return
+    1124            
+    1125 000004 0110          RETA      ; [] 
+    1126                    ; [] 
+    1127                    .dwattr $C$DW$64, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+    1128                    .dwattr $C$DW$64, DW_AT_TI_end_line(0xa2)
+    1129                    .dwattr $C$DW$64, DW_AT_TI_end_column(0x01)
+    1130                    .dwendentry
+    1131                    .dwendtag $C$DW$64
+    1132            
+    1133 000000               .sect   ".text:MPY32_preloadResult"
+    1134                    .clink
+    1135                    .global MPY32_preloadResult
+    1136            
+    1137            $C$DW$66        .dwtag  DW_TAG_subprogram
+    1138                    .dwattr $C$DW$66, DW_AT_name("MPY32_preloadResult")
+    1139                    .dwattr $C$DW$66, DW_AT_low_pc(MPY32_preloadResult)
+    1140                    .dwattr $C$DW$66, DW_AT_high_pc(0x00)
+    1141                    .dwattr $C$DW$66, DW_AT_TI_symbol_name("MPY32_preloadResult")
+    1142                    .dwattr $C$DW$66, DW_AT_external
+    1143                    .dwattr $C$DW$66, DW_AT_TI_begin_file("../MSP430F5xx_6xx/mpy32.c")
+    1144                    .dwattr $C$DW$66, DW_AT_TI_begin_line(0xa4)
+    1145                    .dwattr $C$DW$66, DW_AT_TI_begin_column(0x06)
+    1146                    .dwattr $C$DW$66, DW_AT_decl_file("../MSP430F5xx_6xx/mpy32.c")
+    1147                    .dwattr $C$DW$66, DW_AT_decl_line(0xa4)
+    1148                    .dwattr $C$DW$66, DW_AT_decl_column(0x06)
+    1149                    .dwattr $C$DW$66, DW_AT_TI_max_frame_size(0x04)
+    1150                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 165,column 1,is_stmt,address MPY32_preloadResult
+    1151            
+    1152                    .dwfde $C$DW$CIE, MPY32_preloadResult
+    1153            $C$DW$67        .dwtag  DW_TAG_formal_parameter
+    1154                    .dwattr $C$DW$67, DW_AT_name("result")
+    1155                    .dwattr $C$DW$67, DW_AT_TI_symbol_name("result")
+    1156                    .dwattr $C$DW$67, DW_AT_type(*$C$DW$T$29)
+    1157                    .dwattr $C$DW$67, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2 DW_OP_reg
+    1158            
+    1159            
+    1160            ;*****************************************************************************
+    1161            ;* FUNCTION NAME: MPY32_preloadResult                                        *
+    1162            ;*                                                                           *
+    1163            ;*   Regs Modified     : SP                                                  *
+    1164            ;*   Regs Used         : SP,r12,r13,r14,r15                                  *
+    1165            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1166            ;*****************************************************************************
+    1167 000000       MPY32_preloadResult:
+    1168            ;* --------------------------------------------------------------------------*
+    1169                    .dwcfi  cfa_offset, 4
+    1170                    .dwcfi  save_reg_to_mem, 16, -4
+    1171            ;* r12   assigned to result
+    1172            $C$DW$68        .dwtag  DW_TAG_variable
+    1173                    .dwattr $C$DW$68, DW_AT_name("result")
+    1174                    .dwattr $C$DW$68, DW_AT_TI_symbol_name("result")
+    1175                    .dwattr $C$DW$68, DW_AT_type(*$C$DW$T$29)
+    1176                    .dwattr $C$DW$68, DW_AT_location[DW_OP_reg12 DW_OP_piece 2 DW_OP_reg13 DW_OP_piece 2 DW_OP_reg
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   23
+
+    1177            
+    1178                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 166,column 5,is_stmt,isa 0
+    1179 000000 4C82          MOV.W     r12,&0x4e4            ; [] |166| 
+         000002 04E4 
+    1180                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 167,column 5,is_stmt,isa 0
+    1181 000004 4D82          MOV.W     r13,&0x4e6            ; [] |167| 
+         000006 04E6 
+    1182                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 168,column 5,is_stmt,isa 0
+    1183 000008 4E82          MOV.W     r14,&0x4e8            ; [] |168| 
+         00000a 04E8 
+    1184                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 169,column 5,is_stmt,isa 0
+    1185 00000c 4F82          MOV.W     r15,&0x4ea            ; [] |169| 
+         00000e 04EA 
+    1186                    .dwpsn  file "../MSP430F5xx_6xx/mpy32.c",line 170,column 1,is_stmt,isa 0
+    1187            $C$DW$69        .dwtag  DW_TAG_TI_branch
+    1188                    .dwattr $C$DW$69, DW_AT_low_pc(0x00)
+    1189                    .dwattr $C$DW$69, DW_AT_TI_return
+    1190            
+    1191 000010 0110          RETA      ; [] 
+    1192                    ; [] 
+    1193                    .dwattr $C$DW$66, DW_AT_TI_end_file("../MSP430F5xx_6xx/mpy32.c")
+    1194                    .dwattr $C$DW$66, DW_AT_TI_end_line(0xaa)
+    1195                    .dwattr $C$DW$66, DW_AT_TI_end_column(0x01)
+    1196                    .dwendentry
+    1197                    .dwendtag $C$DW$66
+    1198            
+    1199            
+    1200            ;******************************************************************************
+    1201            ;* BUILD ATTRIBUTES                                                           *
+    1202            ;******************************************************************************
+    1203                    .battr "TI", Tag_File, 1, Tag_LPM_INFO(1)
+    1204                    .battr "TI", Tag_File, 1, Tag_PORTS_INIT_INFO("012345678901ABCDEFGHIJ0000000000001111000000000
+    1205                    .battr "TI", Tag_File, 1, Tag_HW_MPY32_INFO(2)
+    1206                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+    1207                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+    1208                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+    1209            
+    1210            ;******************************************************************************
+    1211            ;* TYPE INFORMATION                                                           *
+    1212            ;******************************************************************************
+    1213            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1214                    .dwattr $C$DW$T$2, DW_AT_name("void")
+    1215            
+    1216            
+    1217            $C$DW$T$31      .dwtag  DW_TAG_subroutine_type
+    1218                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
+    1219                    .dwendtag $C$DW$T$31
+    1220            
+    1221            $C$DW$T$32      .dwtag  DW_TAG_pointer_type
+    1222                    .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+    1223                    .dwattr $C$DW$T$32, DW_AT_address_class(0x14)
+    1224            
+    1225            $C$DW$T$33      .dwtag  DW_TAG_typedef
+    1226                    .dwattr $C$DW$T$33, DW_AT_name("__SFR_FARPTR")
+    1227                    .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$32)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   24
+
+    1228                    .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
+    1229                    .dwattr $C$DW$T$33, DW_AT_decl_file("D:\Program Files\TI CCSv6\ccsv6\ccs_base\msp430\include\m
+    1230                    .dwattr $C$DW$T$33, DW_AT_decl_line(0x47)
+    1231                    .dwattr $C$DW$T$33, DW_AT_decl_column(0x11)
+    1232            
+    1233            $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1234                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1235                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1236                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1237            
+    1238            $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1239                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1240                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1241                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1242            
+    1243            $C$DW$T$34      .dwtag  DW_TAG_typedef
+    1244                    .dwattr $C$DW$T$34, DW_AT_name("int8_t")
+    1245                    .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$5)
+    1246                    .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+    1247                    .dwattr $C$DW$T$34, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1248                    .dwattr $C$DW$T$34, DW_AT_decl_line(0x2a)
+    1249                    .dwattr $C$DW$T$34, DW_AT_decl_column(0x1e)
+    1250            
+    1251            $C$DW$T$35      .dwtag  DW_TAG_typedef
+    1252                    .dwattr $C$DW$T$35, DW_AT_name("int_least8_t")
+    1253                    .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$34)
+    1254                    .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+    1255                    .dwattr $C$DW$T$35, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1256                    .dwattr $C$DW$T$35, DW_AT_decl_line(0x37)
+    1257                    .dwattr $C$DW$T$35, DW_AT_decl_column(0x17)
+    1258            
+    1259            $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1260                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1261                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1262                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1263            
+    1264            $C$DW$T$22      .dwtag  DW_TAG_typedef
+    1265                    .dwattr $C$DW$T$22, DW_AT_name("uint8_t")
+    1266                    .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$6)
+    1267                    .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    1268                    .dwattr $C$DW$T$22, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1269                    .dwattr $C$DW$T$22, DW_AT_decl_line(0x2b)
+    1270                    .dwattr $C$DW$T$22, DW_AT_decl_column(0x1d)
+    1271            
+    1272            $C$DW$T$40      .dwtag  DW_TAG_typedef
+    1273                    .dwattr $C$DW$T$40, DW_AT_name("uint_least8_t")
+    1274                    .dwattr $C$DW$T$40, DW_AT_type(*$C$DW$T$22)
+    1275                    .dwattr $C$DW$T$40, DW_AT_language(DW_LANG_C)
+    1276                    .dwattr $C$DW$T$40, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1277                    .dwattr $C$DW$T$40, DW_AT_decl_line(0x38)
+    1278                    .dwattr $C$DW$T$40, DW_AT_decl_column(0x16)
+    1279            
+    1280            $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1281                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1282                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   25
+
+    1283                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    1284            
+    1285            $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1286                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1287                    .dwattr $C$DW$T$8, DW_AT_name("short")
+    1288                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+    1289            
+    1290            $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1291                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1292                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1293                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    1294            
+    1295            $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1296                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1297                    .dwattr $C$DW$T$10, DW_AT_name("int")
+    1298                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+    1299            
+    1300            $C$DW$T$41      .dwtag  DW_TAG_typedef
+    1301                    .dwattr $C$DW$T$41, DW_AT_name("int16_t")
+    1302                    .dwattr $C$DW$T$41, DW_AT_type(*$C$DW$T$10)
+    1303                    .dwattr $C$DW$T$41, DW_AT_language(DW_LANG_C)
+    1304                    .dwattr $C$DW$T$41, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1305                    .dwattr $C$DW$T$41, DW_AT_decl_line(0x2c)
+    1306                    .dwattr $C$DW$T$41, DW_AT_decl_column(0x1d)
+    1307            
+    1308            $C$DW$T$42      .dwtag  DW_TAG_typedef
+    1309                    .dwattr $C$DW$T$42, DW_AT_name("int_fast16_t")
+    1310                    .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$41)
+    1311                    .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+    1312                    .dwattr $C$DW$T$42, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1313                    .dwattr $C$DW$T$42, DW_AT_decl_line(0x47)
+    1314                    .dwattr $C$DW$T$42, DW_AT_decl_column(0x17)
+    1315            
+    1316            $C$DW$T$43      .dwtag  DW_TAG_typedef
+    1317                    .dwattr $C$DW$T$43, DW_AT_name("int_fast8_t")
+    1318                    .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$41)
+    1319                    .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    1320                    .dwattr $C$DW$T$43, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1321                    .dwattr $C$DW$T$43, DW_AT_decl_line(0x45)
+    1322                    .dwattr $C$DW$T$43, DW_AT_decl_column(0x17)
+    1323            
+    1324            $C$DW$T$44      .dwtag  DW_TAG_typedef
+    1325                    .dwattr $C$DW$T$44, DW_AT_name("int_least16_t")
+    1326                    .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$41)
+    1327                    .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+    1328                    .dwattr $C$DW$T$44, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1329                    .dwattr $C$DW$T$44, DW_AT_decl_line(0x3a)
+    1330                    .dwattr $C$DW$T$44, DW_AT_decl_column(0x17)
+    1331            
+    1332            $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1333                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1334                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1335                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+    1336            
+    1337            $C$DW$T$19      .dwtag  DW_TAG_typedef
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   26
+
+    1338                    .dwattr $C$DW$T$19, DW_AT_name("uint16_t")
+    1339                    .dwattr $C$DW$T$19, DW_AT_type(*$C$DW$T$11)
+    1340                    .dwattr $C$DW$T$19, DW_AT_language(DW_LANG_C)
+    1341                    .dwattr $C$DW$T$19, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1342                    .dwattr $C$DW$T$19, DW_AT_decl_line(0x2d)
+    1343                    .dwattr $C$DW$T$19, DW_AT_decl_column(0x1c)
+    1344            
+    1345            $C$DW$T$49      .dwtag  DW_TAG_typedef
+    1346                    .dwattr $C$DW$T$49, DW_AT_name("uint_fast16_t")
+    1347                    .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$19)
+    1348                    .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    1349                    .dwattr $C$DW$T$49, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1350                    .dwattr $C$DW$T$49, DW_AT_decl_line(0x48)
+    1351                    .dwattr $C$DW$T$49, DW_AT_decl_column(0x16)
+    1352            
+    1353            $C$DW$T$50      .dwtag  DW_TAG_typedef
+    1354                    .dwattr $C$DW$T$50, DW_AT_name("uint_fast8_t")
+    1355                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$19)
+    1356                    .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    1357                    .dwattr $C$DW$T$50, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1358                    .dwattr $C$DW$T$50, DW_AT_decl_line(0x46)
+    1359                    .dwattr $C$DW$T$50, DW_AT_decl_column(0x16)
+    1360            
+    1361            $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1362                    .dwattr $C$DW$T$51, DW_AT_name("uint_least16_t")
+    1363                    .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$19)
+    1364                    .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1365                    .dwattr $C$DW$T$51, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1366                    .dwattr $C$DW$T$51, DW_AT_decl_line(0x3b)
+    1367                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x16)
+    1368            
+    1369            $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1370                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1371                    .dwattr $C$DW$T$12, DW_AT_name("long")
+    1372                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1373            
+    1374            $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1375                    .dwattr $C$DW$T$52, DW_AT_name("int32_t")
+    1376                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$12)
+    1377                    .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1378                    .dwattr $C$DW$T$52, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1379                    .dwattr $C$DW$T$52, DW_AT_decl_line(0x2e)
+    1380                    .dwattr $C$DW$T$52, DW_AT_decl_column(0x1d)
+    1381            
+    1382            $C$DW$T$53      .dwtag  DW_TAG_typedef
+    1383                    .dwattr $C$DW$T$53, DW_AT_name("int_fast32_t")
+    1384                    .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$52)
+    1385                    .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1386                    .dwattr $C$DW$T$53, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1387                    .dwattr $C$DW$T$53, DW_AT_decl_line(0x4a)
+    1388                    .dwattr $C$DW$T$53, DW_AT_decl_column(0x17)
+    1389            
+    1390            $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1391                    .dwattr $C$DW$T$54, DW_AT_name("int_least32_t")
+    1392                    .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$52)
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   27
+
+    1393                    .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1394                    .dwattr $C$DW$T$54, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1395                    .dwattr $C$DW$T$54, DW_AT_decl_line(0x3c)
+    1396                    .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
+    1397            
+    1398            $C$DW$T$55      .dwtag  DW_TAG_typedef
+    1399                    .dwattr $C$DW$T$55, DW_AT_name("intptr_t")
+    1400                    .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$12)
+    1401                    .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    1402                    .dwattr $C$DW$T$55, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1403                    .dwattr $C$DW$T$55, DW_AT_decl_line(0x55)
+    1404                    .dwattr $C$DW$T$55, DW_AT_decl_column(0x1b)
+    1405            
+    1406            $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1407                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1408                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1409                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1410            
+    1411            $C$DW$T$25      .dwtag  DW_TAG_typedef
+    1412                    .dwattr $C$DW$T$25, DW_AT_name("uint32_t")
+    1413                    .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$13)
+    1414                    .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+    1415                    .dwattr $C$DW$T$25, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1416                    .dwattr $C$DW$T$25, DW_AT_decl_line(0x2f)
+    1417                    .dwattr $C$DW$T$25, DW_AT_decl_column(0x1c)
+    1418            
+    1419            $C$DW$T$56      .dwtag  DW_TAG_typedef
+    1420                    .dwattr $C$DW$T$56, DW_AT_name("uint_fast32_t")
+    1421                    .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$25)
+    1422                    .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    1423                    .dwattr $C$DW$T$56, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1424                    .dwattr $C$DW$T$56, DW_AT_decl_line(0x4b)
+    1425                    .dwattr $C$DW$T$56, DW_AT_decl_column(0x16)
+    1426            
+    1427            $C$DW$T$57      .dwtag  DW_TAG_typedef
+    1428                    .dwattr $C$DW$T$57, DW_AT_name("uint_least32_t")
+    1429                    .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$25)
+    1430                    .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    1431                    .dwattr $C$DW$T$57, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1432                    .dwattr $C$DW$T$57, DW_AT_decl_line(0x3d)
+    1433                    .dwattr $C$DW$T$57, DW_AT_decl_column(0x16)
+    1434            
+    1435            $C$DW$T$58      .dwtag  DW_TAG_typedef
+    1436                    .dwattr $C$DW$T$58, DW_AT_name("uintptr_t")
+    1437                    .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$13)
+    1438                    .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1439                    .dwattr $C$DW$T$58, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1440                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x56)
+    1441                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x1b)
+    1442            
+    1443            $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1444                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1445                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1446                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1447            
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   28
+
+    1448            $C$DW$T$59      .dwtag  DW_TAG_typedef
+    1449                    .dwattr $C$DW$T$59, DW_AT_name("int64_t")
+    1450                    .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$14)
+    1451                    .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    1452                    .dwattr $C$DW$T$59, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1453                    .dwattr $C$DW$T$59, DW_AT_decl_line(0x32)
+    1454                    .dwattr $C$DW$T$59, DW_AT_decl_column(0x21)
+    1455            
+    1456            $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1457                    .dwattr $C$DW$T$60, DW_AT_name("int_fast64_t")
+    1458                    .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$59)
+    1459                    .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1460                    .dwattr $C$DW$T$60, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1461                    .dwattr $C$DW$T$60, DW_AT_decl_line(0x4e)
+    1462                    .dwattr $C$DW$T$60, DW_AT_decl_column(0x17)
+    1463            
+    1464            $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1465                    .dwattr $C$DW$T$61, DW_AT_name("int_least64_t")
+    1466                    .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$59)
+    1467                    .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1468                    .dwattr $C$DW$T$61, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1469                    .dwattr $C$DW$T$61, DW_AT_decl_line(0x40)
+    1470                    .dwattr $C$DW$T$61, DW_AT_decl_column(0x17)
+    1471            
+    1472            $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1473                    .dwattr $C$DW$T$62, DW_AT_name("intmax_t")
+    1474                    .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$14)
+    1475                    .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1476                    .dwattr $C$DW$T$62, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1477                    .dwattr $C$DW$T$62, DW_AT_decl_line(0x5d)
+    1478                    .dwattr $C$DW$T$62, DW_AT_decl_column(0x20)
+    1479            
+    1480            $C$DW$T$15      .dwtag  DW_TAG_base_type
+    1481                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    1482                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    1483                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    1484            
+    1485            $C$DW$T$29      .dwtag  DW_TAG_typedef
+    1486                    .dwattr $C$DW$T$29, DW_AT_name("uint64_t")
+    1487                    .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$15)
+    1488                    .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
+    1489                    .dwattr $C$DW$T$29, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1490                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x33)
+    1491                    .dwattr $C$DW$T$29, DW_AT_decl_column(0x20)
+    1492            
+    1493            $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1494                    .dwattr $C$DW$T$65, DW_AT_name("uint_fast64_t")
+    1495                    .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$29)
+    1496                    .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    1497                    .dwattr $C$DW$T$65, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1498                    .dwattr $C$DW$T$65, DW_AT_decl_line(0x4f)
+    1499                    .dwattr $C$DW$T$65, DW_AT_decl_column(0x16)
+    1500            
+    1501            $C$DW$T$66      .dwtag  DW_TAG_typedef
+    1502                    .dwattr $C$DW$T$66, DW_AT_name("uint_least64_t")
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   29
+
+    1503                    .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$29)
+    1504                    .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1505                    .dwattr $C$DW$T$66, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1506                    .dwattr $C$DW$T$66, DW_AT_decl_line(0x41)
+    1507                    .dwattr $C$DW$T$66, DW_AT_decl_column(0x16)
+    1508            
+    1509            $C$DW$T$67      .dwtag  DW_TAG_typedef
+    1510                    .dwattr $C$DW$T$67, DW_AT_name("uintmax_t")
+    1511                    .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$15)
+    1512                    .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    1513                    .dwattr $C$DW$T$67, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    1514                    .dwattr $C$DW$T$67, DW_AT_decl_line(0x5e)
+    1515                    .dwattr $C$DW$T$67, DW_AT_decl_column(0x20)
+    1516            
+    1517            $C$DW$T$16      .dwtag  DW_TAG_base_type
+    1518                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    1519                    .dwattr $C$DW$T$16, DW_AT_name("float")
+    1520                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    1521            
+    1522            $C$DW$T$17      .dwtag  DW_TAG_base_type
+    1523                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    1524                    .dwattr $C$DW$T$17, DW_AT_name("double")
+    1525                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    1526            
+    1527            $C$DW$T$18      .dwtag  DW_TAG_base_type
+    1528                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    1529                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+    1530                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    1531            
+    1532                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    1533            
+    1534            ;***************************************************************
+    1535            ;* DWARF CIE ENTRIES                                           *
+    1536            ;***************************************************************
+    1537            
+    1538            $C$DW$CIE       .dwcie 16
+    1539                    .dwcfi  cfa_register, 1
+    1540                    .dwcfi  cfa_offset, 0
+    1541                    .dwcfi  same_value, 0
+    1542                    .dwcfi  same_value, 1
+    1543                    .dwcfi  undefined, 2
+    1544                    .dwcfi  same_value, 3
+    1545                    .dwcfi  same_value, 4
+    1546                    .dwcfi  same_value, 5
+    1547                    .dwcfi  same_value, 6
+    1548                    .dwcfi  same_value, 7
+    1549                    .dwcfi  same_value, 8
+    1550                    .dwcfi  same_value, 9
+    1551                    .dwcfi  same_value, 10
+    1552                    .dwcfi  undefined, 11
+    1553                    .dwcfi  undefined, 12
+    1554                    .dwcfi  undefined, 13
+    1555                    .dwcfi  undefined, 14
+    1556                    .dwcfi  undefined, 15
+    1557                    .dwcfi  undefined, 16
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   30
+
+    1558                    .dwendentry
+    1559            
+    1560            ;***************************************************************
+    1561            ;* DWARF REGISTER MAP                                          *
+    1562            ;***************************************************************
+    1563            
+    1564            $C$DW$70        .dwtag  DW_TAG_TI_assign_register
+    1565                    .dwattr $C$DW$70, DW_AT_name("PC")
+    1566                    .dwattr $C$DW$70, DW_AT_location[DW_OP_reg0]
+    1567            
+    1568            $C$DW$71        .dwtag  DW_TAG_TI_assign_register
+    1569                    .dwattr $C$DW$71, DW_AT_name("SP")
+    1570                    .dwattr $C$DW$71, DW_AT_location[DW_OP_reg1]
+    1571            
+    1572            $C$DW$72        .dwtag  DW_TAG_TI_assign_register
+    1573                    .dwattr $C$DW$72, DW_AT_name("SR")
+    1574                    .dwattr $C$DW$72, DW_AT_location[DW_OP_reg2]
+    1575            
+    1576            $C$DW$73        .dwtag  DW_TAG_TI_assign_register
+    1577                    .dwattr $C$DW$73, DW_AT_name("CG")
+    1578                    .dwattr $C$DW$73, DW_AT_location[DW_OP_reg3]
+    1579            
+    1580            $C$DW$74        .dwtag  DW_TAG_TI_assign_register
+    1581                    .dwattr $C$DW$74, DW_AT_name("r4")
+    1582                    .dwattr $C$DW$74, DW_AT_location[DW_OP_reg4]
+    1583            
+    1584            $C$DW$75        .dwtag  DW_TAG_TI_assign_register
+    1585                    .dwattr $C$DW$75, DW_AT_name("r5")
+    1586                    .dwattr $C$DW$75, DW_AT_location[DW_OP_reg5]
+    1587            
+    1588            $C$DW$76        .dwtag  DW_TAG_TI_assign_register
+    1589                    .dwattr $C$DW$76, DW_AT_name("r6")
+    1590                    .dwattr $C$DW$76, DW_AT_location[DW_OP_reg6]
+    1591            
+    1592            $C$DW$77        .dwtag  DW_TAG_TI_assign_register
+    1593                    .dwattr $C$DW$77, DW_AT_name("r7")
+    1594                    .dwattr $C$DW$77, DW_AT_location[DW_OP_reg7]
+    1595            
+    1596            $C$DW$78        .dwtag  DW_TAG_TI_assign_register
+    1597                    .dwattr $C$DW$78, DW_AT_name("r8")
+    1598                    .dwattr $C$DW$78, DW_AT_location[DW_OP_reg8]
+    1599            
+    1600            $C$DW$79        .dwtag  DW_TAG_TI_assign_register
+    1601                    .dwattr $C$DW$79, DW_AT_name("r9")
+    1602                    .dwattr $C$DW$79, DW_AT_location[DW_OP_reg9]
+    1603            
+    1604            $C$DW$80        .dwtag  DW_TAG_TI_assign_register
+    1605                    .dwattr $C$DW$80, DW_AT_name("r10")
+    1606                    .dwattr $C$DW$80, DW_AT_location[DW_OP_reg10]
+    1607            
+    1608            $C$DW$81        .dwtag  DW_TAG_TI_assign_register
+    1609                    .dwattr $C$DW$81, DW_AT_name("r11")
+    1610                    .dwattr $C$DW$81, DW_AT_location[DW_OP_reg11]
+    1611            
+    1612            $C$DW$82        .dwtag  DW_TAG_TI_assign_register
+MSP430 Assembler PC v15.12.3 Wed Oct 12 11:18:54 2016
+
+Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
+C:\Users\LokBok\AppData\Local\Temp\068242                            PAGE   31
+
+    1613                    .dwattr $C$DW$82, DW_AT_name("r12")
+    1614                    .dwattr $C$DW$82, DW_AT_location[DW_OP_reg12]
+    1615            
+    1616            $C$DW$83        .dwtag  DW_TAG_TI_assign_register
+    1617                    .dwattr $C$DW$83, DW_AT_name("r13")
+    1618                    .dwattr $C$DW$83, DW_AT_location[DW_OP_reg13]
+    1619            
+    1620            $C$DW$84        .dwtag  DW_TAG_TI_assign_register
+    1621                    .dwattr $C$DW$84, DW_AT_name("r14")
+    1622                    .dwattr $C$DW$84, DW_AT_location[DW_OP_reg14]
+    1623            
+    1624            $C$DW$85        .dwtag  DW_TAG_TI_assign_register
+    1625                    .dwattr $C$DW$85, DW_AT_name("r15")
+    1626                    .dwattr $C$DW$85, DW_AT_location[DW_OP_reg15]
+    1627            
+    1628            $C$DW$86        .dwtag  DW_TAG_TI_assign_register
+    1629                    .dwattr $C$DW$86, DW_AT_name("CIE_RETA")
+    1630                    .dwattr $C$DW$86, DW_AT_location[DW_OP_reg16]
+    1631            
+    1632                    .dwendtag $C$DW$CU
+    1633            
+
+No Assembly Errors, No Assembly Warnings
