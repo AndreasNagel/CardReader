@@ -1,11 +1,11 @@
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    1
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 C/C++ Codegen                                       PC v15.12.3.LTS *
-       3            ;* Date/Time created: Mon Oct 17 14:33:17 2016                                *
+       3            ;* Date/Time created: Mon Oct 17 15:18:13 2016                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=large --mem_model:d
        6            
@@ -58,10 +58,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    1
       53                    .dwattr $C$DW$3, DW_AT_name("baseAddress")
       54                    .dwattr $C$DW$3, DW_AT_TI_symbol_name("baseAddress")
       55                    .dwattr $C$DW$3, DW_AT_type(*$C$DW$T$19)
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    2
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    2
 
       56                    .dwattr $C$DW$3, DW_AT_location[DW_OP_reg12]
       57            
@@ -118,10 +118,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    2
      102                    .dwattr $C$DW$6, DW_AT_decl_file("../MSP430F5xx_6xx/wdt_a.c")
      103                    .dwattr $C$DW$6, DW_AT_decl_line(0x3d)
      104                    .dwattr $C$DW$6, DW_AT_decl_column(0x06)
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    3
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    3
 
      105                    .dwattr $C$DW$6, DW_AT_TI_max_frame_size(0x04)
      106                    .dwpsn  file "../MSP430F5xx_6xx/wdt_a.c",line 62,column 1,is_stmt,address WDT_A_start,isa 0
@@ -178,10 +178,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    3
      152            $C$DW$10        .dwtag  DW_TAG_TI_branch
      153                    .dwattr $C$DW$10, DW_AT_low_pc(0x00)
      154                    .dwattr $C$DW$10, DW_AT_TI_return
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    4
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    4
 
      155            
      156 00001a 0110          RETA      ; [] 
@@ -238,10 +238,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    4
      207                    .dwattr $C$DW$13, DW_AT_location[DW_OP_reg12]
      208            
      209            ;* r15   assigned to newWDTStatus
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    5
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    5
 
      210            $C$DW$14        .dwtag  DW_TAG_variable
      211                    .dwattr $C$DW$14, DW_AT_name("newWDTStatus")
@@ -298,10 +298,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    5
      258            
      259                    .dwfde $C$DW$CIE, WDT_A_initWatchdogTimer
      260            $C$DW$17        .dwtag  DW_TAG_formal_parameter
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    6
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    6
 
      261                    .dwattr $C$DW$17, DW_AT_name("baseAddress")
      262                    .dwattr $C$DW$17, DW_AT_TI_symbol_name("baseAddress")
@@ -358,10 +358,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    6
          000010 0000 
      311                    .dwpsn  file "../MSP430F5xx_6xx/wdt_a.c",line 85,column 1,is_stmt,isa 0
      312            $C$DW$22        .dwtag  DW_TAG_TI_branch
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    7
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    7
 
      313                    .dwattr $C$DW$22, DW_AT_low_pc(0x00)
      314                    .dwattr $C$DW$22, DW_AT_TI_return
@@ -418,10 +418,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    7
      365            ;*                                                                           *
      366            ;*   Regs Modified     : SP,SR,r12,r13,r14                                   *
      367            ;*   Regs Used         : SP,SR,r12,r13,r14                                   *
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    8
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    8
 
      368            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
      369            ;*****************************************************************************
@@ -478,10 +478,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    8
      417                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
      418            
      419            ;******************************************************************************
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE    9
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE    9
 
      420            ;* TYPE INFORMATION                                                           *
      421            ;******************************************************************************
@@ -538,10 +538,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE    9
      472            
      473            $C$DW$T$21      .dwtag  DW_TAG_typedef
      474                    .dwattr $C$DW$T$21, DW_AT_name("uint8_t")
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   10
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   10
 
      475                    .dwattr $C$DW$T$21, DW_AT_type(*$C$DW$T$6)
      476                    .dwattr $C$DW$T$21, DW_AT_language(DW_LANG_C)
@@ -598,10 +598,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE   10
      527                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$29)
      528                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
      529                    .dwattr $C$DW$T$31, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   11
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   11
 
      530                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x45)
      531                    .dwattr $C$DW$T$31, DW_AT_decl_column(0x17)
@@ -658,10 +658,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE   11
      582            
      583            $C$DW$T$38      .dwtag  DW_TAG_typedef
      584                    .dwattr $C$DW$T$38, DW_AT_name("int32_t")
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   12
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   12
 
      585                    .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$12)
      586                    .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
@@ -718,10 +718,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE   12
      637                    .dwattr $C$DW$T$44, DW_AT_name("uint_least32_t")
      638                    .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$42)
      639                    .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   13
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   13
 
      640                    .dwattr $C$DW$T$44, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
      641                    .dwattr $C$DW$T$44, DW_AT_decl_line(0x3d)
@@ -778,10 +778,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE   13
      692                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
      693            
      694            $C$DW$T$50      .dwtag  DW_TAG_typedef
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   14
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   14
 
      695                    .dwattr $C$DW$T$50, DW_AT_name("uint64_t")
      696                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$15)
@@ -838,10 +838,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE   14
      747            $C$DW$CIE       .dwcie 16
      748                    .dwcfi  cfa_register, 1
      749                    .dwcfi  cfa_offset, 0
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   15
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   15
 
      750                    .dwcfi  same_value, 0
      751                    .dwcfi  same_value, 1
@@ -898,10 +898,10 @@ C:\Users\madis\AppData\Local\Temp\042402                             PAGE   15
      802                    .dwattr $C$DW$37, DW_AT_name("r7")
      803                    .dwattr $C$DW$37, DW_AT_location[DW_OP_reg7]
      804            
-MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:17 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 15:18:13 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\madis\AppData\Local\Temp\042402                             PAGE   16
+C:\Users\madis\AppData\Local\Temp\060322                             PAGE   16
 
      805            $C$DW$38        .dwtag  DW_TAG_TI_assign_register
      806                    .dwattr $C$DW$38, DW_AT_name("r8")

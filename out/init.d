@@ -1,5 +1,5 @@
 # FIXED
 
-init.obj: ../init.c
+D:/CodeComposerProj/CardReader001/out/init.obj: ../init.c
 
 ../init.c: 

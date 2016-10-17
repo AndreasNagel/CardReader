@@ -15,12 +15,12 @@ C_SRCS += \
 ../timer.c 
 
 OBJS += \
-./UARTmodule.obj \
-./init.obj \
-./initClock.obj \
-./initGpio.obj \
-./main.obj \
-./timer.obj 
+D:/CodeComposerProj/CardReader001/out/UARTmodule.obj \
+D:/CodeComposerProj/CardReader001/out/init.obj \
+D:/CodeComposerProj/CardReader001/out/initClock.obj \
+D:/CodeComposerProj/CardReader001/out/initGpio.obj \
+D:/CodeComposerProj/CardReader001/out/main.obj \
+D:/CodeComposerProj/CardReader001/out/timer.obj 
 
 C_DEPS += \
 D:/CodeComposerProj/CardReader001/out/UARTmodule.d \
@@ -39,12 +39,12 @@ C_DEPS__QUOTED += \
 "D:\CodeComposerProj\CardReader001\out\timer.d" 
 
 OBJS__QUOTED += \
-"UARTmodule.obj" \
-"init.obj" \
-"initClock.obj" \
-"initGpio.obj" \
-"main.obj" \
-"timer.obj" 
+"D:\CodeComposerProj\CardReader001\out\UARTmodule.obj" \
+"D:\CodeComposerProj\CardReader001\out\init.obj" \
+"D:\CodeComposerProj\CardReader001\out\initClock.obj" \
+"D:\CodeComposerProj\CardReader001\out\initGpio.obj" \
+"D:\CodeComposerProj\CardReader001\out\main.obj" \
+"D:\CodeComposerProj\CardReader001\out\timer.obj" 
 
 C_SRCS__QUOTED += \
 "../UARTmodule.c" \
