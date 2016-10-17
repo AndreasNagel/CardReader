@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Mon Oct 17 15:18:14 2016
+>> Linked Mon Oct 17 15:25:19 2016
 
 OUTPUT FILE NAME:   <CardReader001.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 00004400
