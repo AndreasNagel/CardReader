@@ -1,11 +1,11 @@
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    1
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    1
 
        1            ;******************************************************************************
        2            ;* MSP430 C/C++ Codegen                                       PC v15.12.3.LTS *
-       3            ;* Date/Time created: Wed Oct 12 11:19:06 2016                                *
+       3            ;* Date/Time created: Mon Oct 17 14:33:06 2016                                *
        4            ;******************************************************************************
        5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=large --mem_model:d
        6            
@@ -13,8 +13,8 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    1
        8                    .dwattr $C$DW$CU, DW_AT_name("../MSP430F5xx_6xx/pmm.c")
        9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 C/C++ Codegen PC v15.12.3.LTS Copyright (c) 2003-2
       10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("D:\Programmeerimine\Code Composer WS\CardReader\src\Debug")
-      12            ;       D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\bin\opt430.exe D:/Programmee
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("D:\CodeComposerProj\CardReader001\src\Debug")
+      12            ;       D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\bin\opt430.exe D:/CodeComposerProj/CardReader001
       13 000000               .sect   ".text:PMM_enableSvsL"
       14                    .clink
       15                    .global PMM_enableSvsL
@@ -58,10 +58,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    1
       49                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 56,column 5,is_stmt,isa 0
       50 00000c 43C2          MOV.B     #0,&0x121             ; [] |56| 
          00000e 0121 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    2
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    2
 
       51                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 57,column 1,is_stmt,isa 0
       52            $C$DW$2 .dwtag  DW_TAG_TI_branch
@@ -118,10 +118,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    2
          00000a 0126 
      100                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 63,column 5,is_stmt,isa 0
      101 00000c 43C2          MOV.B     #0,&0x121             ; [] |63| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    3
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    3
 
          00000e 0121 
      102                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 64,column 1,is_stmt,isa 0
@@ -178,10 +178,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    3
          000008 4000 
          00000a 0126 
      151                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 70,column 5,is_stmt,isa 0
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    4
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    4
 
      152 00000c 43C2          MOV.B     #0,&0x121             ; [] |70| 
          00000e 0121 
@@ -238,10 +238,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    4
      201 000006 F0B2          AND.W     #49151,&0x126         ; [] |76| 
          000008 BFFF 
          00000a 0126 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    5
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    5
 
      202                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 77,column 5,is_stmt,isa 0
      203 00000c 43C2          MOV.B     #0,&0x121             ; [] |77| 
@@ -298,10 +298,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    5
      251                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 83,column 5,is_stmt,isa 0
      252 000006 D0B2          OR.W      #1024,&0x124          ; [] |83| 
          000008 0400 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    6
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    6
 
          00000a 0124 
      253                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 84,column 5,is_stmt,isa 0
@@ -358,10 +358,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    6
          000004 0121 
      302                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 90,column 5,is_stmt,isa 0
      303 000006 F0B2          AND.W     #64511,&0x124         ; [] |90| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    7
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    7
 
          000008 FBFF 
          00000a 0124 
@@ -418,10 +418,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    7
          000002 00A5 
          000004 0121 
      353                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 97,column 5,is_stmt,isa 0
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    8
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    8
 
      354 000006 D0B2          OR.W      #16384,&0x124         ; [] |97| 
          000008 4000 
@@ -478,10 +478,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    8
      403 000000 40F2          MOV.B     #165,&0x121           ; [] |103| 
          000002 00A5 
          000004 0121 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    9
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE    9
 
      404                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 104,column 5,is_stmt,isa 0
      405 000006 F0B2          AND.W     #49151,&0x124         ; [] |104| 
@@ -538,10 +538,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE    9
      453                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 110,column 5,is_stmt,isa 0
      454 000000 40F2          MOV.B     #165,&0x121           ; [] |110| 
          000002 00A5 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   10
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   10
 
          000004 0121 
      455                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 111,column 5,is_stmt,isa 0
@@ -598,10 +598,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   10
      503                    .dwcfi  save_reg_to_mem, 16, -4
      504                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 117,column 5,is_stmt,isa 0
      505 000000 40F2          MOV.B     #165,&0x121           ; [] |117| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   11
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   11
 
          000002 00A5 
          000004 0121 
@@ -658,10 +658,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   11
      553                    .dwcfi  cfa_offset, 4
      554                    .dwcfi  save_reg_to_mem, 16, -4
      555                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 124,column 5,is_stmt,isa 0
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   12
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   12
 
      556 000000 40F2          MOV.B     #165,&0x121           ; [] |124| 
          000002 00A5 
@@ -718,10 +718,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   12
      603            ;* --------------------------------------------------------------------------*
      604                    .dwcfi  cfa_offset, 4
      605                    .dwcfi  save_reg_to_mem, 16, -4
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   13
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   13
 
      606                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 131,column 5,is_stmt,isa 0
      607 000000 40F2          MOV.B     #165,&0x121           ; [] |131| 
@@ -778,10 +778,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   13
      653 000000       PMM_enableSvsLReset:
      654            ;* --------------------------------------------------------------------------*
      655                    .dwcfi  cfa_offset, 4
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   14
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   14
 
      656                    .dwcfi  save_reg_to_mem, 16, -4
      657                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 138,column 5,is_stmt,isa 0
@@ -838,10 +838,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   14
      703            ;*****************************************************************************
      704 000000       PMM_disableSvsLReset:
      705            ;* --------------------------------------------------------------------------*
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   15
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   15
 
      706                    .dwcfi  cfa_offset, 4
      707                    .dwcfi  save_reg_to_mem, 16, -4
@@ -898,10 +898,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   15
      753            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
      754            ;*****************************************************************************
      755 000000       PMM_enableSvmLInterrupt:
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   16
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   16
 
      756            ;* --------------------------------------------------------------------------*
      757                    .dwcfi  cfa_offset, 4
@@ -958,10 +958,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   16
      804            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
      805            ;*****************************************************************************
      806 000000       PMM_disableSvmLInterrupt:
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   17
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   17
 
      807            ;* --------------------------------------------------------------------------*
      808                    .dwcfi  cfa_offset, 4
@@ -1018,10 +1018,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   17
      855            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
      856            ;*****************************************************************************
      857 000000       PMM_enableSvsHReset:
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   18
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   18
 
      858            ;* --------------------------------------------------------------------------*
      859                    .dwcfi  cfa_offset, 4
@@ -1078,10 +1078,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   18
      905            ;*   Regs Used         : SP,SR                                               *
      906            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
      907            ;*****************************************************************************
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   19
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   19
 
      908 000000       PMM_disableSvsHReset:
      909            ;* --------------------------------------------------------------------------*
@@ -1138,10 +1138,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   19
      955            ;*   Regs Modified     : SP                                                  *
      956            ;*   Regs Used         : SP                                                  *
      957            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   20
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   20
 
      958            ;*****************************************************************************
      959 000000       PMM_enableSvmHInterrupt:
@@ -1198,10 +1198,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   20
     1005            ;*                                                                           *
     1006            ;*   Regs Modified     : SP,SR                                               *
     1007            ;*   Regs Used         : SP,SR                                               *
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   21
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   21
 
     1008            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
     1009            ;*****************************************************************************
@@ -1258,10 +1258,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   21
     1055            ;* FUNCTION NAME: PMM_clearPMMIFGS                                           *
     1056            ;*                                                                           *
     1057            ;*   Regs Modified     : SP                                                  *
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   22
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   22
 
     1058            ;*   Regs Used         : SP                                                  *
     1059            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
@@ -1318,10 +1318,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   22
     1106            ;* FUNCTION NAME: PMM_enableSvsLInLPMFastWake                                *
     1107            ;*                                                                           *
     1108            ;*   Regs Modified     : SP,SR                                               *
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   23
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   23
 
     1109            ;*   Regs Used         : SP,SR                                               *
     1110            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
@@ -1378,10 +1378,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   23
     1154                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 209,column 1,is_stmt,address PMM_enableSvsLInLPMSl
     1155            
     1156                    .dwfde $C$DW$CIE, PMM_enableSvsLInLPMSlowWake
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   24
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   24
 
     1157            
     1158            ;*****************************************************************************
@@ -1438,10 +1438,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   24
     1202                    .dwattr $C$DW$47, DW_AT_TI_begin_column(0x06)
     1203                    .dwattr $C$DW$47, DW_AT_decl_file("../MSP430F5xx_6xx/pmm.c")
     1204                    .dwattr $C$DW$47, DW_AT_decl_line(0xd8)
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   25
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   25
 
     1205                    .dwattr $C$DW$47, DW_AT_decl_column(0x06)
     1206                    .dwattr $C$DW$47, DW_AT_TI_max_frame_size(0x04)
@@ -1498,10 +1498,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   25
     1250                    .dwattr $C$DW$49, DW_AT_high_pc(0x00)
     1251                    .dwattr $C$DW$49, DW_AT_TI_symbol_name("PMM_disableSvsLInLPMSlowWake")
     1252                    .dwattr $C$DW$49, DW_AT_external
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   26
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   26
 
     1253                    .dwattr $C$DW$49, DW_AT_TI_begin_file("../MSP430F5xx_6xx/pmm.c")
     1254                    .dwattr $C$DW$49, DW_AT_TI_begin_line(0xe0)
@@ -1558,10 +1558,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   26
     1300                    .dwattr $C$DW$51, DW_AT_low_pc(PMM_enableSvsHInLPMNormPerf)
     1301                    .dwattr $C$DW$51, DW_AT_high_pc(0x00)
     1302                    .dwattr $C$DW$51, DW_AT_TI_symbol_name("PMM_enableSvsHInLPMNormPerf")
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   27
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   27
 
     1303                    .dwattr $C$DW$51, DW_AT_external
     1304                    .dwattr $C$DW$51, DW_AT_TI_begin_file("../MSP430F5xx_6xx/pmm.c")
@@ -1618,10 +1618,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   27
     1348                    .clink
     1349                    .global PMM_enableSvsHInLPMFullPerf
     1350            
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   28
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   28
 
     1351            $C$DW$53        .dwtag  DW_TAG_subprogram
     1352                    .dwattr $C$DW$53, DW_AT_name("PMM_enableSvsHInLPMFullPerf")
@@ -1678,10 +1678,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   28
     1396                    .dwattr $C$DW$53, DW_AT_TI_end_column(0x01)
     1397                    .dwendentry
     1398                    .dwendtag $C$DW$53
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   29
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   29
 
     1399            
     1400 000000               .sect   ".text:PMM_disableSvsHInLPMNormPerf"
@@ -1738,10 +1738,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   29
     1446                    .dwattr $C$DW$55, DW_AT_TI_end_line(0xfc)
     1447                    .dwattr $C$DW$55, DW_AT_TI_end_column(0x01)
     1448                    .dwendentry
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   30
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   30
 
     1449                    .dwendtag $C$DW$55
     1450            
@@ -1798,10 +1798,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   30
     1494                    .dwattr $C$DW$58, DW_AT_TI_return
     1495            
     1496 000016 0110          RETA      ; [] 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   31
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   31
 
     1497                    ; [] 
     1498                    .dwattr $C$DW$57, DW_AT_TI_end_file("../MSP430F5xx_6xx/pmm.c")
@@ -1858,10 +1858,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   31
     1544                    .dwattr $C$DW$60, DW_AT_low_pc(0x00)
     1545                    .dwattr $C$DW$60, DW_AT_TI_return
     1546            
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   32
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   32
 
     1547 000010 0110          RETA      ; [] 
     1548                    ; [] 
@@ -1918,10 +1918,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   32
     1594            $C$DW$62        .dwtag  DW_TAG_TI_branch
     1595                    .dwattr $C$DW$62, DW_AT_low_pc(0x00)
     1596                    .dwattr $C$DW$62, DW_AT_TI_return
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   33
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   33
 
     1597            
     1598 000010 0110          RETA      ; [] 
@@ -1978,10 +1978,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   33
     1649            ;* r12   assigned to level
     1650            $C$DW$65        .dwtag  DW_TAG_variable
     1651                    .dwattr $C$DW$65, DW_AT_name("level")
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   34
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   34
 
     1652                    .dwattr $C$DW$65, DW_AT_TI_symbol_name("level")
     1653                    .dwattr $C$DW$65, DW_AT_type(*$C$DW$T$25)
@@ -2038,10 +2038,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   34
          00002a 0124 
     1695            ;* --------------------------------------------------------------------------*
     1696            ;*   BEGIN LOOP $C$L1
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   35
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   35
 
     1697            ;*
     1698            ;*   Loop source line                : 306
@@ -2098,10 +2098,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   35
          000058 012C 
     1738                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 357,column 5,is_stmt,isa 0
     1739 00005a 4CC2          MOV.B     r12,&0x120            ; [] |357| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   36
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   36
 
          00005c 0120 
     1740                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 360,column 5,is_stmt,isa 0
@@ -2158,10 +2158,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   36
     1778            ;*
     1779            ;*   Loop source line                : 401
     1780            ;*   Loop closing brace source line  : 405
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   37
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   37
 
     1781            ;*   Known Minimum Trip Count        : 1
     1782            ;*   Known Maximum Trip Count        : 4294967295
@@ -2218,10 +2218,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   37
     1823 0000c4 B0B2          BIT.W     #16,&0x12c            ; [] |323| 
          0000c6 0010 
          0000c8 012C 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   38
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   38
 
     1824 0000ca 27FC          JEQ       $C$L7                 ; [] |323| 
     1825                                                      ; [] |323| 
@@ -2278,10 +2278,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   38
     1872                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 421,column 41,is_stmt,address PMM_setVCoreDown,isa
     1873            
     1874                    .dwfde $C$DW$CIE, PMM_setVCoreDown
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   39
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   39
 
     1875            $C$DW$71        .dwtag  DW_TAG_formal_parameter
     1876                    .dwattr $C$DW$71, DW_AT_name("level")
@@ -2338,10 +2338,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   39
     1927 000002 40F2          MOV.B     #165,&0x121           ; [] |430| 
          000004 00A5 
          000006 0121 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   40
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   40
 
     1928                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 434,column 5,is_stmt,isa 0
     1929 000008 421A          MOV.W     &0x12e,r10            ; [] |434| 
@@ -2398,10 +2398,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   40
          00004c 012C 
     1966 00004e 2003          JNE       $C$L10                ; [] |455| 
     1967                                                      ; [] |455| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   41
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   41
 
     1968            ;* --------------------------------------------------------------------------*
     1969 000050 B392          BIT.W     #1,&0x12c             ; [] |455| 
@@ -2458,10 +2458,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   41
          00008a 012C 
     2006 00008c 27F9          JEQ       $C$L11                ; [] |495| 
     2007                                                      ; [] |495| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   42
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   42
 
     2008            ;* --------------------------------------------------------------------------*
     2009 00008e       $C$L12:    
@@ -2518,10 +2518,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   42
     2056                    .dwfde $C$DW$CIE, PMM_setVCore
     2057            $C$DW$78        .dwtag  DW_TAG_formal_parameter
     2058                    .dwattr $C$DW$78, DW_AT_name("level")
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   43
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   43
 
     2059                    .dwattr $C$DW$78, DW_AT_TI_symbol_name("level")
     2060                    .dwattr $C$DW$78, DW_AT_type(*$C$DW$T$25)
@@ -2578,10 +2578,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   43
          000010 0003 
     2109                    .dwpsn  file "../MSP430F5xx_6xx/pmm.c",line 525,column 5,is_stmt,isa 0
     2110 000012 3C10          JMP       $C$L17                ; [] |525| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   44
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   44
 
     2111                                                      ; [] |525| 
     2112            ;* --------------------------------------------------------------------------*
@@ -2638,10 +2638,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   44
     2161 000038 935C          CMP.B     #1,r12                ; [] |525| 
     2162 00003a 27EC          JEQ       $C$L13                ; [] |525| 
     2163                                                      ; [] |525| 
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   45
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   45
 
     2164            ;* --------------------------------------------------------------------------*
     2165 00003c       $C$L18:    
@@ -2698,10 +2698,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   45
     2216            ;*   Regs Modified     : SP,SR,r12                                           *
     2217            ;*   Regs Used         : SP,SR,r12                                           *
     2218            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   46
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   46
 
     2219            ;*****************************************************************************
     2220 000000       PMM_getInterruptStatus:
@@ -2754,14 +2754,14 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   46
     2266                    .dwattr $C$DW$T$22, DW_AT_name("__SFR_FARPTR")
     2267                    .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$21)
     2268                    .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
-    2269                    .dwattr $C$DW$T$22, DW_AT_decl_file("D:\Program Files\TI CCSv6\ccsv6\ccs_base\msp430\include\m
+    2269                    .dwattr $C$DW$T$22, DW_AT_decl_file("D:\ti\ccsv6\ccs_base\msp430\include\msp430f5529.h")
     2270                    .dwattr $C$DW$T$22, DW_AT_decl_line(0x47)
     2271                    .dwattr $C$DW$T$22, DW_AT_decl_column(0x11)
     2272            
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   47
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   47
 
     2273            $C$DW$T$4       .dwtag  DW_TAG_base_type
     2274                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
@@ -2777,7 +2777,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   47
     2284                    .dwattr $C$DW$T$23, DW_AT_name("int8_t")
     2285                    .dwattr $C$DW$T$23, DW_AT_type(*$C$DW$T$5)
     2286                    .dwattr $C$DW$T$23, DW_AT_language(DW_LANG_C)
-    2287                    .dwattr $C$DW$T$23, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2287                    .dwattr $C$DW$T$23, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2288                    .dwattr $C$DW$T$23, DW_AT_decl_line(0x2a)
     2289                    .dwattr $C$DW$T$23, DW_AT_decl_column(0x1e)
     2290            
@@ -2785,7 +2785,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   47
     2292                    .dwattr $C$DW$T$24, DW_AT_name("int_least8_t")
     2293                    .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$23)
     2294                    .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
-    2295                    .dwattr $C$DW$T$24, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2295                    .dwattr $C$DW$T$24, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2296                    .dwattr $C$DW$T$24, DW_AT_decl_line(0x37)
     2297                    .dwattr $C$DW$T$24, DW_AT_decl_column(0x17)
     2298            
@@ -2798,7 +2798,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   47
     2305                    .dwattr $C$DW$T$25, DW_AT_name("uint8_t")
     2306                    .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$6)
     2307                    .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
-    2308                    .dwattr $C$DW$T$25, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2308                    .dwattr $C$DW$T$25, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2309                    .dwattr $C$DW$T$25, DW_AT_decl_line(0x2b)
     2310                    .dwattr $C$DW$T$25, DW_AT_decl_column(0x1d)
     2311            
@@ -2806,7 +2806,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   47
     2313                    .dwattr $C$DW$T$29, DW_AT_name("uint_least8_t")
     2314                    .dwattr $C$DW$T$29, DW_AT_type(*$C$DW$T$25)
     2315                    .dwattr $C$DW$T$29, DW_AT_language(DW_LANG_C)
-    2316                    .dwattr $C$DW$T$29, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2316                    .dwattr $C$DW$T$29, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2317                    .dwattr $C$DW$T$29, DW_AT_decl_line(0x38)
     2318                    .dwattr $C$DW$T$29, DW_AT_decl_column(0x16)
     2319            
@@ -2818,10 +2818,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   47
     2325            $C$DW$T$8       .dwtag  DW_TAG_base_type
     2326                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
     2327                    .dwattr $C$DW$T$8, DW_AT_name("short")
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   48
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   48
 
     2328                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
     2329            
@@ -2839,7 +2839,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   48
     2341                    .dwattr $C$DW$T$30, DW_AT_name("int16_t")
     2342                    .dwattr $C$DW$T$30, DW_AT_type(*$C$DW$T$10)
     2343                    .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
-    2344                    .dwattr $C$DW$T$30, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2344                    .dwattr $C$DW$T$30, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2345                    .dwattr $C$DW$T$30, DW_AT_decl_line(0x2c)
     2346                    .dwattr $C$DW$T$30, DW_AT_decl_column(0x1d)
     2347            
@@ -2847,7 +2847,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   48
     2349                    .dwattr $C$DW$T$31, DW_AT_name("int_fast16_t")
     2350                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$30)
     2351                    .dwattr $C$DW$T$31, DW_AT_language(DW_LANG_C)
-    2352                    .dwattr $C$DW$T$31, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2352                    .dwattr $C$DW$T$31, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2353                    .dwattr $C$DW$T$31, DW_AT_decl_line(0x47)
     2354                    .dwattr $C$DW$T$31, DW_AT_decl_column(0x17)
     2355            
@@ -2855,7 +2855,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   48
     2357                    .dwattr $C$DW$T$32, DW_AT_name("int_fast8_t")
     2358                    .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$30)
     2359                    .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
-    2360                    .dwattr $C$DW$T$32, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2360                    .dwattr $C$DW$T$32, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2361                    .dwattr $C$DW$T$32, DW_AT_decl_line(0x45)
     2362                    .dwattr $C$DW$T$32, DW_AT_decl_column(0x17)
     2363            
@@ -2863,7 +2863,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   48
     2365                    .dwattr $C$DW$T$33, DW_AT_name("int_least16_t")
     2366                    .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$30)
     2367                    .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
-    2368                    .dwattr $C$DW$T$33, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2368                    .dwattr $C$DW$T$33, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2369                    .dwattr $C$DW$T$33, DW_AT_decl_line(0x3a)
     2370                    .dwattr $C$DW$T$33, DW_AT_decl_column(0x17)
     2371            
@@ -2876,12 +2876,12 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   48
     2378                    .dwattr $C$DW$T$36, DW_AT_name("uint16_t")
     2379                    .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$11)
     2380                    .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
-    2381                    .dwattr $C$DW$T$36, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2381                    .dwattr $C$DW$T$36, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2382                    .dwattr $C$DW$T$36, DW_AT_decl_line(0x2d)
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   49
 
     2383                    .dwattr $C$DW$T$36, DW_AT_decl_column(0x1c)
     2384            
@@ -2889,7 +2889,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
     2386                    .dwattr $C$DW$T$42, DW_AT_name("uint_fast16_t")
     2387                    .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$36)
     2388                    .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
-    2389                    .dwattr $C$DW$T$42, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2389                    .dwattr $C$DW$T$42, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2390                    .dwattr $C$DW$T$42, DW_AT_decl_line(0x48)
     2391                    .dwattr $C$DW$T$42, DW_AT_decl_column(0x16)
     2392            
@@ -2897,7 +2897,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
     2394                    .dwattr $C$DW$T$43, DW_AT_name("uint_fast8_t")
     2395                    .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$36)
     2396                    .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
-    2397                    .dwattr $C$DW$T$43, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2397                    .dwattr $C$DW$T$43, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2398                    .dwattr $C$DW$T$43, DW_AT_decl_line(0x46)
     2399                    .dwattr $C$DW$T$43, DW_AT_decl_column(0x16)
     2400            
@@ -2905,7 +2905,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
     2402                    .dwattr $C$DW$T$44, DW_AT_name("uint_least16_t")
     2403                    .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$36)
     2404                    .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
-    2405                    .dwattr $C$DW$T$44, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2405                    .dwattr $C$DW$T$44, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2406                    .dwattr $C$DW$T$44, DW_AT_decl_line(0x3b)
     2407                    .dwattr $C$DW$T$44, DW_AT_decl_column(0x16)
     2408            
@@ -2918,7 +2918,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
     2415                    .dwattr $C$DW$T$45, DW_AT_name("int32_t")
     2416                    .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$12)
     2417                    .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
-    2418                    .dwattr $C$DW$T$45, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2418                    .dwattr $C$DW$T$45, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2419                    .dwattr $C$DW$T$45, DW_AT_decl_line(0x2e)
     2420                    .dwattr $C$DW$T$45, DW_AT_decl_column(0x1d)
     2421            
@@ -2926,7 +2926,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
     2423                    .dwattr $C$DW$T$46, DW_AT_name("int_fast32_t")
     2424                    .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$45)
     2425                    .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
-    2426                    .dwattr $C$DW$T$46, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2426                    .dwattr $C$DW$T$46, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2427                    .dwattr $C$DW$T$46, DW_AT_decl_line(0x4a)
     2428                    .dwattr $C$DW$T$46, DW_AT_decl_column(0x17)
     2429            
@@ -2934,20 +2934,20 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   49
     2431                    .dwattr $C$DW$T$47, DW_AT_name("int_least32_t")
     2432                    .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$45)
     2433                    .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
-    2434                    .dwattr $C$DW$T$47, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2434                    .dwattr $C$DW$T$47, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2435                    .dwattr $C$DW$T$47, DW_AT_decl_line(0x3c)
     2436                    .dwattr $C$DW$T$47, DW_AT_decl_column(0x17)
     2437            
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   50
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   50
 
     2438            $C$DW$T$48      .dwtag  DW_TAG_typedef
     2439                    .dwattr $C$DW$T$48, DW_AT_name("intptr_t")
     2440                    .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$12)
     2441                    .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
-    2442                    .dwattr $C$DW$T$48, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2442                    .dwattr $C$DW$T$48, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2443                    .dwattr $C$DW$T$48, DW_AT_decl_line(0x55)
     2444                    .dwattr $C$DW$T$48, DW_AT_decl_column(0x1b)
     2445            
@@ -2960,7 +2960,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   50
     2452                    .dwattr $C$DW$T$49, DW_AT_name("uint32_t")
     2453                    .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$13)
     2454                    .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
-    2455                    .dwattr $C$DW$T$49, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2455                    .dwattr $C$DW$T$49, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2456                    .dwattr $C$DW$T$49, DW_AT_decl_line(0x2f)
     2457                    .dwattr $C$DW$T$49, DW_AT_decl_column(0x1c)
     2458            
@@ -2968,7 +2968,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   50
     2460                    .dwattr $C$DW$T$50, DW_AT_name("uint_fast32_t")
     2461                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$49)
     2462                    .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
-    2463                    .dwattr $C$DW$T$50, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2463                    .dwattr $C$DW$T$50, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2464                    .dwattr $C$DW$T$50, DW_AT_decl_line(0x4b)
     2465                    .dwattr $C$DW$T$50, DW_AT_decl_column(0x16)
     2466            
@@ -2976,7 +2976,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   50
     2468                    .dwattr $C$DW$T$51, DW_AT_name("uint_least32_t")
     2469                    .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$49)
     2470                    .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
-    2471                    .dwattr $C$DW$T$51, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2471                    .dwattr $C$DW$T$51, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2472                    .dwattr $C$DW$T$51, DW_AT_decl_line(0x3d)
     2473                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x16)
     2474            
@@ -2984,7 +2984,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   50
     2476                    .dwattr $C$DW$T$52, DW_AT_name("uintptr_t")
     2477                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$13)
     2478                    .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
-    2479                    .dwattr $C$DW$T$52, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2479                    .dwattr $C$DW$T$52, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2480                    .dwattr $C$DW$T$52, DW_AT_decl_line(0x56)
     2481                    .dwattr $C$DW$T$52, DW_AT_decl_column(0x1b)
     2482            
@@ -2997,11 +2997,11 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   50
     2489                    .dwattr $C$DW$T$53, DW_AT_name("int64_t")
     2490                    .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$14)
     2491                    .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
-    2492                    .dwattr $C$DW$T$53, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+    2492                    .dwattr $C$DW$T$53, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   51
 
     2493                    .dwattr $C$DW$T$53, DW_AT_decl_line(0x32)
     2494                    .dwattr $C$DW$T$53, DW_AT_decl_column(0x21)
@@ -3010,7 +3010,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
     2497                    .dwattr $C$DW$T$54, DW_AT_name("int_fast64_t")
     2498                    .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$53)
     2499                    .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
-    2500                    .dwattr $C$DW$T$54, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2500                    .dwattr $C$DW$T$54, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2501                    .dwattr $C$DW$T$54, DW_AT_decl_line(0x4e)
     2502                    .dwattr $C$DW$T$54, DW_AT_decl_column(0x17)
     2503            
@@ -3018,7 +3018,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
     2505                    .dwattr $C$DW$T$55, DW_AT_name("int_least64_t")
     2506                    .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$53)
     2507                    .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
-    2508                    .dwattr $C$DW$T$55, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2508                    .dwattr $C$DW$T$55, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2509                    .dwattr $C$DW$T$55, DW_AT_decl_line(0x40)
     2510                    .dwattr $C$DW$T$55, DW_AT_decl_column(0x17)
     2511            
@@ -3026,7 +3026,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
     2513                    .dwattr $C$DW$T$56, DW_AT_name("intmax_t")
     2514                    .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$14)
     2515                    .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
-    2516                    .dwattr $C$DW$T$56, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2516                    .dwattr $C$DW$T$56, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2517                    .dwattr $C$DW$T$56, DW_AT_decl_line(0x5d)
     2518                    .dwattr $C$DW$T$56, DW_AT_decl_column(0x20)
     2519            
@@ -3039,7 +3039,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
     2526                    .dwattr $C$DW$T$57, DW_AT_name("uint64_t")
     2527                    .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$15)
     2528                    .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
-    2529                    .dwattr $C$DW$T$57, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2529                    .dwattr $C$DW$T$57, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2530                    .dwattr $C$DW$T$57, DW_AT_decl_line(0x33)
     2531                    .dwattr $C$DW$T$57, DW_AT_decl_column(0x20)
     2532            
@@ -3047,7 +3047,7 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
     2534                    .dwattr $C$DW$T$58, DW_AT_name("uint_fast64_t")
     2535                    .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$57)
     2536                    .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
-    2537                    .dwattr $C$DW$T$58, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2537                    .dwattr $C$DW$T$58, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2538                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x4f)
     2539                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x16)
     2540            
@@ -3055,20 +3055,20 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   51
     2542                    .dwattr $C$DW$T$59, DW_AT_name("uint_least64_t")
     2543                    .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$57)
     2544                    .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
-    2545                    .dwattr $C$DW$T$59, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2545                    .dwattr $C$DW$T$59, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2546                    .dwattr $C$DW$T$59, DW_AT_decl_line(0x41)
     2547                    .dwattr $C$DW$T$59, DW_AT_decl_column(0x16)
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   52
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   52
 
     2548            
     2549            $C$DW$T$60      .dwtag  DW_TAG_typedef
     2550                    .dwattr $C$DW$T$60, DW_AT_name("uintmax_t")
     2551                    .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$15)
     2552                    .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
-    2553                    .dwattr $C$DW$T$60, DW_AT_decl_file("D:/Program Files/TI CCSv6/ccsv6/tools/compiler/msp430_15.
+    2553                    .dwattr $C$DW$T$60, DW_AT_decl_file("D:/ti/ccsv6/tools/compiler/msp430_15.12.3.LTS/include/std
     2554                    .dwattr $C$DW$T$60, DW_AT_decl_line(0x5e)
     2555                    .dwattr $C$DW$T$60, DW_AT_decl_column(0x20)
     2556            
@@ -3118,10 +3118,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   52
     2600                    .dwcfi  undefined, 14
     2601                    .dwcfi  undefined, 15
     2602                    .dwcfi  undefined, 16
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   53
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   53
 
     2603                    .dwendentry
     2604            
@@ -3178,10 +3178,10 @@ C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   53
     2655                    .dwattr $C$DW$99, DW_AT_location[DW_OP_reg11]
     2656            
     2657            $C$DW$100       .dwtag  DW_TAG_TI_assign_register
-MSP430 Assembler PC v15.12.3 Wed Oct 12 11:19:06 2016
+MSP430 Assembler PC v15.12.3 Mon Oct 17 14:33:07 2016
 
 Tools Copyright (c) 2003-2015 Texas Instruments Incorporated
-C:\Users\LokBok\AppData\Local\Temp\012922                            PAGE   54
+C:\Users\madis\AppData\Local\Temp\027322                             PAGE   54
 
     2658                    .dwattr $C$DW$100, DW_AT_name("r12")
     2659                    .dwattr $C$DW$100, DW_AT_location[DW_OP_reg12]

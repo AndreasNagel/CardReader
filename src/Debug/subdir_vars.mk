@@ -15,36 +15,36 @@ C_SRCS += \
 ../timer.c 
 
 OBJS += \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/UARTmodule.obj \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/init.obj \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/initClock.obj \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/initGpio.obj \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/main.obj \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/timer.obj 
+./UARTmodule.obj \
+./init.obj \
+./initClock.obj \
+./initGpio.obj \
+./main.obj \
+./timer.obj 
 
 C_DEPS += \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/UARTmodule.d \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/init.d \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/initClock.d \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/initGpio.d \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/main.d \
-D:/Programmeerimine/Code\ Composer\ WS/CardReader/out/timer.d 
+D:/CodeComposerProj/CardReader001/out/UARTmodule.d \
+D:/CodeComposerProj/CardReader001/out/init.d \
+D:/CodeComposerProj/CardReader001/out/initClock.d \
+D:/CodeComposerProj/CardReader001/out/initGpio.d \
+D:/CodeComposerProj/CardReader001/out/main.d \
+D:/CodeComposerProj/CardReader001/out/timer.d 
 
 C_DEPS__QUOTED += \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\UARTmodule.d" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\init.d" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\initClock.d" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\initGpio.d" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\main.d" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\timer.d" 
+"D:\CodeComposerProj\CardReader001\out\UARTmodule.d" \
+"D:\CodeComposerProj\CardReader001\out\init.d" \
+"D:\CodeComposerProj\CardReader001\out\initClock.d" \
+"D:\CodeComposerProj\CardReader001\out\initGpio.d" \
+"D:\CodeComposerProj\CardReader001\out\main.d" \
+"D:\CodeComposerProj\CardReader001\out\timer.d" 
 
 OBJS__QUOTED += \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\UARTmodule.obj" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\init.obj" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\initClock.obj" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\initGpio.obj" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\main.obj" \
-"D:\Programmeerimine\Code Composer WS\CardReader\out\timer.obj" 
+"UARTmodule.obj" \
+"init.obj" \
+"initClock.obj" \
+"initGpio.obj" \
+"main.obj" \
+"timer.obj" 
 
 C_SRCS__QUOTED += \
 "../UARTmodule.c" \

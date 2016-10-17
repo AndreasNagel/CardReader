@@ -2,7 +2,7 @@
 <link_info>
    <banner>MSP430 Linker PC v15.12.3.LTS</banner>
    <copyright>Copyright (c) 2003-2015 Texas Instruments Incorporated</copyright>
-   <link_time>0x57fdf397</link_time>
+   <link_time>0x5804b6fd</link_time>
    <link_errors>0x0</link_errors>
    <output_file>CardReader001.out</output_file>
    <entry_point>
@@ -11,577 +11,577 @@
    </entry_point>
    <input_file_list>
       <input_file id="fl-2">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\</path>
          <kind>object</kind>
          <file>UARTmodule.obj</file>
          <name>UARTmodule.obj</name>
       </input_file>
       <input_file id="fl-3">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\</path>
          <kind>object</kind>
          <file>init.obj</file>
          <name>init.obj</name>
       </input_file>
       <input_file id="fl-4">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\</path>
          <kind>object</kind>
          <file>initClock.obj</file>
          <name>initClock.obj</name>
       </input_file>
       <input_file id="fl-5">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\</path>
          <kind>object</kind>
          <file>initGpio.obj</file>
          <name>initGpio.obj</name>
       </input_file>
       <input_file id="fl-6">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\</path>
          <kind>object</kind>
          <file>main.obj</file>
          <name>main.obj</name>
       </input_file>
       <input_file id="fl-7">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\</path>
          <kind>object</kind>
          <file>timer.obj</file>
          <name>timer.obj</name>
       </input_file>
       <input_file id="fl-8">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>adc10_a.obj</file>
          <name>adc10_a.obj</name>
       </input_file>
       <input_file id="fl-9">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>adc12_a.obj</file>
          <name>adc12_a.obj</name>
       </input_file>
       <input_file id="fl-a">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>aes.obj</file>
          <name>aes.obj</name>
       </input_file>
       <input_file id="fl-b">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>battbak.obj</file>
          <name>battbak.obj</name>
       </input_file>
       <input_file id="fl-c">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>comp_b.obj</file>
          <name>comp_b.obj</name>
       </input_file>
       <input_file id="fl-d">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>crc.obj</file>
          <name>crc.obj</name>
       </input_file>
       <input_file id="fl-e">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>ctsd16.obj</file>
          <name>ctsd16.obj</name>
       </input_file>
       <input_file id="fl-f">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>dac12_a.obj</file>
          <name>dac12_a.obj</name>
       </input_file>
       <input_file id="fl-10">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>dma.obj</file>
          <name>dma.obj</name>
       </input_file>
       <input_file id="fl-11">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>eusci_a_spi.obj</file>
          <name>eusci_a_spi.obj</name>
       </input_file>
       <input_file id="fl-12">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>eusci_a_uart.obj</file>
          <name>eusci_a_uart.obj</name>
       </input_file>
       <input_file id="fl-13">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>eusci_b_i2c.obj</file>
          <name>eusci_b_i2c.obj</name>
       </input_file>
       <input_file id="fl-14">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>eusci_b_spi.obj</file>
          <name>eusci_b_spi.obj</name>
       </input_file>
       <input_file id="fl-15">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>flashctl.obj</file>
          <name>flashctl.obj</name>
       </input_file>
       <input_file id="fl-16">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>gpio.obj</file>
          <name>gpio.obj</name>
       </input_file>
       <input_file id="fl-17">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>lcd_b.obj</file>
          <name>lcd_b.obj</name>
       </input_file>
       <input_file id="fl-18">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>ldopwr.obj</file>
          <name>ldopwr.obj</name>
       </input_file>
       <input_file id="fl-19">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>mpy32.obj</file>
          <name>mpy32.obj</name>
       </input_file>
       <input_file id="fl-1a">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>oa.obj</file>
          <name>oa.obj</name>
       </input_file>
       <input_file id="fl-1b">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>pmap.obj</file>
          <name>pmap.obj</name>
       </input_file>
       <input_file id="fl-1c">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>pmm.obj</file>
          <name>pmm.obj</name>
       </input_file>
       <input_file id="fl-1d">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>ram.obj</file>
          <name>ram.obj</name>
       </input_file>
       <input_file id="fl-1e">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>ref.obj</file>
          <name>ref.obj</name>
       </input_file>
       <input_file id="fl-1f">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>rtc_a.obj</file>
          <name>rtc_a.obj</name>
       </input_file>
       <input_file id="fl-20">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>rtc_b.obj</file>
          <name>rtc_b.obj</name>
       </input_file>
       <input_file id="fl-21">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>rtc_c.obj</file>
          <name>rtc_c.obj</name>
       </input_file>
       <input_file id="fl-22">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>sd24_b.obj</file>
          <name>sd24_b.obj</name>
       </input_file>
       <input_file id="fl-23">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>sfr.obj</file>
          <name>sfr.obj</name>
       </input_file>
       <input_file id="fl-24">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>sysctl.obj</file>
          <name>sysctl.obj</name>
       </input_file>
       <input_file id="fl-25">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>tec.obj</file>
          <name>tec.obj</name>
       </input_file>
       <input_file id="fl-26">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>timer_a.obj</file>
          <name>timer_a.obj</name>
       </input_file>
       <input_file id="fl-27">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>timer_b.obj</file>
          <name>timer_b.obj</name>
       </input_file>
       <input_file id="fl-28">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>timer_d.obj</file>
          <name>timer_d.obj</name>
       </input_file>
       <input_file id="fl-29">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>tlv.obj</file>
          <name>tlv.obj</name>
       </input_file>
       <input_file id="fl-2a">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>ucs.obj</file>
          <name>ucs.obj</name>
       </input_file>
       <input_file id="fl-2b">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>usci_a_spi.obj</file>
          <name>usci_a_spi.obj</name>
       </input_file>
       <input_file id="fl-2c">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>usci_a_uart.obj</file>
          <name>usci_a_uart.obj</name>
       </input_file>
       <input_file id="fl-2d">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>usci_b_i2c.obj</file>
          <name>usci_b_i2c.obj</name>
       </input_file>
       <input_file id="fl-2e">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>usci_b_spi.obj</file>
          <name>usci_b_spi.obj</name>
       </input_file>
       <input_file id="fl-2f">
-         <path>D:\Programmeerimine\Code Composer WS\CardReader\out\</path>
+         <path>.\MSP430F5xx_6xx\</path>
          <kind>object</kind>
          <file>wdt_a.obj</file>
          <name>wdt_a.obj</name>
       </input_file>
       <input_file id="fl-50">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>boot.obj</name>
       </input_file>
       <input_file id="fl-51">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>boot_special.obj</name>
       </input_file>
       <input_file id="fl-52">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>copy_decompress_none.obj</name>
       </input_file>
       <input_file id="fl-53">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>copy_decompress_rle.obj</name>
       </input_file>
       <input_file id="fl-54">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>copy_zero_init.obj</name>
       </input_file>
       <input_file id="fl-55">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>div16s.obj</name>
       </input_file>
       <input_file id="fl-56">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>div16u.obj</name>
       </input_file>
       <input_file id="fl-57">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>div32s.obj</name>
       </input_file>
       <input_file id="fl-58">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>div32u.obj</name>
       </input_file>
       <input_file id="fl-59">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>exit.obj</name>
       </input_file>
       <input_file id="fl-5a">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>exit_gvars.obj</name>
       </input_file>
       <input_file id="fl-5b">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int41.obj</name>
       </input_file>
       <input_file id="fl-5c">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int42.obj</name>
       </input_file>
       <input_file id="fl-5d">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int43.obj</name>
       </input_file>
       <input_file id="fl-5e">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int44.obj</name>
       </input_file>
       <input_file id="fl-5f">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int45.obj</name>
       </input_file>
       <input_file id="fl-60">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int46.obj</name>
       </input_file>
       <input_file id="fl-61">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int47.obj</name>
       </input_file>
       <input_file id="fl-62">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int48.obj</name>
       </input_file>
       <input_file id="fl-63">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int49.obj</name>
       </input_file>
       <input_file id="fl-64">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int50.obj</name>
       </input_file>
       <input_file id="fl-65">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int51.obj</name>
       </input_file>
       <input_file id="fl-66">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int52.obj</name>
       </input_file>
       <input_file id="fl-67">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int53.obj</name>
       </input_file>
       <input_file id="fl-68">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int54.obj</name>
       </input_file>
       <input_file id="fl-69">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int55.obj</name>
       </input_file>
       <input_file id="fl-6a">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int56.obj</name>
       </input_file>
       <input_file id="fl-6b">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int57.obj</name>
       </input_file>
       <input_file id="fl-6c">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int58.obj</name>
       </input_file>
       <input_file id="fl-6d">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int59.obj</name>
       </input_file>
       <input_file id="fl-6e">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int60.obj</name>
       </input_file>
       <input_file id="fl-6f">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int61.obj</name>
       </input_file>
       <input_file id="fl-70">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>int62.obj</name>
       </input_file>
       <input_file id="fl-71">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>isr_trap.obj</name>
       </input_file>
       <input_file id="fl-72">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>lsl16.obj</name>
       </input_file>
       <input_file id="fl-73">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>memcpy.obj</name>
       </input_file>
       <input_file id="fl-74">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mpu_init.obj</name>
       </input_file>
       <input_file id="fl-75">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult1632_f5hw.obj</name>
       </input_file>
       <input_file id="fl-76">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult16_f5hw.obj</name>
       </input_file>
       <input_file id="fl-77">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult32.obj</name>
       </input_file>
       <input_file id="fl-78">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult3264_f5hw.obj</name>
       </input_file>
       <input_file id="fl-79">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult32_f5hw.obj</name>
       </input_file>
       <input_file id="fl-7a">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult64_f5hw.obj</name>
       </input_file>
       <input_file id="fl-7b">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>pre_init.obj</name>
       </input_file>
       <input_file id="fl-7c">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>_lock.obj</name>
       </input_file>
       <input_file id="fl-7d">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>args_main.obj</name>
       </input_file>
       <input_file id="fl-7e">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>autoinit_wdt.obj</name>
       </input_file>
       <input_file id="fl-7f">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>cpy_tbl.obj</name>
       </input_file>
       <input_file id="fl-80">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>mult16.obj</name>
       </input_file>
       <input_file id="fl-81">
-         <path>D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
+         <path>D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\</path>
          <kind>archive</kind>
          <file>rts430x_lc_rd_eabi.lib</file>
          <name>startup.obj</name>
@@ -877,133 +877,133 @@
          <name>.debug_info</name>
          <load_address>0x84</load_address>
          <run_address>0x84</run_address>
-         <size>0x154</size>
+         <size>0x146</size>
          <input_file_ref idref="fl-4"/>
       </object_component>
       <object_component id="oc-46b">
          <name>.debug_info</name>
-         <load_address>0x1d8</load_address>
-         <run_address>0x1d8</run_address>
+         <load_address>0x1ca</load_address>
+         <run_address>0x1ca</run_address>
          <size>0x8b</size>
          <input_file_ref idref="fl-4"/>
       </object_component>
       <object_component id="oc-4c8">
          <name>.debug_info</name>
-         <load_address>0x263</load_address>
-         <run_address>0x263</run_address>
+         <load_address>0x255</load_address>
+         <run_address>0x255</run_address>
          <size>0x18b</size>
          <input_file_ref idref="fl-4"/>
       </object_component>
       <object_component id="oc-465">
          <name>.debug_info</name>
-         <load_address>0x3ee</load_address>
-         <run_address>0x3ee</run_address>
-         <size>0x25f</size>
+         <load_address>0x3e0</load_address>
+         <run_address>0x3e0</run_address>
+         <size>0x251</size>
          <input_file_ref idref="fl-5"/>
       </object_component>
       <object_component id="oc-408">
          <name>.debug_info</name>
-         <load_address>0x64d</load_address>
-         <run_address>0x64d</run_address>
-         <size>0x12b</size>
+         <load_address>0x631</load_address>
+         <run_address>0x631</run_address>
+         <size>0x11d</size>
          <input_file_ref idref="fl-6"/>
       </object_component>
       <object_component id="oc-4e5">
          <name>.debug_info</name>
-         <load_address>0x778</load_address>
-         <run_address>0x778</run_address>
-         <size>0x157</size>
+         <load_address>0x74e</load_address>
+         <run_address>0x74e</run_address>
+         <size>0x149</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4db">
          <name>.debug_info</name>
-         <load_address>0x8cf</load_address>
-         <run_address>0x8cf</run_address>
-         <size>0xf7</size>
+         <load_address>0x897</load_address>
+         <run_address>0x897</run_address>
+         <size>0xe9</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4b6">
          <name>.debug_info</name>
-         <load_address>0x9c6</load_address>
-         <run_address>0x9c6</run_address>
-         <size>0x1e7</size>
+         <load_address>0x980</load_address>
+         <run_address>0x980</run_address>
+         <size>0x1d9</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4a4">
          <name>.debug_info</name>
-         <load_address>0xbad</load_address>
-         <run_address>0xbad</run_address>
-         <size>0x1e5</size>
+         <load_address>0xb59</load_address>
+         <run_address>0xb59</run_address>
+         <size>0x1d7</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4bc">
          <name>.debug_info</name>
-         <load_address>0xd92</load_address>
-         <run_address>0xd92</run_address>
-         <size>0x1ef</size>
+         <load_address>0xd30</load_address>
+         <run_address>0xd30</run_address>
+         <size>0x1e1</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4c2">
          <name>.debug_info</name>
-         <load_address>0xf81</load_address>
-         <run_address>0xf81</run_address>
-         <size>0x1ee</size>
+         <load_address>0xf11</load_address>
+         <run_address>0xf11</run_address>
+         <size>0x1e0</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4b0">
          <name>.debug_info</name>
-         <load_address>0x116f</load_address>
-         <run_address>0x116f</run_address>
-         <size>0x210</size>
+         <load_address>0x10f1</load_address>
+         <run_address>0x10f1</run_address>
+         <size>0x202</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4aa">
          <name>.debug_info</name>
-         <load_address>0x137f</load_address>
-         <run_address>0x137f</run_address>
-         <size>0x20c</size>
+         <load_address>0x12f3</load_address>
+         <run_address>0x12f3</run_address>
+         <size>0x1fe</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-3be">
          <name>.debug_info</name>
-         <load_address>0x158b</load_address>
-         <run_address>0x158b</run_address>
+         <load_address>0x14f1</load_address>
+         <run_address>0x14f1</run_address>
          <size>0xf6</size>
          <input_file_ref idref="fl-50"/>
       </object_component>
       <object_component id="oc-c7">
          <name>.debug_info</name>
-         <load_address>0x1681</load_address>
-         <run_address>0x1681</run_address>
+         <load_address>0x15e7</load_address>
+         <run_address>0x15e7</run_address>
          <size>0x194</size>
          <input_file_ref idref="fl-51"/>
       </object_component>
       <object_component id="oc-410">
          <name>.debug_info</name>
-         <load_address>0x1815</load_address>
-         <run_address>0x1815</run_address>
+         <load_address>0x177b</load_address>
+         <run_address>0x177b</run_address>
          <size>0x118</size>
          <input_file_ref idref="fl-59"/>
       </object_component>
       <object_component id="oc-3dc">
          <name>.debug_info</name>
-         <load_address>0x192d</load_address>
-         <run_address>0x192d</run_address>
+         <load_address>0x1893</load_address>
+         <run_address>0x1893</run_address>
          <size>0x108</size>
          <input_file_ref idref="fl-71"/>
       </object_component>
       <object_component id="oc-3eb">
          <name>.debug_info</name>
-         <load_address>0x1a35</load_address>
-         <run_address>0x1a35</run_address>
+         <load_address>0x199b</load_address>
+         <run_address>0x199b</run_address>
          <size>0x149</size>
          <input_file_ref idref="fl-7b"/>
       </object_component>
       <object_component id="oc-553">
          <name>.debug_info</name>
-         <load_address>0x1b7e</load_address>
-         <run_address>0x1b7e</run_address>
-         <size>0xa9</size>
+         <load_address>0x1ae4</load_address>
+         <run_address>0x1ae4</run_address>
+         <size>0x9b</size>
       </object_component>
       <object_component id="oc-420">
          <name>.debug_line</name>
@@ -1030,111 +1030,111 @@
          <name>.debug_line</name>
          <load_address>0x8c</load_address>
          <run_address>0x8c</run_address>
-         <size>0x76</size>
+         <size>0x62</size>
          <input_file_ref idref="fl-4"/>
       </object_component>
       <object_component id="oc-468">
          <name>.debug_line</name>
-         <load_address>0x102</load_address>
-         <run_address>0x102</run_address>
+         <load_address>0xee</load_address>
+         <run_address>0xee</run_address>
          <size>0x60</size>
          <input_file_ref idref="fl-5"/>
       </object_component>
       <object_component id="oc-40b">
          <name>.debug_line</name>
-         <load_address>0x162</load_address>
-         <run_address>0x162</run_address>
+         <load_address>0x14e</load_address>
+         <run_address>0x14e</run_address>
          <size>0x46</size>
          <input_file_ref idref="fl-6"/>
       </object_component>
       <object_component id="oc-4e7">
          <name>.debug_line</name>
-         <load_address>0x1a8</load_address>
-         <run_address>0x1a8</run_address>
+         <load_address>0x194</load_address>
+         <run_address>0x194</run_address>
          <size>0x20</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4e4">
          <name>.debug_line</name>
-         <load_address>0x1c8</load_address>
-         <run_address>0x1c8</run_address>
+         <load_address>0x1b4</load_address>
+         <run_address>0x1b4</run_address>
          <size>0x3c</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4b9">
          <name>.debug_line</name>
-         <load_address>0x204</load_address>
-         <run_address>0x204</run_address>
+         <load_address>0x1f0</load_address>
+         <run_address>0x1f0</run_address>
          <size>0x5c</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4a7">
          <name>.debug_line</name>
-         <load_address>0x260</load_address>
-         <run_address>0x260</run_address>
+         <load_address>0x24c</load_address>
+         <run_address>0x24c</run_address>
          <size>0x5d</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4bf">
          <name>.debug_line</name>
-         <load_address>0x2bd</load_address>
-         <run_address>0x2bd</run_address>
+         <load_address>0x2a9</load_address>
+         <run_address>0x2a9</run_address>
          <size>0x5b</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4c5">
          <name>.debug_line</name>
-         <load_address>0x318</load_address>
-         <run_address>0x318</run_address>
+         <load_address>0x304</load_address>
+         <run_address>0x304</run_address>
          <size>0x5b</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4b3">
          <name>.debug_line</name>
-         <load_address>0x373</load_address>
-         <run_address>0x373</run_address>
+         <load_address>0x35f</load_address>
+         <run_address>0x35f</run_address>
          <size>0x5e</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-4ad">
          <name>.debug_line</name>
-         <load_address>0x3d1</load_address>
-         <run_address>0x3d1</run_address>
+         <load_address>0x3bd</load_address>
+         <run_address>0x3bd</run_address>
          <size>0x5e</size>
          <input_file_ref idref="fl-16"/>
       </object_component>
       <object_component id="oc-41c">
          <name>.debug_line</name>
-         <load_address>0x42f</load_address>
-         <run_address>0x42f</run_address>
+         <load_address>0x41b</load_address>
+         <run_address>0x41b</run_address>
          <size>0x2a</size>
          <input_file_ref idref="fl-50"/>
       </object_component>
       <object_component id="oc-c6">
          <name>.debug_line</name>
-         <load_address>0x459</load_address>
-         <run_address>0x459</run_address>
+         <load_address>0x445</load_address>
+         <run_address>0x445</run_address>
          <size>0x47</size>
          <input_file_ref idref="fl-51"/>
       </object_component>
       <object_component id="oc-414">
          <name>.debug_line</name>
-         <load_address>0x4a0</load_address>
-         <run_address>0x4a0</run_address>
+         <load_address>0x48c</load_address>
+         <run_address>0x48c</run_address>
          <size>0x3d</size>
          <input_file_ref idref="fl-59"/>
       </object_component>
       <object_component id="oc-3df">
          <name>.debug_line</name>
-         <load_address>0x4dd</load_address>
-         <run_address>0x4dd</run_address>
+         <load_address>0x4c9</load_address>
+         <run_address>0x4c9</run_address>
          <size>0x3d</size>
          <input_file_ref idref="fl-71"/>
       </object_component>
       <object_component id="oc-3e9">
          <name>.debug_line</name>
-         <load_address>0x51a</load_address>
-         <run_address>0x51a</run_address>
+         <load_address>0x506</load_address>
+         <run_address>0x506</run_address>
          <size>0x3e</size>
          <input_file_ref idref="fl-7b"/>
       </object_component>
@@ -1295,7 +1295,7 @@
          <name>.debug_str</name>
          <load_address>0x1f6</load_address>
          <run_address>0x1f6</run_address>
-         <size>0x231</size>
+         <size>0x20f</size>
          <input_file_ref idref="fl-4"/>
       </object_component>
       <object_component id="oc-41e">
@@ -2279,7 +2279,7 @@
          <name>.debug_info</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0x1c27</size>
+         <size>0x1b7f</size>
          <contents>
             <object_component_ref idref="oc-41d"/>
             <object_component_ref idref="oc-45f"/>
@@ -2307,7 +2307,7 @@
          <name>.debug_line</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0x558</size>
+         <size>0x544</size>
          <contents>
             <object_component_ref idref="oc-420"/>
             <object_component_ref idref="oc-462"/>
@@ -2362,7 +2362,7 @@
          <name>.debug_str</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0x427</size>
+         <size>0x405</size>
          <contents>
             <object_component_ref idref="oc-421"/>
             <object_component_ref idref="oc-46f"/>

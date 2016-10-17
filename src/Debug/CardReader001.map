@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v15.12.3                    
 ******************************************************************************
->> Linked Wed Oct 12 11:25:59 2016
+>> Linked Mon Oct 17 14:33:17 2016
 
 OUTPUT FILE NAME:   <CardReader001.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 00004400
@@ -206,15 +206,19 @@ MODULE SUMMARY
 
        Module             code   ro data   rw data
        ------             ----   -------   -------
-    D:\Programmeerimine\Code Composer WS\CardReader\out\
-       gpio.obj           272    28        0      
+    .\
        initGpio.obj       82     0         0      
        main.obj           42     0         0      
        initClock.obj      18     0         0      
     +--+------------------+------+---------+---------+
-       Total:             414    28        0      
+       Total:             142    0         0      
                                                   
-    D:\Program Files\TI CCSv6\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\rts430x_lc_rd_eabi.lib
+    .\MSP430F5xx_6xx\
+       gpio.obj           272    28        0      
+    +--+------------------+------+---------+---------+
+       Total:             272    28        0      
+                                                  
+    D:\ti\ccsv6\tools\compiler\msp430_15.12.3.LTS\lib\rts430x_lc_rd_eabi.lib
        boot_special.obj   18     0         0      
        isr_trap.obj       8      0         0      
        exit.obj           6      0         0      
