@@ -7,6 +7,9 @@
 
 #include "MSP430F5xx_6xx/driverlib.h"
 
+
+// Vaata teise rühma clock init sisu, neil on XT2 clock rakendatud.
+
 int set_clock(int clock_speed){
 	if(clock_speed == 0){
 		UCSCTL2 |= 0x0000; // Phase lock loop frequency divider, bits 12-14 set divider, 5 = clk/32, 0 = clk/1

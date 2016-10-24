@@ -7,6 +7,8 @@
 
 #ifndef UARTMODULE_H_
 	#define UARTMODULE_H_
+
+	#include "MSP430F5xx_6xx/driverlib.h"
 	void init_UART();
 	void write_UART(int);
 	int read_UART();

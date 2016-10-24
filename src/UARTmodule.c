@@ -14,13 +14,28 @@
 //#define UCMODE0                (0x02)         /* Async. Mode: USCI Mode 0 */
 //#define UCSYNC                 (0x01)         /* Sync-Mode  0:UART-Mode / 1:SPI-Mode */
 
-#include <msp430.h>
+//#include <msp430.h>
+//#include "MSP430F5xx_6xx/driverlib.h"
 
 
 void init_UART(){
-	P4OUT |= 0x80;
+	//P4OUT |= 0x80;
 	// set all config registers
 	//then clear USCSWRST bit to 0
+	EUSCI_A_UART_initParam initParam;
+	EUSCI_A_UART_initParam *pInitParam;
+	pInitParam->selectClockSource = EUSCI_A_UART_CLOCKSOURCE_SMCLK;
+	pInitParam->clockPrescalar = UART_PRESCLE;
+	pInitParam->firstModReg = UART_FIRST_MOD_REG; //0x0F;
+	pInitParam->secondModReg = UART_SECOND_MOD_REG;
+	pInitParam->parity = USCI_A_UART_NO_PARITY;
+	pInitParam->secondModReg = UART_SECOND_MOD_REG
+
+	EUSCI_A_UART_enable(USCI_A0_BASE, pInitParam);
+	EUSCI_A_UART_init(USCI_A0_BASE, pInitParam);
+
+
+
 }
 
 void write_UART(int out){
