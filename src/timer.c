@@ -15,9 +15,9 @@
 	//		24.10.16
 	//7. param.clockSource = TIMER_A_CLOCKSOURCE_EXTERNAL_TXCLK; kas XT2 korral on clock valik õige?
 	//8. kas pean timer.h-sse lisama igale funcile prototüübi?
-	//9. mis vahe on TAIE ja CCR0_CCIE interruptidel?
+	//9. mis vahe on TAIE ja CCR0_CCIE interruptidel? uuri ise välja
 	//10. ei oska compareoutputmode'i valida. vaja täpsustada, mida timer täpsemalt tegema hakkab
-	//11. kas initupmode ja initcomparemode saab üldse koos kasutada? timerperiod ja comparevalue tekitavad segadust, justkui teeksid sarnast asja.
+	//11. kas initupmode ja initcomparemode saab üldse koos kasutada? timerperiod ja comparevalue tekitavad segadust, justkui teeksid sarnast asja. EI TOHI KOOS KASUTADA
 	//12. täpsusta, milliseid funce kasutama pead üldse. läks nende initite-ga segaseks ära
 
 
@@ -64,19 +64,11 @@ void timer_init()
 	param.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
 	param.timerPeriod = ClockCyclesCount;
 	param.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_ENABLE;
-	param.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE;
+	param.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE; /*mille jaoks seda vaja on, arvatavasti disable*/
 	param.timerClear = TIMER_A_DO_CLEAR;
 	param.startTimer = true; //KÜSIMUS, kas bool väärtus on sellisel kujul siin aksepteeritav?
 
-	Timer_A_initCompareModeParam compareparam;
-	compareparam.compareRegister = TIMER_A_CAPTURECOMPARE_REGISTER_0;
-	compareparam.compareInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_ENABLE;
-	compareparam.compareOutputMode = ; 	//KÜSIMUS
-	compareparam.compareValue = ;		//KÜSIMUS
 
-	Timer_A_initCompareMode	(	TIMER_A0_BASE,			//should be timer_A0 base address,
-	Timer_A_initCompareModeParam &compareparam
-	)
 
 	Timer_A_initUpMode	(	TIMER_A0_BASE,
 	Timer_A_initUpModeParam &param
