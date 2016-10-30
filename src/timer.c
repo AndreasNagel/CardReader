@@ -59,20 +59,28 @@
 
 void timer_init()
 {
+	/*kas peaks mingi watchdogi disablema?*/
+}
 	Timer_A_initUpModeParam param;
 	param.clockSource = TIMER_A_CLOCKSOURCE_EXTERNAL_TXCLK; //K‹SIMUS
 	param.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
-	param.timerPeriod = ClockCyclesCount;
+	param.timerPeriod = ClockCyclesCount;		/*timer loeb 0-ClockCyclesCount, tıstab interrupt lipu ning tegutseb. CCC m‰‰rab ‰ra kui tihti interruptid toimuvad*/
 	param.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_ENABLE;
-	param.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_ENABLE; /*mille jaoks seda vaja on, arvatavasti disable*/
+	param.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_DISABLE; /*mille jaoks seda vaja on, arvatavasti disable. V: ei kasuta capt/comp, seega disable*/
 	param.timerClear = TIMER_A_DO_CLEAR;
 	param.startTimer = true; //K‹SIMUS, kas bool v‰‰rtus on sellisel kujul siin aksepteeritav?
 
 
+	Timer_A_initUpMode	(	TIMER_A0_BASE,		/* timerA baseaddress*/
+	Timer_A_initUpModeParam &param				/* timerA parameters*/
+	);
 
-	Timer_A_initUpMode	(	TIMER_A0_BASE,
-	Timer_A_initUpModeParam &param
-	)
+	Timer_A_startCounter	(	TIMER_A0_BASE,		/*base address and timer mode*/
+			TIMER_A_UP_MODE
+	);
+
+	Timer_A_enableInterrupt	(TIMER_A0_BASE);
+
 
 
 
