@@ -15,8 +15,8 @@ int main(void) {
 	//P1DIR |= 0x01;					// Set P1.0 to output direction, controls red LED
 	//P4DIR |= 0x80;					// Set P4.7 to output, controls green LED
 
-	set_gpio(GPIO_PORT_P1, GPIO_PIN0, OUTPUT, HIGH); //Hetkel kontrollib punast LED-i (P1.0)
-	set_gpio(GPIO_PORT_P4, GPIO_PIN7, OUTPUT, LOW); //Hetkel kontrollib rohelist LED-i (P4.7)
+    RED_LED_ON;
+    GREEN_LED_ON;
 /*
 	for(;;) {
 		volatile unsigned int i;	// volatile to prevent optimization
