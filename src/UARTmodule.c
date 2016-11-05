@@ -34,9 +34,9 @@ void init_UART(){
 	pInitParam->overSampling = UART_OVERSAMPLING;
 	pInitParam->uartMode = USCI_A_UART_AUTOMATIC_BAUDRATE_DETECTION_MODE;
 
-	USCI_A_UART_enable(USCI_A0_BASE);
-	USCI_A_UART_init(USCI_A0_BASE, pInitParam);
-	USCI_A_UART_disableInterrupt(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT+
+	USCI_A_UART_enable(USCI_A1_BASE);
+	USCI_A_UART_init(USCI_A1_BASE, pInitParam);
+	USCI_A_UART_disableInterrupt(USCI_A1_BASE, USCI_A_UART_RECEIVE_INTERRUPT+
 								USCI_A_UART_TRANSMIT_INTERRUPT+
 								USCI_A_UART_RECEIVE_ERRONEOUSCHAR_INTERRUPT+
 								USCI_A_UART_BREAKCHAR_INTERRUPT
@@ -46,12 +46,12 @@ void init_UART(){
 
 int write_UART(unsigned char out){
 	volatile unsigned char lineIdle;
-	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
+	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A1_BASE, USCI_A_UART_IDLELINE);
 	lineIdle = 0x01;
-	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
+	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A1_BASE, USCI_A_UART_IDLELINE);
 	lineIdle = 0x01;
 	if(lineIdle){
-		USCI_A_UART_transmitData(USCI_A0_BASE, out);
+		USCI_A_UART_transmitData(USCI_A1_BASE, out);
 		return SUCCESS;
 	}
 	else{
@@ -64,10 +64,10 @@ int write_UART(unsigned char out){
 unsigned char read_UART(){
 	unsigned char in;
 	in = '\0';
-	unsigned char newBitIn = USCI_A_UART_getInterruptStatus(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
+	unsigned char newBitIn = USCI_A_UART_getInterruptStatus(USCI_A1_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
 	if(newBitIn)
 	{
-		in = USCI_A_UART_receiveData(USCI_A0_BASE);
+		in = USCI_A_UART_receiveData(USCI_A1_BASE);
 	}
 	return in;
 }
