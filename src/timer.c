@@ -59,6 +59,7 @@
 
 void timer_init()
 {
+	uint32_t ClockCyclesCount = 32000000;
 	Timer_A_initUpModeParam param;
 	param.clockSource = TIMER_A_CLOCKSOURCE_EXTERNAL_TXCLK; //KÜSIMUS
 	param.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
@@ -71,16 +72,18 @@ void timer_init()
 	Timer_A_initCompareModeParam compareparam;
 	compareparam.compareRegister = TIMER_A_CAPTURECOMPARE_REGISTER_0;
 	compareparam.compareInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_ENABLE;
-	compareparam.compareOutputMode = ; 	//KÜSIMUS
-	compareparam.compareValue = ;		//KÜSIMUS
+	compareparam.compareOutputMode = 0x00; 	//KÜSIMUS
+	compareparam.compareValue = 0x00;		//KÜSIMUS
 
-	Timer_A_initCompareMode	(	TIMER_A0_BASE,			//should be timer_A0 base address,
-	Timer_A_initCompareModeParam &compareparam
-	)
+	Timer_A_initUpModeParam upmodeparam; //KÜSIMUS
+
+	Timer_A_initCompareMode	(TIMER_A0_BASE,//should be timer_A0 base address,
+	&compareparam
+	);
 
 	Timer_A_initUpMode	(	TIMER_A0_BASE,
-	Timer_A_initUpModeParam &param
-	)
+	&upmodeparam
+	);
 
 
 
@@ -91,4 +94,4 @@ void timer_init()
 	// kindla suurusega).. umbes nii, et kirjutatakse aadressile 0x02, bloki suurus on 2, seega järgmine välja antav aadress saaks olla 0x04.
 	//Timer_A_startCounter(0x0340, TIMER_A_CONTINUOUS_MODE);		//mode contrl=10
 
-//}
+}

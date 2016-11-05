@@ -5,18 +5,29 @@
  *      Author: karls_000
  */
 
+#include "initClock.h"
 #include "MSP430F5xx_6xx/driverlib.h"
 
 
 // Vaata teise rühma clock init sisu, neil on XT2 clock rakendatud.
 
-int set_clock(int clock_speed){
-	if(clock_speed == 0){
-		UCSCTL2 |= 0x0000; // Phase lock loop frequency divider, bits 12-14 set divider, 5 = clk/32, 0 = clk/1
-		//UCSCTL5 |= 0x0005; // uncomment this line to make master clock 32 times slower
+int set_clock(){
 
-		UCSCTL4 |= 0x0004; // Select master clock source currenctly DCOCLKDIV
+	PMM_setVCore(PMM_CORE_LEVEL_3);
+    GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P5, GPIO_PIN4+GPIO_PIN2); // Connect XT1
+    GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_P5, GPIO_PIN5+GPIO_PIN3);
 
-	}
+	UCS_setExternalClockSource(XT1_FREQ, XT2_FREQ);
+
+	// Initialize the crystals
+
+	UCS_turnOnXT2(UCS_XT2_DRIVE_24MHZ_32MHZ);
+					//FLL Reference, use higher frequency crystal, divide
+	UCS_initClockSignal(UCS_FLLREF, UCS_XT2CLK_SELECT, UCS_CLOCK_DIVIDER_4);
+
+	// Start the FLL and let it settle
+	// This becomes the MCLCK and SMCLK automatically
+
+	UCS_initFLLSettle(MCLK_FREQ_KHZ, MCLK_FLLREFERENCE_RATIO);
 	return 0;
 }

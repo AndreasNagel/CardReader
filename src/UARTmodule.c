@@ -16,33 +16,58 @@
 
 //#include <msp430.h>
 //#include "MSP430F5xx_6xx/driverlib.h"
+#include "UARTmodule.h"
 
 
 void init_UART(){
 	//P4OUT |= 0x80;
 	// set all config registers
 	//then clear USCSWRST bit to 0
-	EUSCI_A_UART_initParam initParam;
-	EUSCI_A_UART_initParam *pInitParam;
-	pInitParam->selectClockSource = EUSCI_A_UART_CLOCKSOURCE_SMCLK;
-	pInitParam->clockPrescalar = UART_PRESCLE;
+	USCI_A_UART_initParam initParam;
+	USCI_A_UART_initParam *pInitParam;
+	pInitParam = &initParam;
+	pInitParam->selectClockSource = USCI_A_UART_CLOCKSOURCE_SMCLK;
+	pInitParam->clockPrescalar = UART_PRESCALE;
 	pInitParam->firstModReg = UART_FIRST_MOD_REG; //0x0F;
 	pInitParam->secondModReg = UART_SECOND_MOD_REG;
 	pInitParam->parity = USCI_A_UART_NO_PARITY;
-	pInitParam->secondModReg = UART_SECOND_MOD_REG
+	pInitParam->overSampling = UART_OVERSAMPLING;
+	pInitParam->uartMode = USCI_A_UART_AUTOMATIC_BAUDRATE_DETECTION_MODE;
 
-	EUSCI_A_UART_enable(USCI_A0_BASE, pInitParam);
-	EUSCI_A_UART_init(USCI_A0_BASE, pInitParam);
+	USCI_A_UART_enable(USCI_A0_BASE);
+	USCI_A_UART_init(USCI_A0_BASE, pInitParam);
+	USCI_A_UART_disableInterrupt(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT+
+								USCI_A_UART_TRANSMIT_INTERRUPT+
+								USCI_A_UART_RECEIVE_ERRONEOUSCHAR_INTERRUPT+
+								USCI_A_UART_BREAKCHAR_INTERRUPT
+								);
+}
 
 
+int write_UART(unsigned char out){
+	volatile unsigned char lineIdle;
+	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
+	lineIdle = 0x01;
+	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
+	lineIdle = 0x01;
+	if(lineIdle){
+		USCI_A_UART_transmitData(USCI_A0_BASE, out);
+		return SUCCESS;
+	}
+	else{
+		return FAILURE;
+	}
 
 }
 
-void write_UART(int out){
 
-}
-
-int read_UART(){
-
-	return 0;
+unsigned char read_UART(){
+	unsigned char in;
+	in = '\0';
+	unsigned char newBitIn = USCI_A_UART_getInterruptStatus(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
+	if(newBitIn)
+	{
+		in = USCI_A_UART_receiveData(USCI_A0_BASE);
+	}
+	return in;
 }
