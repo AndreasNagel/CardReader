@@ -36,7 +36,6 @@ int main(void) {
 
     RED_LED_ON;
     GREEN_LED_ON;
-/*
 
 	for(;;) {
 		volatile unsigned long i;	// volatile to prevent optimization
