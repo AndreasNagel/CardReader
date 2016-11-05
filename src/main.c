@@ -8,8 +8,8 @@
 /*
  * main.c
  */
-
 int main(void) {
+
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 
     volatile uint32_t mclk = 0;
@@ -57,4 +57,9 @@ int main(void) {
 // Sets master clock to a designated frequency,
 // viable settings are yet to be determined
 // more information in datasheet under unified clock system (UCS)
+ *
+ */
+}
+
+
 
