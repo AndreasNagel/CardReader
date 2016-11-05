@@ -59,27 +59,17 @@
 
 void timer_init()
 {
-
-	uint32_t ClockCyclesCount = 32000000;
-=======
 	/*kas peaks mingi watchdogi disablema? JAH peaks*/
 }
-	Timer_A_initCompareModeParam compareparam;
-	compareparam.compareRegister = TIMER_A_CAPTURECOMPARE_REGISTER_0;
-	compareparam.compareInterruptEnable = TIMER_A_CAPTURECOMPARE_INTERRUPT_ENABLE;
-	compareparam.compareOutputMode = 0x00; 	//K‹SIMUS
-	compareparam.compareValue = 0x00;		//K‹SIMUS
+	Timer_A_initUpModeParam param;
+	param.clockSource = TIMER_A_CLOCKSOURCE_EXTERNAL_TXCLK; //K‹SIMUS
+	param.clockSourceDivider = TIMER_A_CLOCKSOURCE_DIVIDER_1;
+	param.timerPeriod = ClockCyclesCount;		/*timer loeb 0-ClockCyclesCount, tıstab interrupt lipu ning tegutseb. CCC m‰‰rab ‰ra kui tihti interruptid toimuvad*/
+	param.timerInterruptEnable_TAIE = TIMER_A_TAIE_INTERRUPT_ENABLE;
+	param.captureCompareInterruptEnable_CCR0_CCIE = TIMER_A_CCIE_CCR0_INTERRUPT_DISABLE; /*mille jaoks seda vaja on, arvatavasti disable. V: ei kasuta capt/comp, seega disable*/
+	param.timerClear = TIMER_A_DO_CLEAR;
+	param.startTimer = true; //K‹SIMUS, kas bool v‰‰rtus on sellisel kujul siin aksepteeritav?
 
-	Timer_A_initUpModeParam upmodeparam; //K‹SIMUS
-
-	Timer_A_initCompareMode	(TIMER_A0_BASE,//should be timer_A0 base address,
-	&compareparam
-	);
-
-	Timer_A_initUpMode	(	TIMER_A0_BASE,
-	&upmodeparam
-	);
-=======
 
 	Timer_A_initUpMode	(	TIMER_A0_BASE,		/* timerA baseaddress*/
 	Timer_A_initUpModeParam &param				/* timerA parameters*/
@@ -92,4 +82,13 @@ void timer_init()
 	/*Timer_A_enableInterrupt	(TIMER_A0_BASE); pole vaja eraldi v‰lja kutsuda*/
 
 
-}
+
+
+
+	//Timer_A_initContinuousMode(0x0340, &param);		//0x0340 on base address, teine parameeter &param loeb sisse Timer_A_initContinuousModeParam
+	// structi aadressi
+	// kui n¸¸d &param toob sisse param bloki aadressi (bloki suurus on m‰‰ratud sellega, et tegu on structiga Timer_A_initContinuousModeParam, mis on
+	// kindla suurusega).. umbes nii, et kirjutatakse aadressile 0x02, bloki suurus on 2, seega j‰rgmine v‰lja antav aadress saaks olla 0x04.
+	//Timer_A_startCounter(0x0340, TIMER_A_CONTINUOUS_MODE);		//mode contrl=10
+
+//}
