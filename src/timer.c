@@ -59,7 +59,7 @@
 
 void timer_init()
 {
-	/*kas peaks mingi watchdogi disablema?*/
+	/*kas peaks mingi watchdogi disablema? JAH peaks*/
 }
 	Timer_A_initUpModeParam param;
 	param.clockSource = TIMER_A_CLOCKSOURCE_EXTERNAL_TXCLK; //KÜSIMUS
@@ -79,7 +79,7 @@ void timer_init()
 			TIMER_A_UP_MODE
 	);
 
-	Timer_A_enableInterrupt	(TIMER_A0_BASE);
+	/*Timer_A_enableInterrupt	(TIMER_A0_BASE); pole vaja eraldi välja kutsuda*/
 
 
 
