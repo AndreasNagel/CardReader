@@ -19,5 +19,9 @@ int set_clock(){
 	// This becomes the MCLCK and SMCLK automatically
 
 	UCS_initFLLSettle(MCLK_FREQ_KHZ, MCLK_FLLREFERENCE_RATIO);
+
+    //mclk=UCS_getMCLK();    // Get clock values to test
+    //smclk=UCS_getSMCLK();	// Get clock values to test
+
 	return 0;
 }
