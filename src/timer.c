@@ -57,6 +57,7 @@
 //#include <msp430.h>
 #include "MSP430F5xx_6xx/driverlib.h"
 #include "timer.h"
+#include "initClock.h"
 
 
 void timer_init()
@@ -64,7 +65,7 @@ void timer_init()
 	WDTCTL = WDTPW + WDTHOLD;                 // Stop WDT
 	  //P1DIR |= 0x01;                            // P1.0 output
 	  TA0CCTL0 = CCIE;                          // CCR0 interrupt enabled
-	  TA0CCR0 = 16000;
+	  TA0CCR0 = MCLK_FREQ_KHZ / 2;
 	  TA0CTL = TASSEL_2 + MC_1 + TACLR;         // SMCLK, upmode, clear TAR
 
 	  __bis_SR_register(LPM0_bits + GIE);       // Enter LPM0, enable interrupts
