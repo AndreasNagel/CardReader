@@ -31,6 +31,7 @@ void main(void) {
 
 	for(;;) {
 		UART_cyclic();
+
 	}
 }
 
