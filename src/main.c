@@ -21,17 +21,11 @@ void main(void) {
     timer_init();
     init_UART();
 
-    RED_LED_ON;
-    GREEN_LED_ON;
-
-	//set_gpio(GPIO_PORT_P1, GPIO_PIN0, OUTPUT, HIGH); //Hetkel kontrollib punast LED-i (P1.0)
-	//set_gpio(GPIO_PORT_P4, GPIO_PIN7, OUTPUT, LOW); //Hetkel kontrollib rohelist LED-i (P4.7)
-
 
 
 	for(;;) {
 		UART_cyclic();
-
+		GPIO_cyclic();
 	}
 }
 

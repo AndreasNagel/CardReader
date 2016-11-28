@@ -20,5 +20,6 @@
 
 
 void set_gpio(int port, int pins, char IO, int highlow);
+void GPIO_cyclic();
 
 #endif /* INITGPIO_H_ */
