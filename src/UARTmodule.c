@@ -4,20 +4,15 @@
  *  Created on: 19. sept 2016
  *      Author: Andreas Nagel
  */
-// UCAxCTL0 UART-Mode Control Bits
-//#define UCPEN                  (0x80)         /* Async. Mode: Parity enable */
-//#define UCPAR                  (0x40)         /* Async. Mode: Parity     0:odd / 1:even */
-//#define UCMSB                  (0x20)         /* Async. Mode: MSB first  0:LSB / 1:MSB */
-//#define UC7BIT                 (0x10)         /* Async. Mode: Data Bits  0:8-bits / 1:7-bits */
-//#define UCSPB                  (0x08)         /* Async. Mode: Stop Bits  0:one / 1: two */
-//#define UCMODE1                (0x04)         /* Async. Mode: USCI Mode 1 */
-//#define UCMODE0                (0x02)         /* Async. Mode: USCI Mode 0 */
-//#define UCSYNC                 (0x01)         /* Sync-Mode  0:UART-Mode / 1:SPI-Mode */
+
 
 //#include <msp430.h>
 //#include "MSP430F5xx_6xx/driverlib.h"
 #include "UARTmodule.h"
 #include "fifo.h"
+
+
+fifo_t cardBytes;
 
 
 void init_UART(){
@@ -53,6 +48,10 @@ void init_UART(){
 								USCI_A_UART_BREAKCHAR_INTERRUPT
 								);
 	USCI_A_UART_transmitData(USCI_A0_BASE, 'F');
+
+	// initialize fifo inside UART
+    fifo_init(&cardBytes, 16);
+
 }
 
 
@@ -81,16 +80,17 @@ unsigned char read_UART(){
 	if(newBitIn)
 	{
 		in = USCI_A_UART_receiveData(USCI_A1_BASE);
+		fifo_write(&cardBytes, in);
 	}
 	return in;
 }
 
 void UART_cyclic(void){
+	// Reads data from fifo, checks if the card code is correct and passes an identifier to main function?
 
-
-	write_UART(0x2A);
+	/*write_UART(0x2A);
 	write_UART('\0');
-	write_UART(0x7F);
+	write_UART(0x7F);*/
 	/*write_UART('D');
 	write_UART('C');
 	write_UART('B');

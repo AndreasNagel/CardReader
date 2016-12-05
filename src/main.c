@@ -5,16 +5,12 @@
 #include "timer.h"
 #include "initGpio.h"
 #include "MSP430F5xx_6xx/driverlib.h"
-#include "fifo.h"
 
-
-#define FIFO_SIZE 16
 
 /*
  * main.c
  */
 
-fifo_t cardBytes;
 
 void main(void) {
 
@@ -23,11 +19,10 @@ void main(void) {
     volatile uint32_t mclk = 0;
     volatile uint32_t smclk = 0;
 
+
     set_clock();
     timer_init();
     init_UART();
-    fifo_init(&cardBytes, 16);
-
 
 
 	for(;;) {

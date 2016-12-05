@@ -17,6 +17,7 @@
 	#define UART_OVERSAMPLING 0x01
 	#define TXD BIT3
 	#define RXD BIT4
+	#define FIFO_SIZE 16
 
 
 	void init_UART();
