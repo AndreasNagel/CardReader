@@ -14,14 +14,14 @@
  * main.c
  */
 
+fifo_t cardBytes;
+
 void main(void) {
 
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 
     volatile uint32_t mclk = 0;
     volatile uint32_t smclk = 0;
-    fifo_t cardBytes;
-
 
     set_clock();
     timer_init();
