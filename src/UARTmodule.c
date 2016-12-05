@@ -17,6 +17,7 @@
 //#include <msp430.h>
 //#include "MSP430F5xx_6xx/driverlib.h"
 #include "UARTmodule.h"
+#include "fifo.h"
 
 
 void init_UART(){
@@ -85,6 +86,7 @@ unsigned char read_UART(){
 }
 
 void UART_cyclic(void){
+
 
 	write_UART(0x2A);
 	write_UART('\0');
