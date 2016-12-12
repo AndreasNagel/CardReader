@@ -50,7 +50,7 @@ void init_UART(){
 	USCI_A_UART_transmitData(USCI_A0_BASE, 'F');
 
 	// initialize fifo inside UART
-    fifo_init(&cardBytes, 16);
+    fifo_init(&cardBytes, 32);
 
 }
 
@@ -85,9 +85,17 @@ unsigned char read_UART(){
 	return in;
 }
 
-void UART_cyclic(void){
+unsigned char UART_cyclic(void){
 	// Reads data from fifo, checks if the card code is correct and passes an identifier to main function?
-
+	char buf[FIFO_READ_LEN];
+	int read = 0;
+	read = fifo_read(&cardBytes, buf, FIFO_READ_LEN);
+	if(read==FIFO_READ_LEN)
+		//read successful, right amount of bytes read
+		return SUCCESS;
+	else{
+		return FAILURE;
+	}
 	/*write_UART(0x2A);
 	write_UART('\0');
 	write_UART(0x7F);*/

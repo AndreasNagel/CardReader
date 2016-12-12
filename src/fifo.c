@@ -37,7 +37,13 @@ int fifo_read(fifo_t * f, char *buf, int nbytes){
                     f->tail = 0;
                }
           } else {
-               return i; //number of bytes read
+        	   for(i; i>=0; i--){
+        		   if(f->tail == 0){
+        			   f->tail = size;
+        		   }
+        		   f->tail--;
+        	   }
+               return 0; //number of bytes read
           }
      }
      return nbytes;

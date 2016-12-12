@@ -18,12 +18,12 @@
 	#define TXD BIT3
 	#define RXD BIT4
 	#define FIFO_SIZE 16
-
+	#define FIFO_READ_LEN 4
 
 	void init_UART();
 	int write_UART(unsigned char);
 	unsigned char read_UART();
-	void UART_cyclic();
+	unsigned char UART_cyclic();
 
 
 
