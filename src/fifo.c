@@ -10,7 +10,9 @@
 
 
 
-
+/* Input: *f - memory allocated fifo element
+ * 		  size - Size of fifo buffer
+ */
 void fifo_init(fifo_t *f, int size){
      f->head = 0;
      f->tail = 0;
@@ -36,14 +38,15 @@ int fifo_read(fifo_t * f, char *buf, int nbytes){
                if(f->tail == f->size){  //check for wrap-around
                     f->tail = 0;
                }
-          } else {
-        	   for(i; i>=0; i--){
+          } else { // Not enough bytes available
+        	   for(i; i>0; i--){
         		   if(f->tail == 0){
         			   f->tail = size;
         		   }
         		   f->tail--;
         	   }
-               return 0; //number of bytes read
+               return 0; //no bytes read
+               *buf = '/0';
           }
      }
      return nbytes;

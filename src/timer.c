@@ -58,6 +58,7 @@
 #include "MSP430F5xx_6xx/driverlib.h"
 #include "timer.h"
 #include "initClock.h"
+#include "UARTmodule.h"
 
 
 void timer_init()
@@ -81,7 +82,8 @@ void __attribute__ ((interrupt(TIMER0_A0_VECTOR))) TIMER0_A0_ISR (void)
 #error Compiler not supported!
 #endif
 {
-  P1OUT ^= 0x01;                            // Toggle P1.0
+
+	read_UART();                            // Toggle P1.0
   //return;
 }
 

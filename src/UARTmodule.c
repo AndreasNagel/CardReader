@@ -76,10 +76,10 @@ int write_UART(unsigned char out){
 unsigned char read_UART(){
 	unsigned char in;
 	in = '\0';
-	unsigned char newBitIn = USCI_A_UART_getInterruptStatus(USCI_A1_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
+	unsigned char newBitIn = USCI_A_UART_getInterruptStatus(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
 	if(newBitIn)
 	{
-		in = USCI_A_UART_receiveData(USCI_A1_BASE);
+		in = USCI_A_UART_receiveData(USCI_A0_BASE);
 		fifo_write(&cardBytes, in);
 	}
 	return in;
