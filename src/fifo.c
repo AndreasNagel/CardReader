@@ -39,14 +39,14 @@ int fifo_read(fifo_t * f, char *buf, int nbytes){
                     f->tail = 0;
                }
           } else { // Not enough bytes available
-        	   for(i; i>0; i--){
+        	   for(i=i; i>0; i--){
         		   if(f->tail == 0){
-        			   f->tail = size;
+        			   f->tail = f->size;
         		   }
         		   f->tail--;
         	   }
+        	   *buf = '\0';
                return 0; //no bytes read
-               *buf = '/0';
           }
      }
      return nbytes;
