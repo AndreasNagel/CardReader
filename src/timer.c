@@ -60,6 +60,16 @@
 #include "initClock.h"
 #include "UARTmodule.h"
 
+unsigned int halfmsCount;
+
+int get05msCount(){
+	return halfmsCount;
+}
+
+void reset05msCount(){
+	halfmsCount = 0;
+}
+
 
 void timer_init()
 {
@@ -84,6 +94,7 @@ void __attribute__ ((interrupt(TIMER0_A0_VECTOR))) TIMER0_A0_ISR (void)
 {
 
 	read_UART();                            // Toggle P1.0
+	halfmsCount++;
   //return;
 }
 

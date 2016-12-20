@@ -1,15 +1,13 @@
-#include <msp430.h>
-#include <stdlib.h>
-#include "UARTmodule.h"
-#include "initClock.h"
-#include "timer.h"
-#include "initGpio.h"
-#include "MSP430F5xx_6xx/driverlib.h"
 
+#include <stdlib.h>
+
+#include "initClock.h"
+#include "application.h"
 
 /*
  * main.c
  */
+
 
 
 void main(void) {
@@ -19,6 +17,8 @@ void main(void) {
     volatile uint32_t mclk = 0;
     volatile uint32_t smclk = 0;
 
+    int accessGranted = 0;
+
 
     set_clock();
     timer_init();
@@ -26,8 +26,8 @@ void main(void) {
 
 
 	for(;;) {
-		UART_cyclic();
-		GPIO_cyclic();
+		accessGranted = checkCode();
+		blinkLED(accessGranted);
 	}
 }
 

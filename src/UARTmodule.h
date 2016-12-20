@@ -7,7 +7,7 @@
 
 #ifndef UARTMODULE_H_
 	#define UARTMODULE_H_
-
+	#include "fifo.h"
 	#include "MSP430F5xx_6xx/driverlib.h"
 	#define UART_PRESCALE 0x0068
 	#define UART_FIRST_MOD_REG 0x03
@@ -24,6 +24,7 @@
 	int write_UART(unsigned char);
 	unsigned char read_UART();
 	unsigned char UART_cyclic();
+	fifo_t* getFifoAddress();
 
 
 

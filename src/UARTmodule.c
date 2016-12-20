@@ -14,6 +14,11 @@
 
 fifo_t cardBytes;
 
+fifo_t* getFifoAddress()
+{
+	return &cardBytes;
+}
+
 
 void init_UART(){
 	//P4OUT |= 0x80;
@@ -86,7 +91,7 @@ unsigned char read_UART(){
 }
 
 unsigned char UART_cyclic(void){
-	// Reads data from fifo, checks if the card code is correct and passes an identifier to main function?
+
 	char buf[FIFO_READ_LEN];
 	int read = 0;
 	read = fifo_read(&cardBytes, buf, FIFO_READ_LEN);

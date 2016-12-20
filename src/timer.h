@@ -11,6 +11,7 @@
 
 /* ainult enda kirjutatud funcid ning mida saab väljast kutsuda; muud timer.c failis olevad funcid on olemas "MSP430F5xx_6xx/driverlib.h"*/
 void timer_init();
-
+int get05msCount();
+void reset05msCount();
 
 #endif /* TIMER_H_ */
