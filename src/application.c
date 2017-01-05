@@ -25,6 +25,10 @@ void set_rawCode(){
 
 int checkCode(){
 	int accessGranted = 0;
+
+	if(rawCode == accessCode) accessGranted = 1;
+	else accessGranted = 2;
+
 	return accessGranted;
 }
 
