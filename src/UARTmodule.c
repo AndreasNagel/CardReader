@@ -25,12 +25,10 @@ void init_UART(){
 	// set all config registers
 	//then clear USCSWRST bit to 0
 
-	//P3SEL |= TXD + RXD;  // Select Uart module on pins 3.3 = TX and 3.4 = RX
+	P3SEL |= TXD + RXD;  // Select Uart module on pins 3.3 = TX and 3.4 = RX
+	//P3SEL |= BIT3;
 
-    GPIO_setAsPeripheralModuleFunctionInputPin(
-        GPIO_PORT_P3,
-        GPIO_PIN3 + GPIO_PIN4
-        );
+    //GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P3, GPIO_PIN3 + GPIO_PIN4);
 
 	USCI_A_UART_initParam initParam;
 	USCI_A_UART_initParam *pInitParam;
@@ -44,8 +42,9 @@ void init_UART(){
 	pInitParam->uartMode = USCI_A_UART_MODE;	//USCI_A_UART_AUTOMATIC_BAUDRATE_DETECTION_MODE;
 	pInitParam->numberofStopBits = USCI_A_UART_ONE_STOP_BIT;
 
-
-	USCI_A_UART_init(USCI_A0_BASE, pInitParam);
+	volatile int status = USCI_A_UART_init(USCI_A0_BASE, pInitParam);
+	volatile int success = STATUS_SUCCESS;
+	volatile int fail = STATUS_FAIL;
 	USCI_A_UART_enable(USCI_A0_BASE);
 	USCI_A_UART_disableInterrupt(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT+
 								USCI_A_UART_TRANSMIT_INTERRUPT+
@@ -65,10 +64,9 @@ int write_UART(unsigned char out){
 	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
 	lineIdle = 0x01;
 
-	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
-	lineIdle = 0x01;
 	if(lineIdle){
 		USCI_A_UART_transmitData(USCI_A0_BASE, out);
+		UCA0TXBUF = out;
 		return SUCCESS;
 	}
 	else{

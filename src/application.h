@@ -10,7 +10,10 @@
 #include "cardReader.h"
 #include "initGpio.h"
 
+#define CODE_LEN 16
+
 int checkCode();
+void set_rawCodePtr();
 
 void blinkLED(int accessGranted);
 

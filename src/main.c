@@ -3,7 +3,6 @@
 
 #include "initClock.h"
 #include "application.h"
-
 /*
  * main.c
  */
@@ -21,11 +20,15 @@ void main(void) {
 
 
     set_clock();
-    timer_init();
     init_UART();
-
+    //UART_init();
+    set_rawCodePtr();
+    timer_init();
 
 	for(;;) {
+		write_UART('F');
+		write_UART('G');
+		write_UART('R');
 		accessGranted = checkCode();
 		blinkLED(accessGranted);
 	}

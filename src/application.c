@@ -7,9 +7,9 @@
 
 #include "application.h"
 
-char accessCode[1][16]={{"1234567890123456"}};
+char accessCode[1][CODE_LEN]={{"1234567890123456"}};
 fifo_t *rawCode;
-void set_rawCode(){
+void set_rawCodePtr(){
 	rawCode = getCardFifo();
 }
 
@@ -25,8 +25,9 @@ void set_rawCode(){
 
 int checkCode(){
 	int accessGranted = 0;
-
-	if(rawCode == accessCode) accessGranted = 1;
+	char readCode[CODE_LEN];
+	fifo_read(rawCode, readCode, CODE_LEN);
+	if(readCode == accessCode[0]) accessGranted = 1;
 	else accessGranted = 2;
 
 	return accessGranted;
