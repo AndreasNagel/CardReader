@@ -63,10 +63,9 @@ int write_UART(unsigned char out){
 	volatile unsigned char lineIdle;
 	lineIdle = USCI_A_UART_queryStatusFlags(USCI_A0_BASE, USCI_A_UART_IDLELINE);
 	lineIdle = 0x01;
-
 	if(lineIdle){
 		USCI_A_UART_transmitData(USCI_A0_BASE, out);
-		UCA0TXBUF = out;
+		//UCA0TXBUF = out;
 		return SUCCESS;
 	}
 	else{
@@ -78,13 +77,14 @@ int write_UART(unsigned char out){
 
 unsigned char read_UART(){
 	unsigned char in;
-	in = '\0';
 	unsigned char newBitIn = USCI_A_UART_getInterruptStatus(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
+	in = '\0';
 	if(newBitIn)
 	{
 		in = USCI_A_UART_receiveData(USCI_A0_BASE);
 		fifo_write(&cardBytes, in);
 	}
+	//USCI_A_UART_clearInterrupt(USCI_A0_BASE, USCI_A_UART_RECEIVE_INTERRUPT_FLAG);
 	return in;
 }
 

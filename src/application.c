@@ -6,6 +6,7 @@
  */
 
 #include "application.h"
+#include "string.h"
 
 char accessCode[1][CODE_LEN]={{"1234567890123456"}};
 fifo_t *rawCode;
@@ -24,11 +25,24 @@ void set_rawCodePtr(){
 
 
 int checkCode(){
-	int accessGranted = 0;
+	volatile int accessGranted = 0;
+	volatile unsigned int bytes;
 	char readCode[CODE_LEN];
-	fifo_read(rawCode, readCode, CODE_LEN);
-	if(readCode == accessCode[0]) accessGranted = 1;
-	else accessGranted = 2;
+	bytes = fifo_read(rawCode, readCode, CODE_LEN);
+
+	strncpy(readCode, "1234567890123456", 16);
+
+	volatile char codeCorrect = strncmp(readCode, accessCode[0], 16);
+	if(bytes == 0) {
+		accessGranted = 0;
+	}
+
+	else if(codeCorrect == 0){
+		accessGranted = 1;
+	}
+	else{
+		accessGranted = 2;
+	}
 
 	return accessGranted;
 }
